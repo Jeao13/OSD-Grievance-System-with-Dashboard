@@ -1,19 +1,32 @@
 <ion-header>
   <ion-toolbar>
     <ion-title>
-      LawyerLink
+      OSD GRIEVANCE SYSTEM
     </ion-title>
   </ion-toolbar>
 </ion-header>
-<ion-content class="auth-form">
-  <ion-grid>
-    <ion-row align-items-center>
-      <ion-col align-self-center>
-        <ion-button [routerLink]="['/registration']" expand="block" >Register</ion-button>
-        <span class="divider line one-line">or</span>
-        <span class="already">  Already a user?</span>
-        <ion-button [routerLink]="['/login']" expand="block" >Sign In</ion-button>
-      </ion-col>
-    </ion-row>
-  </ion-grid>
+
+<ion-content class="background-image">
+  <div id="container">
+  <ion-card>
+  <form (ngSubmit)="validateForm()">
+    <ion-item class="background-image1">
+      <ion-label position="floating">Username</ion-label>
+      <ion-input type="text" [(ngModel)]="username" name="username"></ion-input>
+    </ion-item>
+
+    <ion-item class="background-image1">
+      <ion-label position="floating">Password</ion-label>
+      <ion-input type="password" [(ngModel)]="password" name="password"></ion-input>
+    </ion-item>
+<div class="container">
+    <ion-button type="submit" shape="round"><ion-icon name="lock-open-outline" style="padding-right: 5px;"> </ion-icon>Sign In</ion-button>
+  </div>
+    <div *ngIf="loginFailed" class="login-error">
+      Invalid username or password
+    </div>
+  </form>
+</ion-card>
+</div>
 </ion-content>
+

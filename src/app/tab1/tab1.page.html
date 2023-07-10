@@ -1,0 +1,28 @@
+<ion-header [translucent]="true">
+  <ion-toolbar class="background">
+    <ion-title>Home</ion-title>
+  </ion-toolbar>
+  <ion-toolbar class="btn-right">
+   
+    <ion-button class="custom-button" [routerLink]="['/home']" color="danger"> <ion-icon name="power" style="padding-right: 5px;"> </ion-icon>Sign-out</ion-button>
+  </ion-toolbar>
+</ion-header>
+
+
+
+
+<ion-content class="background-image">
+  <div class="image-container">
+    <ion-img [src]="user.profilePic" alt="Profile Picture" class="profile-pic"></ion-img>
+  </div>
+  <ion-item class="no-border">
+    <ion-label class="center">{{ user?.name }}</ion-label>
+  </ion-item>
+  <ion-item class="no-border">
+    <ion-label class="font">{{ user?.college }} - {{ user?.year }}</ion-label>
+  </ion-item>
+
+  <ion-button expand="full" class="btn-left">Sanctions</ion-button>
+  <ion-button [routerLink]="['/forgot-password']" expand="full" class="btn-left">File Complaint</ion-button>
+  <ion-button expand="full" class="btn-left">Track Complaint</ion-button>
+</ion-content>

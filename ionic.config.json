@@ -2,6 +2,7 @@
   "name": "ionic-form-ui",
   "integrations": {
     "capacitor": {}
+    
   },
   "type": "angular"
 }
