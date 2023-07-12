@@ -15,7 +15,7 @@ export class HomePage {
 
   constructor(private navCtrl: NavController,private router: Router, private http: HttpClient) {}
 
-  
+ 
 
   validateForm(): boolean {
     
@@ -42,6 +42,8 @@ export class HomePage {
         if (authenticated) {
           // Login successful
           this.router.navigate(['/tabs/tab1'], { queryParams: { username: this.username} });
+          this.username = '';
+          this.password = '';
         }  else {
           // Login failed
           this.loginFailed = true;

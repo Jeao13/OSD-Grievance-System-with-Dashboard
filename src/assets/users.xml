@@ -42,4 +42,13 @@
     <year>THIRD YEAR</year>
      <profilePic>assets/Eya_ID.jpg</profilePic>
   </user>
+
+    <user>
+    <username>20-07600</username>
+    <password>andeng</password>
+     <name>Andrea Baluyot</name>
+    <college>BS INFORMATION TECHNOLOGY</college>
+    <year>THIRD YEAR</year>
+     <profilePic>assets/Andrea_ID.jpg</profilePic>
+  </user>
 </users>

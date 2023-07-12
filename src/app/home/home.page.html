@@ -8,25 +8,29 @@
 
 <ion-content class="background-image">
   <div id="container">
-  <ion-card>
-  <form (ngSubmit)="validateForm()">
-    <ion-item class="background-image1">
-      <ion-label position="floating">Username</ion-label>
-      <ion-input type="text" [(ngModel)]="username" name="username"></ion-input>
-    </ion-item>
+    <ion-card>
+      <form (ngSubmit)="validateForm()">
+        <ion-item class="background-image1">
+          <ion-label position="floating">Username</ion-label>
+          <ion-input type="text" [(ngModel)]="username" name="username"></ion-input>
+        </ion-item>
 
-    <ion-item class="background-image1">
-      <ion-label position="floating">Password</ion-label>
-      <ion-input type="password" [(ngModel)]="password" name="password"></ion-input>
-    </ion-item>
-<div class="container">
-    <ion-button type="submit" shape="round"><ion-icon name="lock-open-outline" style="padding-right: 5px;"> </ion-icon>Sign In</ion-button>
+        <ion-item class="background-image1">
+          <ion-label position="floating">Password</ion-label>
+          <ion-input type="password" [(ngModel)]="password" name="password"></ion-input>
+        </ion-item>
+
+        <div class="container">
+          <ion-button type="submit" shape="round">
+            <ion-icon name="lock-open-outline" style="padding-right: 5px;"></ion-icon>Sign In
+          </ion-button>
+        </div>
+
+        <div *ngIf="loginFailed" class="login-error">
+          Invalid username or password
+        </div>
+      </form>
+    </ion-card>
   </div>
-    <div *ngIf="loginFailed" class="login-error">
-      Invalid username or password
-    </div>
-  </form>
-</ion-card>
-</div>
 </ion-content>
 
