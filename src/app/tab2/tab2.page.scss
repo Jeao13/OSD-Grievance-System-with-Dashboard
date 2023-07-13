@@ -9,3 +9,26 @@ ion-content{
   
     
   }
+
+  
+ion-item{
+
+ color: black;
+
+  
+}
+
+.report-container {
+  display: none;
+  padding: 10px;
+  background-color: #f5f5f5;
+  border: 1px solid #ddd;
+}
+
+.report-container.show {
+  display: block;
+}
+
+h2{
+  font-weight: bold;
+}

@@ -46,6 +46,7 @@ export class HomePage {
           this.password = '';
         }  else {
           // Login failed
+          
           this.loginFailed = true;
           console.log('Invalid username or password');
         }

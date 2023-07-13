@@ -5,35 +5,28 @@
     <dept>JohnDoe</dept>
     <violation>Hello, world!</violation>
     <report>Hellow</report>
+    <timestamp>asd</timestamp>
+    <status>asd</status>
   </data>
   <data>
     <srcode>20-07600</srcode>
-    <dept>CEAFA</dept>
-    <violation>Bullying</violation>
-    <report>ako po ay ni ano ng ano kaya ouch</report>
-  </data>
-  <data>
-    <srcode>20-07600</srcode>
-    <dept>CEAFA</dept>
-    <violation>Bullying</violation>
-    <report>ako po ay ni ano ng ano kaya ouch</report>
-  </data>
-  <data>
-    <srcode>20-07600</srcode>
-    <dept>CAFAD</dept>
-    <violation>PDA</violation>
-    <report>asdasd</report>
-  </data>
-  <data>
-    <srcode>20-06193</srcode>
-    <dept>CAFAD</dept>
-    <violation>Bullying</violation>
-    <report>asdsad</report>
-  </data>
-  <data>
-    <srcode>20-03235</srcode>
     <dept>CICS</dept>
-    <violation>PDA</violation>
-    <report>hafdgffydyuduyswd</report>
+    <violation>Bullying</violation>
+    <report>asddsadasdasdasdsdasda
+look at me now</report>
+    <timestamp>Jul 12, 2023, 11:02 PM</timestamp>
+    <status>Pending</status>
+  </data>
+  <data>
+    <srcode>20-07600</srcode>
+    <dept>COE</dept>
+    <violation>Bullying</violation>
+    <report>i want to smack yo face sheesh 
+
+das krazy ferson
+
+bat malungkot ang beshywaps ko</report>
+    <timestamp>Jul 12, 2023, 11:08 PM</timestamp>
+    <status>Pending</status>
   </data>
 </datas>

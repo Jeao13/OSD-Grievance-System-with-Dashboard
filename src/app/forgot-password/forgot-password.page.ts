@@ -23,13 +23,22 @@ export class ForgotPasswordPage {
   }
 
   saveData() {
-    console.log('Username in the forgot:', this.username);
+   
     const apiUrl = 'http://localhost/modify-xml.php'; // Replace with the actual URL of your PHP script
     const data = {
       srcode: this.username,
       dept: this.username1,
       violation: this.message,
       report: this.message1,
+      timestamp: new Date().toLocaleString('en-US', {
+        hour: 'numeric',
+        minute: 'numeric',
+        year: 'numeric',
+        month: 'short',
+        day: 'numeric'
+      }    ),
+      status:'Pending'
+
     };
 
     this.http.post(apiUrl, data).subscribe(

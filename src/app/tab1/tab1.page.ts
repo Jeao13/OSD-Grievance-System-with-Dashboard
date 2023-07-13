@@ -3,6 +3,7 @@ import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
 import { HttpClient } from '@angular/common/http';
 import { ActivatedRoute } from '@angular/router';
 import { Router } from '@angular/router';
+import { DataService } from 'src/app/data.service';
 
 @Component({
   selector: 'app-tab1',
@@ -18,12 +19,18 @@ export class Tab1Page implements OnInit {
     private route: ActivatedRoute,
     private http: HttpClient,
     private sanitizer: DomSanitizer,
-    private router: Router
+    private router: Router,
+    private dataService: DataService
   ) {}
+
+ 
+    
+  
 
   ngOnInit() {
     this.route.queryParams.subscribe((params) => {
       this.username = params['username'];
+      this.dataService.setUsername(this.username);
 
       const { name, college, year, profilePic } = params;
       this.user = { name, college, year, profilePic };
@@ -38,6 +45,7 @@ export class Tab1Page implements OnInit {
     this.router.navigate(['/forgot-password'], { queryParams: { username: this.username } });
   }
 
+ 
   logout() {
     // Clear user data from local storage or session storage
     localStorage.removeItem('userToken');
@@ -51,7 +59,7 @@ export class Tab1Page implements OnInit {
   }
 
   displayUserInfo() {
-    console.log('Username in tab1.page.ts:', this.username);
+   
     this.http.get('assets/users.xml', { responseType: 'text' }).subscribe((xmlData) => {
       const parser = new DOMParser();
       const xmlDoc = parser.parseFromString(xmlData, 'application/xml');

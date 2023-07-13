@@ -51,4 +51,50 @@
     <year>THIRD YEAR</year>
      <profilePic>assets/Andrea_ID.jpg</profilePic>
   </user>
+
+  <user>
+    <username>20-07045</username>
+    <password>edson</password>
+     <name>Mark Edson Magsombol</name>
+    <college>BS INFORMATION TECHNOLOGY</college>
+    <year>THIRD YEAR</year>
+     <profilePic>assets/Edson_ID.jpg</profilePic>
+  </user>
+
+   <user>
+    <username>20-02513</username>
+    <password>myziel</password>
+     <name>Myziel Joy Sorezo</name>
+    <college>BS INFORMATION TECHNOLOGY</college>
+    <year>THIRD YEAR</year>
+     <profilePic>assets/Myziel_ID.jpg</profilePic>
+  </user>
+
+   <user>
+    <username>20-02255</username>
+    <password>kevin</password>
+     <name>Mark Kevin Malabanan</name>
+    <college>BS INFORMATION TECHNOLOGY</college>
+    <year>THIRD YEAR</year>
+     <profilePic>assets/Kevin_ID.jpg</profilePic>
+  </user>
+
+   <user>
+    <username>20-08393</username>
+    <password>boss</password>
+     <name>Jonathan Ajeda</name>
+    <college>BS INFORMATION TECHNOLOGY</college>
+    <year>THIRD YEAR</year>
+     <profilePic>assets/Boss_ID.jpg</profilePic>
+  </user>
+
+    <user>
+    <username>555477</username>
+    <password>sirgerald</password>
+     <name>Jonathan Ajeda</name>
+    <college>GUEST LECTURER I</college>
+    <year>Faculty</year>
+     <profilePic>assets/Boss_ID.jpg</profilePic>
+  </user>
+
 </users>
