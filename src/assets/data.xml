@@ -29,4 +29,28 @@ bat malungkot ang beshywaps ko</report>
     <timestamp>Jul 12, 2023, 11:08 PM</timestamp>
     <status>Pending</status>
   </data>
+  <data>
+    <srcode>20-06969</srcode>
+    <dept>CICS</dept>
+    <violation>Sana aus kapa lods</violation>
+    <report>asdasdasdsad</report>
+    <timestamp>Jul 13, 2023, 2:33 PM</timestamp>
+    <status>Pending</status>
+  </data>
+  <data>
+    <srcode>20-07600</srcode>
+    <dept>CAFAD</dept>
+    <violation>Bullying</violation>
+    <report>asdasdasd</report>
+    <timestamp>Jul 13, 2023, 2:49 PM</timestamp>
+    <status>Pending</status>
+  </data>
+  <data>
+    <srcode>20-07600</srcode>
+    <dept>CICS</dept>
+    <violation>Bullying</violation>
+    <report>asdsadasdsad</report>
+    <timestamp>Jul 13, 2023, 4:18 PM</timestamp>
+    <status>Pending</status>
+  </data>
 </datas>

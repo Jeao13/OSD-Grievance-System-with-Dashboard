@@ -101,3 +101,7 @@ ion-content{
     bottom: 0;
     z-index: -1; /* Set a negative z-index to keep it behind the content */
   }
+
+  .hide-item {
+    display: none;
+  }
