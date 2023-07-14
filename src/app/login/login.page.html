@@ -1,26 +1,81 @@
+
 <ion-header>
   <ion-toolbar>
+
+<ion-menu side="start" contentId="main-content">
+  <ion-header>
+    <ion-toolbar>
+      <ion-title>Menu</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-content>
+    <ion-list>
+      <ion-menu-toggle auto-hide="false">
+        <ion-item>
+          
+          <ion-label>Give Sanctions</ion-label>
+        </ion-item>
+      </ion-menu-toggle>
+
+      <ion-menu-toggle (click)="file()" auto-hide="false">
+        <ion-item>
+          
+          <ion-label>File Complaint</ion-label>
+        </ion-item>
+      </ion-menu-toggle>
+
+      <ion-menu-toggle auto-hide="false">
+        <ion-item (click)="toggleClass($event)">
+        
+          <ion-label>Forms</ion-label>
+        
+        </ion-item>
+      </ion-menu-toggle>
+
+      <ion-item [ngClass]="{'hide-item': isClassDisabled}">
+        <ion-label>Formal Complaint Letter</ion-label>
+        <ion-button (click)="downloadFile()">
+  
+          Download
+        </ion-button>
+      </ion-item>
+      <ion-item [ngClass]="{'hide-item': isClassDisabled}">
+        <ion-label >Request for New ID</ion-label>
+        <ion-button (click)="downloadFile1()">
+        
+          Download
+        </ion-button>
+      </ion-item> 
+    </ion-list>
+  </ion-content>
+</ion-menu>
+
+<ion-router-outlet id="main-content"></ion-router-outlet>
+
+<ion-header [translucent]="true">
+   <ion-toolbar class="background">
     <ion-buttons slot="start">
-      <ion-back-button></ion-back-button>
+      <ion-menu-button></ion-menu-button>
     </ion-buttons>
-    <ion-title>Log In</ion-title>
+    <ion-title>Home</ion-title>
+    <ion-buttons slot="end">
+      <ion-button (click)="logout()">
+        <ion-icon name="power"></ion-icon>
+        Sign-out
+      </ion-button>
+    </ion-buttons>
   </ion-toolbar>
 </ion-header>
-<ion-content>
-  <form>
-    <ion-item lines="full">
-      <ion-label position="floating">Email</ion-label>
-      <ion-input type="text" required></ion-input>
-    </ion-item>
-    <ion-item lines="full">
-      <ion-label position="floating">Password</ion-label>
-      <ion-input type="password" required></ion-input>
-    </ion-item>
-    <ion-row>
-      <ion-col>
-        <ion-button type="submit" color="danger" expand="block">Sign In</ion-button>
-        <a [routerLink]="['/forgot-password']" class="small-text">Forgot Password?</a>
-      </ion-col>
-    </ion-row>
-  </form>
+
+<ion-content class="background-image">
+  <div class="image-container">
+    <ion-img [src]="user.profilePic" alt="Profile Picture" class="profile-pic"></ion-img>
+  </div>
+  <ion-item class="no-border">
+    <ion-label class="center">{{ user?.name }}</ion-label>
+  </ion-item>
+  <ion-item class="no-border">
+    <ion-label class="font">{{ user?.college }} - {{ user?.year }}</ion-label>
+  </ion-item>
 </ion-content>
