@@ -42,4 +42,65 @@
     <year>THIRD YEAR</year>
      <profilePic>assets/Eya_ID.jpg</profilePic>
   </user>
+
+  
+    <user>
+    <username>20-07600</username>
+    <password>andeng</password>
+    <role>student</role>
+     <name>Andrea Baluyot</name>
+    <college>BS INFORMATION TECHNOLOGY</college>
+    <year>THIRD YEAR</year>
+     <profilePic>assets/Andrea_ID.jpg</profilePic>
+  </user>
+
+  <user>
+    <username>20-07045</username>
+    <password>edson</password>
+    <role>student</role>
+     <name>Mark Edson Magsombol</name>
+    <college>BS INFORMATION TECHNOLOGY</college>
+    <year>THIRD YEAR</year>
+     <profilePic>assets/Edson_ID.jpg</profilePic>
+  </user>
+
+   <user>
+    <username>20-02513</username>
+    <password>myziel</password>
+    <role>student</role>
+     <name>Myziel Joy Sorezo</name>
+    <college>BS INFORMATION TECHNOLOGY</college>
+    <year>THIRD YEAR</year>
+     <profilePic>assets/Myziel_ID.jpg</profilePic>
+  </user>
+
+   <user>
+    <username>20-02255</username>
+    <password>kevin</password>
+    <role>student</role>
+     <name>Mark Kevin Malabanan</name>
+    <college>BS INFORMATION TECHNOLOGY</college>
+    <year>THIRD YEAR</year>
+     <profilePic>assets/Kevin_ID.jpg</profilePic>
+  </user>
+
+   <user>
+    <username>20-08393</username>
+    <password>boss</password>
+    <role>student</role>
+     <name>Jonathan Ajeda</name>
+    <college>BS INFORMATION TECHNOLOGY</college>
+    <year>THIRD YEAR</year>
+     <profilePic>assets/Boss_ID.jpg</profilePic>
+  </user>
+
+    <user>
+    <username>555477</username>
+    <password>sirgerald</password>
+    <role>coordinator</role>
+     <name>Sir Gerald</name>
+    <college>GUEST LECTURER I</college>
+    <year>Faculty</year>
+     <profilePic>assets/Boss_ID.jpg</profilePic>
+  </user>
 </users>
