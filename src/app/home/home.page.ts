@@ -54,7 +54,7 @@ export class HomePage {
           this.password = '';
         }  else if (authenticated1){
           // Login failed
-          this.router.navigate(['login'], { queryParams: { username: this.username} });
+          this.router.navigate(['/tabadmin/login'], { queryParams: { username: this.username} });
           this.username = '';
           this.password = '';
         }

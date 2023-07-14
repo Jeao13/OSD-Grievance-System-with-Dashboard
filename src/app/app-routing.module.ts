@@ -4,6 +4,7 @@ import { Tab1Page } from './tab1/tab1.page';
 
 
 
+
 const routes: Routes = [
   {
     path: 'home',
@@ -42,6 +43,10 @@ const routes: Routes = [
   {
     path: 'tabadmin2',
     loadChildren: () => import('./tabadmin2/tabadmin2.module').then( m => m.Tabadmin2PageModule)
+  },
+  {
+    path: 'tabadmin3',
+    loadChildren: () => import('./tabadmin3/tabadmin3.module').then( m => m.Tabadmin3PageModule)
   },
 
 
