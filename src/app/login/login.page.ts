@@ -79,6 +79,11 @@ export class LoginPage implements OnInit {
     });
   }
 
+
+  sanction() {
+    this.router.navigate(['/tabadmin1'], { queryParams: { username: this.username } });
+  }
+
   file() {
     this.router.navigate(['/forgot-password'], { queryParams: { username: this.username } });
   }
