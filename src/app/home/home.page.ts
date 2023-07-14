@@ -28,6 +28,7 @@ export class HomePage {
         const users = xmlDoc.getElementsByTagName('user');
         let authenticated = false;
         let authenticated1 = false;
+        
 
         for (let i = 0; i < users.length; i++) {
           const user = users[i];
@@ -51,10 +52,13 @@ export class HomePage {
           this.username = '';
           this.password = '';
         }  else if (authenticated1){
-          // Login failed
           this.router.navigate(['/tabadmin/login'], { queryParams: { username: this.username} });
           this.username = '';
           this.password = '';
+        
+
+        }  else {
+          // Login failed
           this.loginFailed = true;
           console.log('Invalid username or password');
         }

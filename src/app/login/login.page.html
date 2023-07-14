@@ -1,7 +1,3 @@
-
-<ion-header>
-  <ion-toolbar>
-
 <ion-menu side="start" contentId="main-content">
   <ion-header>
     <ion-toolbar>
@@ -11,10 +7,10 @@
 
   <ion-content>
     <ion-list>
-      <ion-menu-toggle (click)="sanction()" auto-hide="false">
+      <ion-menu-toggle auto-hide="false">
         <ion-item>
           
-          <ion-label>Give Sanctions</ion-label>
+          <ion-label>Sanctions</ion-label>
         </ion-item>
       </ion-menu-toggle>
 
@@ -54,7 +50,7 @@
 <ion-router-outlet id="main-content"></ion-router-outlet>
 
 <ion-header [translucent]="true">
-   <ion-toolbar class="background">
+  <ion-toolbar class="background">
     <ion-buttons slot="start">
       <ion-menu-button></ion-menu-button>
     </ion-buttons>

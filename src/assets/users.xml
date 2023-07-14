@@ -2,6 +2,7 @@
   <user>
     <username>20-06193</username>
     <password>hornbill</password>
+        <role>student</role>
     <name>Aedrian Jeao De Torres</name>
     <college>BS INFORMATION TECHNOLOGY</college>
     <year>THIRD YEAR</year>
@@ -10,6 +11,7 @@
   <user>
     <username>20-03025</username>
     <password>hornbill2</password>
+        <role>student</role>
      <name>Florie Mae A. Cordero</name>
     <college>BS INFORMATION TECHNOLOGY</college>
     <year>THIRD YEAR</year>
@@ -19,6 +21,7 @@
    <user>
     <username>20-03235</username>
     <password>hornbill3</password>
+        <role>student</role>
      <name>Dennyel Panganiban</name>
     <college>BS INFORMATION TECHNOLOGY</college>
     <year>THIRD YEAR</year>
@@ -28,6 +31,7 @@
   <user>
     <username>20-06036</username>
     <password>jopay</password>
+        <role>student</role>
      <name>Jofer Joy Castillo</name>
     <college>BS INFORMATION TECHNOLOGY</college>
     <year>THIRD YEAR</year>
@@ -37,6 +41,7 @@
   <user>
     <username>20-06969</username>
     <password>eya</password>
+        <role>student</role>
      <name>Judea Hazel Mae Camat</name>
     <college>BS INFORMATION TECHNOLOGY</college>
     <year>THIRD YEAR</year>
@@ -102,5 +107,16 @@
     <college>GUEST LECTURER I</college>
     <year>Faculty</year>
      <profilePic>assets/Boss_ID.jpg</profilePic>
+  </user>
+
+  
+    <user>
+    <username>20-04729</username>
+    <password>buquis</password>
+    <role>student</role>
+     <name>CJ Buquis</name>
+    <college>BS INFORMATION TECHNOLOGY</college>
+    <year>THIRD YEAR</year>
+     <profilePic>assets/CJ_ID.jpg</profilePic>
   </user>
 </users>
