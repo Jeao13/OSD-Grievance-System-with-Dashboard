@@ -4,17 +4,17 @@ import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { RegistrationPageRoutingModule } from './registration-routing.module';
+import { FormsStudentPageRoutingModule } from './forms-student-routing.module';
 
-import { RegistrationPage } from './registration.page';
+import { FormsStudentPage } from './forms-student.page';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    RegistrationPageRoutingModule
+    FormsStudentPageRoutingModule
   ],
-  declarations: [RegistrationPage]
+  declarations: [FormsStudentPage]
 })
-export class RegistrationPageModule {}
+export class FormsStudentPageModule {}
