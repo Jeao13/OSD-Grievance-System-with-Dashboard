@@ -1,77 +1,34 @@
-/* Styling for ion-header */
-ion-header {
-  background-color: #333;
-  color: #fff;
+
+ion-content{
+
+  --ion-background-color:rgba(255, 255, 255, 0.8);
+  --ion-item-background:rgba(255, 255, 255, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  
 }
 
-ion-title {
-  font-size: 20px;
-  font-weight: bold;
-  text-align: center;
-  padding: 10px;
+
+ion-item{
+
+color: black;
+
+
 }
 
-/* Styling for ion-content */
-ion-content {
-  padding: 10px;
+.report-container {
+display: none;
+padding: 10px;
+background-color: #f5f5f5;
+border: 1px solid #ddd;
 }
 
-/* Styling for ion-list */
-ion-list {
-  margin-top: 10px;
+.report-container.show {
+display: block;
 }
 
-/* Styling for ion-item */
-ion-item {
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  margin-bottom: 10px;
-  padding: 10px;
-}
-
-/* Styling for h3 within ion-label */
-ion-label h3 {
-  font-size: 18px;
-  font-weight: bold;
-  margin-bottom: 5px;
-}
-
-/* Styling for h3 within ion-label */
-ion-label h3:first-child {
-  color: #237cdc;
-}
-
-/* Styling for h2 within ion-label */
-ion-label h2 {
-  margin-bottom: 5px;
-  font-size: 16px;
-}
-
-/* Styling for p within ion-label */
-ion-label p {
-  font-size: 14px;
-  margin-bottom: 10px;
-}
-
-/* Styling for ion-button */
-ion-button {
-  margin-top: 10px;
-  --background: green;
-  font-weight: bold;
-}
-
-/* Styling for ion-ripple-effect */
-ion-ripple-effect {
-  color: green;
-}
-
-/* Styling for ion-item when no results found */
-ion-item.no-results {
-  border: none;
-}
-
-/* Styling for ion-label when no results found */
-ion-label.no-results {
-  text-align: center;
-  color: #777;
+h2{
+font-weight: bold;
 }

@@ -1,44 +1,49 @@
 <ion-menu side="start" contentId="main-content">
-  <ion-header>
-    <ion-toolbar>
-      <ion-title>Menu</ion-title>
+  <ion-header >
+    <ion-toolbar class="header-toolbar">
+      <ion-title class="header-title">Home</ion-title>
     </ion-toolbar>
   </ion-header>
+
 
   <ion-content>
     <ion-list>
       <ion-menu-toggle auto-hide="false">
-        <ion-item>
-          
+        <ion-item class="menu">
+          <ion-icon slot="start" name="clipboard"></ion-icon>
+          <ion-icon slot="end" name="chevron-forward"></ion-icon>
           <ion-label>Sanctions</ion-label>
         </ion-item>
       </ion-menu-toggle>
-
+  
       <ion-menu-toggle (click)="file()" auto-hide="false">
-        <ion-item>
-          
+        <ion-item class="menu" >
+          <ion-icon slot="start" name="search-circle"></ion-icon>
+          <ion-icon slot="end" name="chevron-forward"></ion-icon>
           <ion-label>File Complaint</ion-label>
         </ion-item>
       </ion-menu-toggle>
-
+  
       <ion-menu-toggle auto-hide="false">
-        <ion-item (click)="toggleClass($event)">
-        
+        <ion-item class="forms-item" (click)="toggleClass($event)">
+          <ion-icon slot="end" name="chevron-down"></ion-icon>
+          <ion-icon slot="start" name="list"></ion-icon>
           <ion-label>Forms</ion-label>
-        
         </ion-item>
       </ion-menu-toggle>
+ 
+  
 
-      <ion-item [ngClass]="{'hide-item': isClassDisabled}">
+      <ion-item class="forms"  [ngClass]="{'hide-item': isClassDisabled}">
         <ion-label>Formal Complaint Letter</ion-label>
-        <ion-button (click)="downloadFile()">
+        <ion-button class="button-dl" (click)="downloadFile()">
   
           Download
         </ion-button>
       </ion-item>
-      <ion-item [ngClass]="{'hide-item': isClassDisabled}">
+      <ion-item class="forms"[ngClass]="{'hide-item': isClassDisabled}">
         <ion-label >Request for New ID</ion-label>
-        <ion-button (click)="downloadFile1()">
+        <ion-button class="button-dl"(click)="downloadFile1()">
         
           Download
         </ion-button>
@@ -56,8 +61,8 @@
     </ion-buttons>
     <ion-title>Home</ion-title>
     <ion-buttons slot="end">
-      <ion-button (click)="logout()">
-        <ion-icon name="power"></ion-icon>
+      <ion-button class ="custom-text-button " (click)="logout()">
+        <ion-icon class="icons"name="arrow-forward"></ion-icon>
         Sign-out
       </ion-button>
     </ion-buttons>
