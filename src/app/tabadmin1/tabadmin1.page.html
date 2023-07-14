@@ -1,13 +1,43 @@
-<ion-header [translucent]="true">
+<ion-header>
   <ion-toolbar>
-    <ion-title>tabadmin1</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>
+     Give Sanction
+    </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">tabadmin1</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content>
+  <form (ngSubmit)="saveData()">
+    <ion-item>
+      <ion-label position="floating">Department</ion-label>
+      <ion-select [(ngModel)]="username1" name="username">
+        <ion-select-option value="CAFAD">CAFAD</ion-select-option>
+        <ion-select-option value="CICS">CICS</ion-select-option>
+        <ion-select-option value="CIT">CIT</ion-select-option>
+        <ion-select-option value="COE">COE</ion-select-option>
+      </ion-select>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">Classification of Violation</ion-label>
+      <ion-select [(ngModel)]="message" name="message1">
+        <ion-select-option value="Classroom Rules and Regulations">Classroom Rules and Regulations</ion-select-option>
+        <ion-select-option value="ID Requirement">ID Requirement</ion-select-option>
+        <ion-select-option value="Proper Uniform, Dress Code & Other Related Rules/Regulations">Proper Uniform, Dress Code & Other Related Rules/Regulations</ion-select-option>
+        <ion-select-option value="University Facilities & Premises">University Facilities & Premises</ion-select-option>
+        <ion-select-option value="Academic Dishonesty">Academic Dishonesty</ion-select-option>
+      </ion-select>
+    </ion-item>
+
+    
+    <ion-item>
+      <ion-label position="floating">Report</ion-label>
+      <ion-textarea [(ngModel)]="message1" name="message"></ion-textarea>
+    </ion-item>
+    <ion-button type="submit" >Save</ion-button>
+  </form>
 </ion-content>
+
