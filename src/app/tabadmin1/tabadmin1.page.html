@@ -8,36 +8,48 @@
     </ion-title>
   </ion-toolbar>
 </ion-header>
-
+ 
 <ion-content>
-  <form (ngSubmit)="saveData()">
-    <ion-item>
-      <ion-label position="floating">Department</ion-label>
-      <ion-select [(ngModel)]="username1" name="username">
-        <ion-select-option value="CAFAD">CAFAD</ion-select-option>
-        <ion-select-option value="CICS">CICS</ion-select-option>
-        <ion-select-option value="CIT">CIT</ion-select-option>
-        <ion-select-option value="COE">COE</ion-select-option>
-      </ion-select>
-    </ion-item>
+  <div class="content-container">
+    <div class="search-container">
+      <ion-searchbar [(ngModel)]="searchTerm" (input)="onSearch()" (keyup.enter)="displayUserInfo()" placeholder="Input Sr-Code"></ion-searchbar>
+      <ion-list *ngIf="showRecommendations" class="recommendation-list">
+        <ion-item *ngFor="let recommendation of recommendations" (click)="selectRecommendation(recommendation)">
+          {{ recommendation }}
+        </ion-item>
+      </ion-list>
+    </div>
 
-    <ion-item>
-      <ion-label position="floating">Classification of Violation</ion-label>
-      <ion-select [(ngModel)]="message" name="message1">
-        <ion-select-option value="Classroom Rules and Regulations">Classroom Rules and Regulations</ion-select-option>
-        <ion-select-option value="ID Requirement">ID Requirement</ion-select-option>
-        <ion-select-option value="Proper Uniform, Dress Code & Other Related Rules/Regulations">Proper Uniform, Dress Code & Other Related Rules/Regulations</ion-select-option>
-        <ion-select-option value="University Facilities & Premises">University Facilities & Premises</ion-select-option>
-        <ion-select-option value="Academic Dishonesty">Academic Dishonesty</ion-select-option>
-      </ion-select>
-    </ion-item>
+    <div class="user-info-container">
+      <div class="image-container">
+        <ion-img [src]="users2.profilePic" alt="Profile Picture" class="profile-pic"></ion-img>
+      </div>
+      <ion-item class="no-border">
+        <ion-label class="center">{{ users2?.name }}</ion-label>
+      </ion-item>
+      <ion-item class="no-border">
+        <ion-label class="font">{{ users2?.college }}</ion-label>
+  
+      </ion-item>
+      <ion-item>
+        <ion-label class="font">{{ users2?.year }}</ion-label>
+  
+      </ion-item>
+    </div>
 
-    
-    <ion-item>
-      <ion-label position="floating">Report</ion-label>
-      <ion-textarea [(ngModel)]="message1" name="message"></ion-textarea>
-    </ion-item>
-    <ion-button type="submit" >Save</ion-button>
-  </form>
+    <div class="user-info-container">
+      <ion-label class="font">Sanctions:</ion-label>
+
+    </div>
+
+
+
+
+
+
+
+  </div>
+
+  
 </ion-content>
 

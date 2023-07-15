@@ -1,0 +1,158 @@
+
+
+
+ion-content {
+    --ion-background-color: rgba(255, 255, 255, 0.8);
+    --ion-item-background: rgba(255, 255, 255);
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    overflow: hidden;
+  }
+  .icons{
+    color: rgb(255, 255, 255);
+  }
+  .menu{
+    --background: transparent;
+  }
+  ion-icon {
+    color: rgb(0, 0, 0);
+    }
+  .forms-item {   
+    border-bottom: 1px solid black;
+  }
+  .forms{
+  --background: rgba(255, 255, 255, 0.236);
+  
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: -200px;
+    height: 100%;
+  }
+  
+  .header-toolbar {
+    font-weight: bold;
+    height: auto;
+    font-size: 10px;
+  
+  }
+  .background{
+    --background: linear-gradient(to right, rgba(189, 21, 21, 0.692), rgba(255,0,0,1));
+  
+  }
+  
+  
+  .center { 
+    text-align: center;
+    font-weight: bold;
+    font-size: large;
+  }
+  
+  
+  .profile-pic {
+    width: 200px;
+    height: 200px;
+    padding-top: 20px;
+   
+  }
+  
+  .image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .font {
+    font-size: smaller;
+    text-align: center;
+  
+  }
+  
+  .btn-right {
+    display: flex;
+    justify-content: flex-end;
+    --background: transparent;
+  }
+  
+  
+  .button-dl{
+  
+    --background: rgb(10, 230, 50);
+    font-size: 10px;
+    font-weight: bold;
+  }
+  
+  
+  .custom-text-button {
+    color: rgb(255, 255, 255);
+    font-size: 10px;
+    font-weight: bold;
+    /* Add more custom styles as needed */
+  }
+  
+  
+  ion-item,
+  .no-border {
+    --background: transparent;
+    --color: black;  
+    --border-style: none; /* Remove border style */
+  
+   }
+
+   ion-label{
+    color:black;
+   }
+  
+  
+  .background-image {
+    position: relative;
+  }
+  
+  .background-image::before {
+    content: "";
+    background: url('/assets/Alangilan.jpg') no-repeat center center fixed;
+    background-size: cover;
+    opacity: 0.8;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    filter: grayscale(100%); /* Apply grayscale filter */
+  }
+  .content-container {
+    position: relative;
+  }
+  
+  .search-container {
+    position: relative;
+    z-index: 1;
+  }
+  
+  .recommendation-list {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: #ffffff;
+    z-index: 2;
+    border: 1px solid #ccc;
+    border-top: none;
+    border-radius: 0 0 8px 8px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 8px;
+    max-height: 200px;
+    overflow-y: auto;
+  }
+  
+  .user-info-container {
+    margin-top: 16px;
+    padding: 16px;
+    background-color: #ffffff;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }

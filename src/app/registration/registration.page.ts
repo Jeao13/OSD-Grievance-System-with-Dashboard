@@ -52,9 +52,11 @@ export class RegistrationPage {
 
         this.matchingData = [];
         for (let i = 0; i < datas.length; i++) {
-          const dept = datas[i].getElementsByTagName('dept')[0].textContent;
+          const deptElement = datas[i].getElementsByTagName('dept')[0];
+          const dept = deptElement ? deptElement.textContent : '';
           if (dept === 'CICS') {
-            const srcode = datas[i].getElementsByTagName('srcode')[0].textContent;
+            const srcodeElement = datas[i].getElementsByTagName('srcode')[0];
+            const srcode = srcodeElement ? srcodeElement.textContent : '';
             const violation = datas[i].getElementsByTagName('violation')[0].textContent;
             const report = datas[i].getElementsByTagName('report')[0].textContent;
             const timestamp = datas[i].getElementsByTagName('timestamp')[0].textContent;

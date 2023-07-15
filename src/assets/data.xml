@@ -6,7 +6,7 @@
     <violation>Bullying</violation>
     <report>asddsadasdasdasdsdasda
 look at me now</report>
-    <timestamp>Jul 14, 2023, 5:07 PM</timestamp>
+    <timestamp>Jul 15, 2023, 11:41 AM</timestamp>
     <status>Taken Action</status>
   </data>
   <data>
@@ -26,8 +26,8 @@ bat malungkot ang beshywaps ko</report>
     <dept>CICS</dept>
     <violation>Sana aus kapa lods</violation>
     <report>asdasdasdsad</report>
-    <timestamp>Jul 14, 2023, 5:07 PM</timestamp>
-    <status>Case Closed</status>
+    <timestamp>Jul 15, 2023, 11:40 AM</timestamp>
+    <status>Taken Action</status>
   </data>
   <data>
     <srcode>20-07600</srcode>
@@ -61,13 +61,49 @@ bat malungkot ang beshywaps ko</report>
     <timestamp>Jul 14, 2023, 3:50 PM</timestamp>
     <status>Pending</status>
   </data>
-  
   <data>
     <srcode>20-06969</srcode>
     <dept>CICS</dept>
     <violation>Classroom Rules and Regulations</violation>
     <report>jkcxzljkcxjlkzc</report>
-    <timestamp>Jul 14, 2023, 8:09 PM</timestamp>
+    <timestamp>Jul 15, 2023, 2:05 PM</timestamp>
+    <status>Case Closed</status>
+  </data>
+  <data>
+    <srcode>20-06969</srcode>
+    <dept>CICS</dept>
+    <violation>ID Requirement</violation>
+    <report>id</report>
+    <timestamp>Jul 15, 2023, 2:04 PM</timestamp>
+    <status>Case Closed</status>
+  </data>
+  <data>
+    <srcode>20-06969</srcode>
+    <dept>CICS</dept>
+    <violation>Classroom Rules and Regulations</violation>
+    <report>rules</report>
+    <timestamp>Jul 15, 2023, 2:04 PM</timestamp>
+    <status>Case Closed</status>
+  </data>
+  <data>
+    <srcode>555477</srcode>
+    <dept>CICS</dept>
+    <violation>ID Requirement</violation>
+    <report>ghj</report>
+    <timestamp>Jul 15, 2023, 2:04 PM</timestamp>
+    <status>Taken Action</status>
+  </data>
+  <data>
+    <srcode>555477</srcode>
+    <timestamp>Jul 15, 2023, 2:41 PM</timestamp>
+    <status>Pending</status>
+  </data>
+  <data>
+    <srcode>20-06969</srcode>
+    <dept>CICS</dept>
+    <violation>ID Requirement</violation>
+    <report>sad</report>
+    <timestamp>Jul 15, 2023, 3:29 PM</timestamp>
     <status>Pending</status>
   </data>
 </datas>
