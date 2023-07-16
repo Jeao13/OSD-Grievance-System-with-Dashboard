@@ -1,4 +1,3 @@
-
 ion-header {
   background-color: #333;
   color: #fff;
@@ -10,19 +9,15 @@ ion-title {
   padding: 10px;
 }
 
-.background{
+.background {
   --background: linear-gradient(to right, rgba(189, 21, 21, 0.692), rgba(255,0,0,1));
-
 }
 
 /* Styling for ion-content */
 ion-content {
   padding: 10px;
-  
   --ion-background-color:rgba(255, 255, 255, 0.8);
   --ion-item-background:rgba(255, 255, 255, 0.8);
-
-
   display: flex;
   align-items: center;
   justify-content: center;
@@ -39,7 +34,6 @@ ion-item {
   border-radius: 5px;
   margin-bottom: 10px;
   padding: 10px;
-
 }
 
 ion-label h3 {
@@ -63,7 +57,7 @@ ion-label h2 {
 /* Styling for p within ion-label */
 ion-label p {
   font-size: 14px;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 
 /* Styling for ion-button */
