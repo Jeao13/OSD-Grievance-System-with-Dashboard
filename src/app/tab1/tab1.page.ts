@@ -5,6 +5,8 @@ import { ActivatedRoute } from '@angular/router';
 import { Router } from '@angular/router';
 import { DataService } from 'src/app/data.service';
 import { saveAs } from 'file-saver';
+import { ModalController } from '@ionic/angular';
+import { ReportModalComponent } from './report-modal.component';
 
 
 @Component({
@@ -26,6 +28,7 @@ export class Tab1Page implements OnInit {
 
     private router: Router,
     private dataService: DataService,
+    private modalController: ModalController
 
   ) {}
 
@@ -153,12 +156,14 @@ export class Tab1Page implements OnInit {
         if (currentUsername === this.username) {
           const nameNode = currentUser.getElementsByTagName('violation')[0]?.textContent;
           const collegeNode = currentUser.getElementsByTagName('time')[0]?.textContent;
+        
      
-
+         
           const violation = nameNode || '';
           const time = collegeNode || '';
          
           this.user1 = {
+      
             violation,
             time,
         
@@ -168,9 +173,23 @@ export class Tab1Page implements OnInit {
       }
     });
   }
+
+  async openReportModal(report: string, violation:string) {
+    const modal = await this.modalController.create({
+      component: ReportModalComponent,
+      componentProps: {
+ 
+        report: report,
+        violation: violation
+      }
+    });
+
+    return await modal.present();
+  }
 }
 
 interface User1 {
+
   violation?: string;
   time?: string;
   

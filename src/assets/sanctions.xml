@@ -1,18 +1,20 @@
 <?xml version="1.0"?>
 <OSD>
-  <Forms>
+  <forms>
     <srcode>asdasd</srcode>
     <sanctions>asdasd</sanctions>
     <time>asdasdasd</time>
-  </Forms>
-  <Forms>
+  </forms>
+
+  <forms>
     <srcode>20-04729</srcode>
     <violation>Classroom Rules and Regulations</violation>
     <time>Jul 16, 2023, 11:44 AM</time>
-  </Forms>
-  <Forms>
+
+  </forms>
+  <forms>
     <srcode>20-06969</srcode>
     <violation>Classroom Rules and Regulations</violation>
     <time>Jul 16, 2023, 11:44 AM</time>
-  </Forms>
+  </forms>
 </OSD>

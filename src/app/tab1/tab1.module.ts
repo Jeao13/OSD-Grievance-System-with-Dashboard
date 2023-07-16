@@ -6,6 +6,7 @@ import { IonicModule } from '@ionic/angular';
 
 import { Tab1PageRoutingModule } from './tab1-routing.module';
 
+import { ReportModalComponent } from './report-modal.component';
 import { Tab1Page } from './tab1.page';
 
 @NgModule({
@@ -16,6 +17,6 @@ import { Tab1Page } from './tab1.page';
     Tab1PageRoutingModule
     
   ],
-  declarations: [Tab1Page]
+  declarations: [Tab1Page,ReportModalComponent ]
 })
 export class Tab1PageModule {}
