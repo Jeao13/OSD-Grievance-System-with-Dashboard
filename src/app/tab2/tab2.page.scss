@@ -6,11 +6,22 @@ ion-content{
   display: flex;
   align-items: center;
   justify-content: center;
-
-  
 }
+.custom-button {
+    --background: rgb(10, 230, 50);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    font-size: 15px;
+    font-weight: bold;
+}
+  
 
+.header-toolbar {
+  font-weight: bold;
+  height: auto;
+  font-size: 10px;
+  --background: rgb(235, 34, 34);
 
+}
 ion-item{
 
 color: black;
@@ -28,7 +39,14 @@ border: 1px solid #ddd;
 .report-container.show {
 display: block;
 }
-
+h1{
+  font-weight: bold;
+  font-size: 20px;
+}
 h2{
-font-weight: bold;
+  font-size: 15px;
+}
+p{
+  color: gray;
+  font-size: 15px;
 }
