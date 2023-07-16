@@ -113,8 +113,9 @@ export class Tabadmin1Page {
 
   addsanctions() {
    
-    const apiUrl = 'http://localhost/modify-xml.php'; // Replace with the actual URL of your PHP script
+    const apiUrl = 'http://localhost/modify-sanctions.php'; // Replace with the actual URL of your PHP script
     const data = {
+      srcode: this.searchTerm,
       violation: this.message,
       timestamp: new Date().toLocaleString('en-US', {
         hour: 'numeric',

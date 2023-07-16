@@ -14,7 +14,8 @@ import { saveAs } from 'file-saver';
 })
 export class Tab1Page implements OnInit {
   username: string;
-  user: User = {}; // Initialize with an empty object
+  user: User = {};
+   user1: User1 = {}; // Initialize with an empty object
   safeProfilePicUrl: SafeResourceUrl;
   showFormsDropdown = false;
   isClassDisabled = true;
@@ -76,6 +77,7 @@ export class Tab1Page implements OnInit {
 
       if (this.username) {
         this.displayUserInfo();
+        this.displayUserInfo1()
       }
     });
   }
@@ -134,6 +136,44 @@ export class Tab1Page implements OnInit {
       }
     });
   }
+  
+
+  displayUserInfo1() {
+   
+    this.http.get('assets/sanctions.xml', { responseType: 'text' }).subscribe((xmlData) => {
+      const parser = new DOMParser();
+      const xmlDoc = parser.parseFromString(xmlData, 'application/xml');
+
+      const users = xmlDoc.getElementsByTagName('Forms');
+
+      for (let i = 0; i < users.length; i++) {
+        const currentUser = users[i];
+        const currentUsername = currentUser.getElementsByTagName('srcode')[0]?.textContent;
+
+        if (currentUsername === this.username) {
+          const nameNode = currentUser.getElementsByTagName('violation')[0]?.textContent;
+          const collegeNode = currentUser.getElementsByTagName('time')[0]?.textContent;
+     
+
+          const violation = nameNode || '';
+          const time = collegeNode || '';
+         
+          this.user1 = {
+            violation,
+            time,
+        
+          };
+          break;
+        }
+      }
+    });
+  }
+}
+
+interface User1 {
+  violation?: string;
+  time?: string;
+  
 }
 
 interface User {
