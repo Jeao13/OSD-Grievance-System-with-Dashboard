@@ -3,6 +3,7 @@
     <username>20-06193</username>
     <password>hornbill</password>
         <role>student</role>
+        <sanctions>N/A</sanctions>
     <name>Aedrian Jeao De Torres</name>
     <college>BS INFORMATION TECHNOLOGY</college>
     <year>THIRD YEAR</year>
@@ -12,6 +13,7 @@
     <username>20-03025</username>
     <password>hornbill2</password>
         <role>student</role>
+        <sanctions>N/A</sanctions>
      <name>Florie Mae A. Cordero</name>
     <college>BS INFORMATION TECHNOLOGY</college>
     <year>THIRD YEAR</year>
@@ -22,6 +24,7 @@
     <username>20-03235</username>
     <password>hornbill3</password>
         <role>student</role>
+        <sanctions>N/A</sanctions>
      <name>Dennyel Panganiban</name>
     <college>BS INFORMATION TECHNOLOGY</college>
     <year>THIRD YEAR</year>
@@ -32,6 +35,7 @@
     <username>20-06036</username>
     <password>jopay</password>
         <role>student</role>
+        <sanctions>N/A</sanctions>
      <name>Jofer Joy Castillo</name>
     <college>BS INFORMATION TECHNOLOGY</college>
     <year>THIRD YEAR</year>
@@ -42,6 +46,7 @@
     <username>20-06969</username>
     <password>eya</password>
         <role>student</role>
+        <sanctions>N/A</sanctions>
      <name>Judea Hazel Mae Camat</name>
     <college>BS INFORMATION TECHNOLOGY</college>
     <year>THIRD YEAR</year>
@@ -53,6 +58,7 @@
     <username>20-07600</username>
     <password>andeng</password>
     <role>student</role>
+    <sanctions>N/A</sanctions>
      <name>Andrea Baluyot</name>
     <college>BS INFORMATION TECHNOLOGY</college>
     <year>THIRD YEAR</year>
@@ -63,6 +69,7 @@
     <username>20-07045</username>
     <password>edson</password>
     <role>student</role>
+    <sanctions>N/A</sanctions>
      <name>Mark Edson Magsombol</name>
     <college>BS INFORMATION TECHNOLOGY</college>
     <year>THIRD YEAR</year>
@@ -73,6 +80,7 @@
     <username>20-02513</username>
     <password>myziel</password>
     <role>student</role>
+    <sanctions>N/A</sanctions>
      <name>Myziel Joy Sorezo</name>
     <college>BS INFORMATION TECHNOLOGY</college>
     <year>THIRD YEAR</year>
@@ -83,6 +91,7 @@
     <username>20-02255</username>
     <password>kevin</password>
     <role>student</role>
+    <sanctions>N/A</sanctions>
      <name>Mark Kevin Malabanan</name>
     <college>BS INFORMATION TECHNOLOGY</college>
     <year>THIRD YEAR</year>
@@ -93,6 +102,7 @@
     <username>20-08393</username>
     <password>boss</password>
     <role>student</role>
+    <sanctions>N/A</sanctions>
      <name>Jonathan Ajeda</name>
     <college>BS INFORMATION TECHNOLOGY</college>
     <year>THIRD YEAR</year>
@@ -103,6 +113,7 @@
     <username>555477</username>
     <password>sirgerald</password>
     <role>coordinator</role>
+    <sanctions>N/A</sanctions>
      <name>Gerald James Dañoy</name>
     <college>GUEST LECTURER I</college>
     <year>Faculty</year>
@@ -114,6 +125,7 @@
     <username>20-04729</username>
     <password>buquis</password>
     <role>student</role>
+    <sanctions>N/A</sanctions>
      <name>CJ Buquis</name>
     <college>BS INFORMATION TECHNOLOGY</college>
     <year>THIRD YEAR</year>

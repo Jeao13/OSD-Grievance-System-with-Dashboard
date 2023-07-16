@@ -17,6 +17,7 @@ export class Tabadmin1Page {
   username1: string;
   message: string;
   message1: string;
+ 
   users: User[] = [];
   users2: users2 = {};
   recommendations: string[] = [];
@@ -44,7 +45,7 @@ export class Tabadmin1Page {
       
   
             this.users.push({ username: username !== null ? username : ''});
-          }
+          } 
   
           this.filteredUsers = this.users;
         }
@@ -110,6 +111,31 @@ export class Tabadmin1Page {
     );
   }
 
+  addsanctions() {
+   
+    const apiUrl = 'http://localhost/modify-xml.php'; // Replace with the actual URL of your PHP script
+    const data = {
+      violation: this.message,
+      timestamp: new Date().toLocaleString('en-US', {
+        hour: 'numeric',
+        minute: 'numeric',
+        year: 'numeric',
+        month: 'short',
+        day: 'numeric'
+      }    ),
+        
+
+    };
+
+    this.http.post(apiUrl, data).subscribe(
+      () => {
+        console.log('Data saved successfully');
+      },
+      (error) => {
+        console.error('Error saving data:', error);
+      }
+    );
+  }
   displayUserInfo() {
    
     this.http.get('assets/users.xml', { responseType: 'text' }).subscribe((xmlData) => {
@@ -125,6 +151,7 @@ export class Tabadmin1Page {
         if (currentUsername === this.searchTerm) {
           const nameNode = currentUser.getElementsByTagName('name')[0]?.textContent;
           const collegeNode = currentUser.getElementsByTagName('college')[0]?.textContent;
+          const sanctions1 = currentUser.getElementsByTagName('sanctions')[0]?.textContent;
           const yearNode = currentUser.getElementsByTagName('year')[0]?.textContent;
           const profilePicNode = currentUser.getElementsByTagName('profilePic')[0]?.textContent;
 
@@ -132,12 +159,14 @@ export class Tabadmin1Page {
           const college = collegeNode || '';
           const year = yearNode || '';
           const profilePic = profilePicNode || '';
+          const sanctions = sanctions1 || '';
 
           this.users2 = {
             name,
             college,
             year,
             profilePic,
+            sanctions
           };
           break;
         }
@@ -150,6 +179,7 @@ interface users2 {
   college?: string;
   year?: string;
   profilePic?: string;
+  sanctions?: string;
 }
 
 
