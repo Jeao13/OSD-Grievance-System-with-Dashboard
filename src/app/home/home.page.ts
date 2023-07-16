@@ -27,14 +27,21 @@ export class HomePage {
         // Extract user data from the XML
         const users = xmlDoc.getElementsByTagName('user');
         let authenticated = false;
+        let authenticated1 = false;
+        
 
         for (let i = 0; i < users.length; i++) {
           const user = users[i];
           const xmlUsername = user.getElementsByTagName('username')[0]?.textContent;
           const xmlPassword = user.getElementsByTagName('password')[0]?.textContent;
+          const xmlrole = user.getElementsByTagName('role')[0]?.textContent;
 
-          if (this.username === xmlUsername && this.password === xmlPassword) {
+          if (this.username === xmlUsername && this.password === xmlPassword && xmlrole ==='student') {
             authenticated = true;
+            break;
+          }
+          else if(this.username === xmlUsername && this.password === xmlPassword && xmlrole ==='coordinator'){
+            authenticated1 = true;
             break;
           }
         }
@@ -42,6 +49,14 @@ export class HomePage {
         if (authenticated) {
           // Login successful
           this.router.navigate(['/tabs/tab1'], { queryParams: { username: this.username} });
+          this.username = '';
+          this.password = '';
+        }  else if (authenticated1){
+          this.router.navigate(['/tabadmin/login'], { queryParams: { username: this.username} });
+          this.username = '';
+          this.password = '';
+        
+
         }  else {
           // Login failed
           this.loginFailed = true;

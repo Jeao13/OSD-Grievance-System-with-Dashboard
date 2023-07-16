@@ -1,0 +1,107 @@
+ion-content{
+
+  --ion-background-color:rgba(255, 255, 255,0.8);
+  --ion-item-background:rgba(255, 255, 255);
+
+
+
+}
+
+.center{
+  text-align: center;
+  font-weight: bold;
+  font-size:large;
+}
+
+ion-item{
+  color: black;
+
+}
+
+.background{
+  --background: linear-gradient(to right, rgba(189, 21, 21, 0.692), rgba(255,0,0,1));
+
+}
+
+
+.profile-pic {
+  width: 200px; 
+  height: 200px; 
+
+
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+}
+.image-container {  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.font {
+  font-size: small;
+  text-align: center;
+  font-weight: bold;
+
+}
+
+.btn-right {
+  display: flex;
+  justify-content: flex-end;
+  --background: rgb(92, 92, 92);
+
+
+}
+
+.btn-left {
+  display: flex;
+  justify-content: flex-end;
+  --background: #28a745;
+  margin-top: 20px;
+
+
+}
+
+
+.ion-toolbar-right {
+  display: flex;
+  justify-content: flex-end;
+
+}
+
+.custom-button {
+  height: 30px;
+  font-size: small;
+  color: white !important;
+  --background: linear-gradient(to right, rgba(189, 21, 21, 0.692), rgba(255, 0, 0, 1)) !important;
+  float: right;
+}
+
+.no-border {
+  border-width: 0;
+  margin-bottom: 20px;
+}
+
+.background-image {
+  position: relative; /* Add this to make the pseudo-element relative to the parent */
+}
+
+.background-image::before {
+  content: "";
+  background: url('/assets/bsuo.jpg') no-repeat center center fixed;
+  background-size: cover;
+  opacity: 0.8; /* Adjust the opacity value as needed */
+  position: absolute; /* Position the pseudo-element over the parent */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1; /* Set a negative z-index to keep it behind the content */
+}
+
+.hide-item {
+  display: none;
+}
+

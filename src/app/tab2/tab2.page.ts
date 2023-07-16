@@ -51,7 +51,8 @@ export class Tab2Page {
 
         this.matchingData = [];
         for (let i = 0; i < datas.length; i++) {
-          const srcode = datas[i].getElementsByTagName('srcode')[0].textContent;
+          const srcodeElement = datas[i].getElementsByTagName('srcode')[0];
+          const srcode = srcodeElement ? srcodeElement.textContent : '';
           if (srcode === this.username) {
             const dept = datas[i].getElementsByTagName('dept')[0].textContent;
             const violation = datas[i].getElementsByTagName('violation')[0].textContent;

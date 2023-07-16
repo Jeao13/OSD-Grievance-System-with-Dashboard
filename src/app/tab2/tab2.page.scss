@@ -1,27 +1,36 @@
 
-ion-content{
+ion-header {
+  background-color: #333;
+  color: #fff;
+}
 
+ion-title {
+  font-size: 20px;
+  font-weight: bold;
+  padding: 10px;
+}
+
+.background{
+  --background: linear-gradient(to right, rgba(189, 21, 21, 0.692), rgba(255,0,0,1));
+
+}
+
+/* Styling for ion-content */
+ion-content {
+  padding: 10px;
+  
   --ion-background-color:rgba(255, 255, 255, 0.8);
   --ion-item-background:rgba(255, 255, 255, 0.8);
+
+
   display: flex;
   align-items: center;
   justify-content: center;
-}
-.custom-button {
-    --background: rgb(10, 230, 50);
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
-    font-size: 15px;
-    font-weight: bold;
-}
+
   
-
-.header-toolbar {
-  font-weight: bold;
-  height: auto;
-  font-size: 10px;
-  --background: rgb(235, 34, 34);
-
 }
+
+
 ion-item{
 
 color: black;
@@ -29,24 +38,35 @@ color: black;
 
 }
 
-.report-container {
-display: none;
-padding: 10px;
-background-color: #f5f5f5;
-border: 1px solid #ddd;
+/* Styling for h2 within ion-label */
+ion-label h2 {
+  margin-bottom: 5px;
+  font-size: 16px;
+  color: black;
 }
 
-.report-container.show {
-display: block;
+/* Styling for p within ion-label */
+ion-label p {
+  font-size: 14px;
+  margin-bottom: 10px;
 }
-h1{
-  font-weight: bold;
-  font-size: 20px;
-}
+
 h2{
-  font-size: 15px;
+font-weight: bold;
 }
-p{
-  color: gray;
-  font-size: 15px;
+
+/* Styling for ion-ripple-effect */
+ion-ripple-effect {
+  color: green;
+}
+
+/* Styling for ion-item when no results found */
+ion-item.no-results {
+  border: none;
+}
+
+/* Styling for ion-label when no results found */
+ion-label.no-results {
+  text-align: center;
+  color: #777;
 }
