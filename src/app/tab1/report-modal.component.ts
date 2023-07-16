@@ -68,37 +68,31 @@ export class ReportModalComponent {
     if (!this.username) {
       return; // Handle the case where username is null
     }
-
+  
     this.http.get('assets/sanctions.xml', { responseType: 'text' }).subscribe(
       (data) => {
         this.xmlData = data;
         const parser = new DOMParser();
         const xmlDoc = parser.parseFromString(data, 'text/xml');
-        const forms = xmlDoc.getElementsByTagName('forms');
-
+        const forms = xmlDoc.querySelectorAll('forms'); // Use querySelectorAll
+  
         this.matchingData = [];
         for (let i = 0; i < forms.length; i++) {
           const currentForm = forms[i];
-          const srcodeElement = currentForm.getElementsByTagName('srcode')[0];
+          const srcodeElement = currentForm.querySelector('srcode');
           const srcode = srcodeElement ? srcodeElement.textContent : '';
+  
           if (srcode === this.username) {
-            const violationElement = currentForm.getElementsByTagName('violation')[0];
+            const violationElement = currentForm.querySelector('violation');
             const violation = violationElement ? violationElement.textContent : '';
-
-            const reportElement = currentForm.getElementsByTagName('report')[0];
-            const report = reportElement ? reportElement.textContent : '';
-
-            const timestampElement = currentForm.getElementsByTagName('time')[0];
+  
+            const timestampElement = currentForm.querySelector('time');
             const timestamp = timestampElement ? timestampElement.textContent : '';
-
-            // Assuming there's a 'status' element in the XML as well
-            const statusElement = currentForm.getElementsByTagName('status')[0];
-            const status = statusElement ? statusElement.textContent : '';
-
-            this.matchingData.push({ violation, report, timestamp, status });
+  
+            this.matchingData.push({ violation, timestamp });
           }
         }
-
+  
         this.showResults = true;
       },
       (error) => {

@@ -5,16 +5,19 @@
     <sanctions>asdasd</sanctions>
     <time>asdasdasd</time>
   </forms>
-
   <forms>
     <srcode>20-04729</srcode>
     <violation>Classroom Rules and Regulations</violation>
     <time>Jul 16, 2023, 11:44 AM</time>
-
   </forms>
   <forms>
     <srcode>20-06969</srcode>
     <violation>Classroom Rules and Regulations</violation>
     <time>Jul 16, 2023, 11:44 AM</time>
+  </forms>
+  <forms>
+    <srcode>20-06969</srcode>
+    <violation>Academic Dishonesty</violation>
+    <time>Jul 17, 2023, 12:25 AM</time>
   </forms>
 </OSD>
