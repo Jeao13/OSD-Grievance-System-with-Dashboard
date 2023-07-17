@@ -25,11 +25,17 @@ export class Tabadmin1Page {
   searchTerm: string = '';
   xmlUrl = 'assets/users.xml';
   showRecommendations: boolean = false;
+
+  username3: string | null; // Updated type to allow null values
+  xmlData: any;
+  matchingData: any[] = [];
+  showResults = false;
  
 
 
   ngOnInit() {
     this.loadUsernames();
+    
   }
 
   loadUsernames() {
@@ -71,6 +77,7 @@ export class Tabadmin1Page {
     this.searchTerm = recommendation;
     this.showRecommendations = false;
     this.displayUserInfo()
+    this.loadAndDisplayViolationReport()
   }
 
   constructor(private route: ActivatedRoute, private http: HttpClient) {
@@ -112,11 +119,25 @@ export class Tabadmin1Page {
   }
 
   addsanctions() {
-   
+    const apiUrl1 = 'http://localhost/modify-notif.php';
     const apiUrl = 'http://localhost/modify-sanctions.php'; // Replace with the actual URL of your PHP script
     const data = {
       srcode: this.searchTerm,
       violation: this.message,
+      timestamp: new Date().toLocaleString('en-US', {
+        hour: 'numeric',
+        minute: 'numeric',
+        year: 'numeric',
+        month: 'short',
+        day: 'numeric'
+      }    ),
+        
+
+    };
+
+    const data1 = {
+      srcode: this.searchTerm,
+      violation: 'You have a new sanction!',
       timestamp: new Date().toLocaleString('en-US', {
         hour: 'numeric',
         minute: 'numeric',
@@ -136,7 +157,17 @@ export class Tabadmin1Page {
         console.error('Error saving data:', error);
       }
     );
+
+    this.http.post(apiUrl1, data1).subscribe(
+      () => {
+        console.log('Data saved successfully');
+      },
+      (error) => {
+        console.error('Error saving data:', error);
+      }
+    );
   }
+
   displayUserInfo() {
    
     this.http.get('assets/users.xml', { responseType: 'text' }).subscribe((xmlData) => {
@@ -162,6 +193,8 @@ export class Tabadmin1Page {
           const profilePic = profilePicNode || '';
           const sanctions = sanctions1 || '';
 
+
+
           this.users2 = {
             name,
             college,
@@ -173,6 +206,40 @@ export class Tabadmin1Page {
         }
       }
     });
+  }
+  loadAndDisplayViolationReport() {
+ 
+
+    this.http.get('assets/sanctions.xml', { responseType: 'text' }).subscribe(
+      (data) => {
+        this.xmlData = data;
+        const parser = new DOMParser();
+        const xmlDoc = parser.parseFromString(data, 'text/xml');
+        const datas = xmlDoc.querySelectorAll('forms'); 
+
+        this.matchingData = [];
+        for (let i = 0; i < datas.length; i++) {
+          const currentForm = datas[i];
+          const srcodeElement = currentForm.querySelector('srcode');
+          const srcode = srcodeElement ? srcodeElement.textContent : '';
+          if (srcode === this.searchTerm) {
+            const violationElement = currentForm.querySelector('violation');
+            const violation = violationElement ? violationElement.textContent : '';
+  
+            const timestampElement = currentForm.querySelector('time');
+            const timestamp = timestampElement ? timestampElement.textContent : '';
+
+
+            this.matchingData.push({ violation,timestamp});
+          }
+        }
+
+        this.showResults = true;
+      },
+      (error) => {
+        console.error('Error loading XML file:', error);
+      }
+    );
   }
 }
 interface users2 {

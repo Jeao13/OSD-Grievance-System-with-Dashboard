@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<OSD>
+  <notif>
+    <srcode/>
+    <message/>
+    <time/>
+  </notif>
+  <notif>
+    <srcode>20-06969</srcode>
+    <message>You have a new sanction!</message>
+    <time>Jul 18, 2023, 12:23 AM</time>
+  </notif>
+</OSD>
