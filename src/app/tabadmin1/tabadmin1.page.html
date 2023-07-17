@@ -38,7 +38,22 @@
     </div>
 
     <div class="user-info-container">
-      <ion-label class="font">Sanctions:{{ users2?.sanctions }}</ion-label>
+<ion-label><h1>Sanctions:</h1></ion-label>
+      <ion-list *ngIf="showResults">
+        <ion-item *ngFor="let data of matchingData">
+          <ion-label>
+            
+            <h2>{{ data.violation }}</h2>
+            <h2>{{ data.timestamp }}</h2>
+     
+    
+            
+          </ion-label>
+        </ion-item>
+        <ion-item *ngIf="matchingData.length === 0">
+          <ion-label>N/A</ion-label>
+        </ion-item>
+      </ion-list>
 
     </div>
     <form (ngSubmit)="addsanctions()">
