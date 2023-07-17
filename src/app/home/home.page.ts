@@ -13,12 +13,11 @@ export class HomePage {
   password: string;
   loginFailed: boolean = false;
 
-  constructor(private navCtrl: NavController,private router: Router, private http: HttpClient) {}
-
-  
+  constructor(private navCtrl: NavController, private router: Router, private http: HttpClient) {}
 
   validateForm(): boolean {
-    
+    this.loginFailed = false; // Reset loginFailed property to false
+
     this.http.get('assets/users.xml', { responseType: 'text' }).subscribe(
       (xmlData) => {
         const parser = new DOMParser();
@@ -28,19 +27,17 @@ export class HomePage {
         const users = xmlDoc.getElementsByTagName('user');
         let authenticated = false;
         let authenticated1 = false;
-        
 
         for (let i = 0; i < users.length; i++) {
           const user = users[i];
           const xmlUsername = user.getElementsByTagName('username')[0]?.textContent;
           const xmlPassword = user.getElementsByTagName('password')[0]?.textContent;
-          const xmlrole = user.getElementsByTagName('role')[0]?.textContent;
+          const xmlRole = user.getElementsByTagName('role')[0]?.textContent;
 
-          if (this.username === xmlUsername && this.password === xmlPassword && xmlrole ==='student') {
+          if (this.username === xmlUsername && this.password === xmlPassword && xmlRole === 'student') {
             authenticated = true;
             break;
-          }
-          else if(this.username === xmlUsername && this.password === xmlPassword && xmlrole ==='coordinator'){
+          } else if (this.username === xmlUsername && this.password === xmlPassword && xmlRole === 'coordinator') {
             authenticated1 = true;
             break;
           }
@@ -48,16 +45,14 @@ export class HomePage {
 
         if (authenticated) {
           // Login successful
-          this.router.navigate(['/tabs/tab1'], { queryParams: { username: this.username} });
+          this.router.navigate(['/tabs/tab1'], { queryParams: { username: this.username } });
           this.username = '';
           this.password = '';
-        }  else if (authenticated1){
-          this.router.navigate(['/tabadmin/login'], { queryParams: { username: this.username} });
+        } else if (authenticated1) {
+          this.router.navigate(['/tabadmin/login'], { queryParams: { username: this.username } });
           this.username = '';
           this.password = '';
-        
-
-        }  else {
+        } else {
           // Login failed
           this.loginFailed = true;
           console.log('Invalid username or password');
@@ -70,5 +65,4 @@ export class HomePage {
     );
     return true;
   }
-
 }

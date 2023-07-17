@@ -10,10 +10,10 @@
         <h2 class="login-title">Grievance System Login</h2>
           <form (ngSubmit)="validateForm()">
             <ion-item>
-              <ion-input label="Username" labelPlacement="floating" type="text" [(ngModel)]="username" name="username"></ion-input>
+              <ion-input placeholder="Username" type="text" [(ngModel)]="username" name="username"></ion-input>
             </ion-item>
             <ion-item>
-              <ion-input label="Password" labelPlacement="floating" type="password" [(ngModel)]="password" name="password"></ion-input>
+              <ion-input placeholder="Password"  type="password" [(ngModel)]="password" name="password"></ion-input>
             </ion-item>
             <ion-label>* Password is case sensitive</ion-label>
             <div class="form-footer">
