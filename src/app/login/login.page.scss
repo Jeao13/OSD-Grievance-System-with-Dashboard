@@ -109,3 +109,26 @@ ion-icon{
   color: black;
 }
 
+.bar-chart {
+  display: flex;
+  align-items: flex-end;
+  height: 200px;
+  margin-top: 20px;
+}
+
+.bar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-grow: 1;
+  padding: 0 10px;
+}
+
+.bar .label {
+  margin-top: 5px;
+}
+
+.bar-fill {
+  background-color: #007bff; /* Change color to your preference */
+  transition: height 0.5s;
+}

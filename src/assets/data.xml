@@ -3,196 +3,66 @@
   <data>
     <srcode>20-07600</srcode>
     <dept>CICS</dept>
-    <violation>Bullying</violation>
+    <violation>ID Requirement</violation>
     <report>asddsadasdasdasdsdasda
 look at me now</report>
-    <timestamp>Jul 15, 2023, 11:41 AM</timestamp>
-    <status>Taken Action</status>
-  </data>
-  <data>
-    <srcode>20-07600</srcode>
-    <dept>COE</dept>
-    <violation>Bullying</violation>
-    <report>i want to smack yo face sheesh 
-
-das krazy ferson
-
-bat malungkot ang beshywaps ko</report>
-    <timestamp>Jul 12, 2023, 11:08 PM</timestamp>
-    <status>Pending</status>
+    <timestamp>Jul 18, 2023, 3:03 PM</timestamp>
+    <status>Case Closed</status>
   </data>
   <data>
     <srcode>20-06969</srcode>
     <dept>CICS</dept>
-    <violation>Sana aus kapa lods</violation>
-    <report>asdasdasdsad</report>
-    <timestamp>Jul 15, 2023, 11:40 AM</timestamp>
-    <status>Taken Action</status>
-  </data>
-  <data>
-    <srcode>20-07600</srcode>
-    <dept>CAFAD</dept>
-    <violation>Bullying</violation>
+    <violation>ID Requirement</violation>
     <report>asdasdasd</report>
-    <timestamp>Jul 13, 2023, 2:49 PM</timestamp>
-    <status>Pending</status>
-  </data>
-  <data>
-    <srcode>20-07600</srcode>
-    <dept>CICS</dept>
-    <violation>Bullying</violation>
-    <report>asdsadasdsad</report>
-    <timestamp>Jul 14, 2023, 5:07 PM</timestamp>
-    <status>Taken Action</status>
-  </data>
-  <data>
-    <srcode>20-03235</srcode>
-    <dept>CAFAD</dept>
-    <violation>Bullying</violation>
-    <report>dasgdjhgasjhdgjahsghasgdh</report>
-    <timestamp>Jul 14, 2023, 11:31 AM</timestamp>
-    <status>Pending</status>
-  </data>
-  <data>
-    <srcode>20-06969</srcode>
-    <dept>CAFAD</dept>
-    <violation>ID Requirement</violation>
-    <report>sdasd</report>
-    <timestamp>Jul 14, 2023, 3:50 PM</timestamp>
-    <status>Pending</status>
-  </data>
-  <data>
-    <srcode>20-06969</srcode>
-    <dept>CICS</dept>
-    <violation>Classroom Rules and Regulations</violation>
-    <report>jkcxzljkcxjlkzc</report>
-    <timestamp>Jul 15, 2023, 2:05 PM</timestamp>
-    <status>Case Closed</status>
-  </data>
-  <data>
-    <srcode>20-06969</srcode>
-    <dept>CICS</dept>
-    <violation>ID Requirement</violation>
-    <report>id</report>
-    <timestamp>Jul 15, 2023, 2:04 PM</timestamp>
+    <timestamp>Jul 18, 2023, 3:03 PM</timestamp>
     <status>Case Closed</status>
   </data>
   <data>
     <srcode>20-06969</srcode>
     <dept>CICS</dept>
     <violation>Classroom Rules and Regulations</violation>
-    <report>rules</report>
-    <timestamp>Jul 15, 2023, 2:04 PM</timestamp>
+    <report>asdasdasd</report>
+    <timestamp>Jul 18, 2023, 3:03 PM</timestamp>
     <status>Case Closed</status>
   </data>
   <data>
-    <srcode>555477</srcode>
+    <srcode>20-06969</srcode>
     <dept>CICS</dept>
-    <violation>ID Requirement</violation>
-    <report>ghj</report>
-    <timestamp>Jul 15, 2023, 2:04 PM</timestamp>
-    <status>Taken Action</status>
+    <violation>University Facilities and Premises</violation>
+    <report>asdasdasd</report>
+    <timestamp>Jul 18, 2023, 3:03 PM</timestamp>
+    <status>Case Closed</status>
   </data>
   <data>
-    <srcode>555477</srcode>
-    <timestamp>Jul 15, 2023, 2:41 PM</timestamp>
-    <status>Pending</status>
+    <srcode>20-06969</srcode>
+    <dept>CICS</dept>
+    <violation>Academic Dishonesty</violation>
+    <report>asdasdasd</report>
+    <timestamp>Jul 18, 2023, 3:03 PM</timestamp>
+    <status>Case Closed</status>
   </data>
   <data>
     <srcode>20-06969</srcode>
     <dept>CICS</dept>
     <violation>ID Requirement</violation>
-    <report>sad</report>
-    <timestamp>Jul 15, 2023, 3:29 PM</timestamp>
-    <status>Pending</status>
+    <report>asdasdasd</report>
+    <timestamp>Jul 18, 2023, 3:03 PM</timestamp>
+    <status>Case Closed</status>
   </data>
-  <data>
-    <srcode>20-04729</srcode>
-    <dept>CICS</dept>
-    <violation/>
-    <report>adasdasdas</report>
-    <timestamp>Jul 16, 2023, 11:58 AM</timestamp>
-    <status>Pending</status>
-  </data>
-  <data>
-    <srcode>20-04729</srcode>
-    <dept>CICS</dept>
-    <violation/>
-    <report>adasdasdas</report>
-    <timestamp>Jul 16, 2023, 11:58 AM</timestamp>
-    <status>Pending</status>
-  </data>
-  <data>
-    <srcode>20-04729</srcode>
-    <dept>CICS</dept>
-    <violation/>
-    <report>adasdasdas</report>
-    <timestamp>Jul 16, 2023, 12:00 PM</timestamp>
-    <status>Pending</status>
-  </data>
-  <data>
-    <srcode>20-06969</srcode>
-    <dept>CICS</dept>
-    <violation>ID Requirement</violation>
-    <report>fdfssf</report>
-    <timestamp>Jul 16, 2023, 12:01 PM</timestamp>
-    <status>Pending</status>
-  </data>
-  <data>
-    <srcode>20-08393</srcode>
-    <dept>CICS</dept>
-    <violation>ID Requirement</violation>
-    <report>asdasdas</report>
-    <timestamp>Jul 16, 2023, 12:03 PM</timestamp>
-    <status>Pending</status>
-  </data>
-  <data>
-    <srcode>20-08393</srcode>
-    <dept>CAFAD</dept>
-    <violation>ID Requirement</violation>
-    <report>asdasdas</report>
-    <timestamp>Jul 16, 2023, 12:03 PM</timestamp>
-    <status>Pending</status>
-  </data>
-  <data>
-    <srcode>20-04729</srcode>
-    <dept>CICS</dept>
-    <violation>ID Requirement</violation>
-    <report>dsadsad</report>
-    <timestamp>Jul 16, 2023, 12:04 PM</timestamp>
-    <status>Pending</status>
-  </data>
-  <data>
-    <srcode>20-06969</srcode>
-    <dept>CICS</dept>
-    <violation/>
-    <report>sdasdasd</report>
-    <timestamp>Jul 17, 2023, 11:46 PM</timestamp>
-    <status>Pending</status>
-  </data>
-  <data>
-    <srcode>20-06969</srcode>
-    <dept>CICS</dept>
-    <violation>Classroom Rules and Regulations</violation>
-    <report>sdasdasd</report>
-    <timestamp>Jul 17, 2023, 11:47 PM</timestamp>
-    <status>Pending</status>
-  </data>
-  <data>
-    <srcode>20-06969</srcode>
-    <dept>CICS</dept>
-    <violation/>
-    <report>sdasdasd</report>
-    <timestamp>Jul 17, 2023, 11:47 PM</timestamp>
-    <status>Pending</status>
-  </data>
-
   <data>
     <srcode>20-06969</srcode>
     <dept>CICS</dept>
     <violation>Proper Uniform, Dress Code and Other Related Rules/Regulations</violation>
-    <report>asdsadsad</report>
-    <timestamp>Jul 18, 2023, 12:06 AM</timestamp>
+    <report>asdasdasd</report>
+    <timestamp>Jul 18, 2023, 3:03 PM</timestamp>
+    <status>Case Closed</status>
+  </data>
+  <data>
+    <srcode>20-07600</srcode>
+    <dept>CICS</dept>
+    <violation>ID Requirement</violation>
+    <report>asdsadasdsad</report>
+    <timestamp>Jul 18, 2023, 3:15 PM</timestamp>
     <status>Pending</status>
   </data>
 </datas>
