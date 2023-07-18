@@ -14,7 +14,7 @@ interface Form {
       <ngx-charts-pie-chart
         [results]="chartData"
         [view]="[400, 300]"
-
+        [labels]="true"
         (select)="onSelect($event)"
       >
       </ngx-charts-pie-chart>

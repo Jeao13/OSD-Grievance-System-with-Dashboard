@@ -22,6 +22,7 @@ export class Tab1Page implements OnInit {
   showFormsDropdown = false;
   isClassDisabled = true;
 
+
   constructor(
     private route: ActivatedRoute,
     private http: HttpClient,
@@ -126,7 +127,11 @@ export class Tab1Page implements OnInit {
           const name = nameNode || '';
           const college = collegeNode || '';
           const year = yearNode || '';
-          const profilePic = profilePicNode || '';
+          let profilePic = profilePicNode || '';
+          const fallbackImage = 'assets/userpic.png';
+          if (!profilePic) {
+            profilePic = fallbackImage;
+          }
 
           this.user = {
             name,

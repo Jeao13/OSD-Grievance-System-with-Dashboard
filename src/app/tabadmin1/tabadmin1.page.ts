@@ -190,7 +190,11 @@ export class Tabadmin1Page {
           const name = nameNode || '';
           const college = collegeNode || '';
           const year = yearNode || '';
-          const profilePic = profilePicNode || '';
+          let profilePic = profilePicNode || '';
+          const fallbackImage = 'assets/userpic.png';
+          if (!profilePic) {
+            profilePic = fallbackImage;
+          }
           const sanctions = sanctions1 || '';
 
 

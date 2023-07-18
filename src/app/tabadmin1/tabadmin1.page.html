@@ -22,7 +22,7 @@
 
     <div class="user-info-container">
       <div class="image-container">
-        <ion-img [src]="users2.profilePic" alt="Profile Picture" class="profile-pic"></ion-img>
+        <ion-img [src]="users2.profilePic" fallback="assets/userpic.png" class="profile-pic"></ion-img>
       </div>
       <ion-item class="no-border">
         <ion-label class="center">{{ users2?.name }}</ion-label>
