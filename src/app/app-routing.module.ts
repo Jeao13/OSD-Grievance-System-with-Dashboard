@@ -47,7 +47,15 @@ const routes: Routes = [
     {
       path: 'tabadmin3',
       loadChildren: () => import('./tabadmin3/tabadmin3.module').then( m => m.Tabadmin3PageModule)
-    },
+    },  {
+    path: 'osdhome',
+    loadChildren: () => import('./osdhome/osdhome.module').then( m => m.OsdhomePageModule)
+  },
+  {
+    path: 'osdlogs',
+    loadChildren: () => import('./osdlogs/osdlogs.module').then( m => m.OsdlogsPageModule)
+  },
+
 ];
 
 

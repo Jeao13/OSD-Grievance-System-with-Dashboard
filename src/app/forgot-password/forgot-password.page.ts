@@ -23,7 +23,7 @@ export class ForgotPasswordPage {
   }
 
   saveData() {
-   
+    const apiUrl1 = 'http://localhost/modify-adnotif.php';
     const apiUrl = 'http://localhost/modify-xml.php'; // Replace with the actual URL of your PHP script
     const data = {
       srcode: this.username,
@@ -40,6 +40,31 @@ export class ForgotPasswordPage {
       status:'Pending'
 
     };
+
+    
+    const data1 = {
+      
+      dept: this.username1,
+      violation: 'There is a new report',
+      timestamp: new Date().toLocaleString('en-US', {
+        hour: 'numeric',
+        minute: 'numeric',
+        year: 'numeric',
+        month: 'short',
+        day: 'numeric'
+      }    ),
+        
+
+    };
+
+    this.http.post(apiUrl1, data1).subscribe(
+      () => {
+        console.log('Data saved successfully');
+      },
+      (error) => {
+        console.error('Error saving data:', error);
+      }
+    );
 
     this.http.post(apiUrl, data).subscribe(
       () => {

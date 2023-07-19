@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<OSD>
+  <notif>
+    <dept>CICS</dept>
+    <message>There is a new report</message>
+    <time>Jul 19, 2023, 10:29 AM</time>
+  </notif>
+  <notif>
+    <dept>CICS</dept>
+    <message>There is a new report</message>
+    <time>Jul 19, 2023, 1:17 PM</time>
+  </notif>
+  <notif>
+    <dept>CICS</dept>
+    <message>There is a new report</message>
+    <time>Jul 19, 2023, 1:19 PM</time>
+  </notif>
+  <notif>
+    <dept>CICS</dept>
+    <message>There is a new report</message>
+    <time>Jul 19, 2023, 1:41 PM</time>
+  </notif>
+</OSD>

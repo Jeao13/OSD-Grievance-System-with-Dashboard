@@ -11,6 +11,7 @@ import { NavController } from '@ionic/angular';
 export class HomePage {
   username: string;
   password: string;
+  dept:string | null;
   loginFailed: boolean = false;
 
   constructor(private navCtrl: NavController,private router: Router, private http: HttpClient) {}
@@ -35,13 +36,15 @@ export class HomePage {
           const xmlUsername = user.getElementsByTagName('username')[0]?.textContent;
           const xmlPassword = user.getElementsByTagName('password')[0]?.textContent;
           const xmlrole = user.getElementsByTagName('role')[0]?.textContent;
+          const xmldept = user.getElementsByTagName('dept')[0]?.textContent;
 
           if (this.username === xmlUsername && this.password === xmlPassword && xmlrole ==='student') {
             authenticated = true;
-            break;
+            break;  
           }
           else if(this.username === xmlUsername && this.password === xmlPassword && xmlrole ==='coordinator'){
             authenticated1 = true;
+            this.dept = xmldept;
             break;
           }
         }
@@ -52,7 +55,7 @@ export class HomePage {
           this.username = '';
           this.password = '';
         }  else if (authenticated1){
-          this.router.navigate(['/tabadmin/login'], { queryParams: { username: this.username} });
+          this.router.navigate(['/tabadmin/login'], { queryParams: { username: this.username, dept:this.dept} });
           this.username = '';
           this.password = '';
         

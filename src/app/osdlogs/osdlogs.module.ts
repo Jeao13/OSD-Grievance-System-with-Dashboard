@@ -4,17 +4,17 @@ import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { Tabadmin2PageRoutingModule } from './tabadmin2-routing.module';
+import { OsdlogsPageRoutingModule } from './osdlogs-routing.module';
 
-import { Tabadmin2Page } from './tabadmin2.page';
+import { OsdlogsPage } from './osdlogs.page';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    Tabadmin2PageRoutingModule
+    OsdlogsPageRoutingModule
   ],
-  declarations: [Tabadmin2Page]
+  declarations: [OsdlogsPage]
 })
-export class Tabadmin2PageModule {}
+export class OsdlogsPageModule {}

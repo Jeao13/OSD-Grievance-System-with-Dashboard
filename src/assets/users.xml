@@ -121,6 +121,41 @@
      <profilePic>assets/Gerald_ID.jpeg</profilePic>
   </user>
 
+     <user>
+    <username>555476</username>
+    <password>sirgerald1</password>
+    <role>coordinator</role>
+    <dept>CAFAD</dept>
+    <sanctions>N/A</sanctions>
+     <name>CAFAD COORDINATOR</name>
+    <college>GUEST LECTURER I</college>
+    <year>COORDINATOR</year>
+     <profilePic></profilePic>
+  </user>
+
+ <user>
+    <username>555473</username>
+    <password>sirgerald2</password>
+    <role>coordinator</role>
+    <dept>CIT</dept>
+    <sanctions>N/A</sanctions>
+     <name>CIT COORDINATOR</name>
+    <college>GUEST LECTURER I</college>
+    <year>COORDINATOR</year>
+     <profilePic></profilePic>
+  </user>
+
+   <user>
+    <username>555472</username>
+    <password>sirgerald3</password>
+    <role>coordinator</role>
+    <dept>COE</dept>
+    <sanctions>N/A</sanctions>
+     <name>COE COORDINATOR</name>
+    <college>GUEST LECTURER I</college>
+    <year>COORDINATOR</year>
+     <profilePic></profilePic>
+  </user>
   
     <user>
     <username>20-04729</username>
