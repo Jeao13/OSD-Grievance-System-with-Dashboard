@@ -36,7 +36,7 @@ export class HomePage {
           const xmlrole = user.getElementsByTagName('role')[0]?.textContent;
           const xmldept = user.getElementsByTagName('dept')[0]?.textContent;
 
-          if (this.username === xmlUsername && this.password === xmlPassword && xmlRole === 'student') {
+          if (this.username === xmlUsername && this.password === xmlPassword && xmlrole === 'student') {
             authenticated = true;
             break;  
           }
