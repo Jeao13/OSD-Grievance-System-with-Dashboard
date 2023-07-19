@@ -1,5 +1,9 @@
 
-
+ion-header {
+    background-color: #333;
+    color: #fff;
+  }
+  
   ion-title {
     font-size: 20px;
     font-weight: bold;
@@ -7,15 +11,9 @@
   }
   
   .background{
-   
-      font-weight: bold;
-      height: auto;
-      font-size: 10px;
-      --background: linear-gradient(to right, rgba(189, 21, 21, 0.692), rgba(255,0,0,1));
-    
-    }
+    --background: linear-gradient(to right, rgba(189, 21, 21, 0.692), rgba(255,0,0,1));
   
-  
+  }
   
   /* Styling for ion-content */
   ion-content {
@@ -44,8 +42,16 @@
   
   }
   
-
-
+  ion-label h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  /* Styling for h3 within ion-label */
+  ion-label h3:first-child {
+    color: #237cdc;
+  }
   
   /* Styling for h2 within ion-label */
   ion-label h2 {
@@ -57,13 +63,13 @@
   /* Styling for p within ion-label */
   ion-label p {
     font-size: 14px;
-  
+    margin-bottom: 10px;
   }
   
   /* Styling for ion-button */
   ion-button {
     margin-top: 10px;
-    --background: rgb(16, 204, 50);
+    --background: green;
     font-weight: bold;
   }
   
@@ -82,11 +88,3 @@
     text-align: center;
     color: #777;
   }
-  /* Styling for h2 within ion-label */
-ion-label h1 {
-  margin-bottom: 5px;
-  font-size: 20px;
-  font-weight: bold;
-  color: black;
-}
-

@@ -1,6 +1,3 @@
-
-
-
 ion-content {
   --ion-background-color: rgba(255, 255, 255, 0.8);
   --ion-item-background: rgba(255, 255, 255);
@@ -8,22 +5,26 @@ ion-content {
   -ms-overflow-style: none;
   overflow: hidden;
 }
+
 .icons{
   color: rgb(255, 255, 255);
 }
+
 .menu{
   --background: transparent;
 }
+
 ion-icon {
-  color: rgba(0, 0, 0, 0.79);
+  color: rgb(0, 0, 0);
   }
 .forms-item {   
   border-bottom: 1px solid black;
 }
+
 .forms{
 --background: rgba(255, 255, 255, 0.236);
-
 }
+
 .container {
   display: flex;
   flex-direction: column;
@@ -37,39 +38,39 @@ ion-icon {
   font-weight: bold;
   height: auto;
   font-size: 10px;
-  --background: rgb(235, 34, 34);
 
 }
+
 .background{
   --background: linear-gradient(to right, rgba(189, 21, 21, 0.692), rgba(255,0,0,1));
-
 }
-
 
 .center { 
   text-align: center;
   font-weight: bold;
   font-size: large;
+  margin-right: 0;
 }
 
-
 .profile-pic {
-  width: 200px;
-  height: 200px;
-  padding-top: 20px;
- 
+  width: 50%;
+  height: 50%;
+  border-style: solid;
 }
 
 .image-container {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .font {
   font-size: small;
   text-align: center;
   font-weight: bold;
+  margin-right: 0;
 }
 
 .btn-right {
@@ -78,14 +79,12 @@ ion-icon {
   --background: transparent;
 }
 
-
 .button-dl{
 
-  --background: rgb(19, 196, 43);
+  --background: rgb(10, 230, 50);
   font-size: 10px;
   font-weight: bold;
 }
-
 
 .custom-text-button {
   color: rgb(255, 255, 255);
@@ -94,15 +93,12 @@ ion-icon {
   /* Add more custom styles as needed */
 }
 
-
-ion-item,
-.no-border {
+ion-item, .no-border {
   --background: transparent;
   --color: black;  
   --border-style: none; /* Remove border style */
-
- }
-
+  text-align: center;
+}
 
 .background-image {
   position: relative;
@@ -120,6 +116,35 @@ ion-item,
   bottom: 0;
   z-index: -1;
   filter: grayscale(100%); /* Apply grayscale filter */
+}
+
+ion-title{
+  color: aliceblue;
+}
+
+ion-card-title, .title{
+  font-size: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: rgb(189, 14, 14);
+  padding-bottom: 0;
+}
+
+ion-card-content{
+  font-size: 14px;
+  color: black;
+  padding-top: 0;
+}
+
+ion-card {
+  --border-radius: 0;
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid rgba(0,0,0,.1);
+  box-sizing: content-box;
+  height: 0;
+  overflow: visible;
 }
 
 

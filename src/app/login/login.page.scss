@@ -1,36 +1,10 @@
+ion-content{
+
+  --ion-background-color:rgba(255, 255, 255,0.8);
+  --ion-item-background:rgba(255, 255, 255);
 
 
 
-ion-content {
-  --ion-background-color: rgba(255, 255, 255, 0.8);
-  --ion-item-background: rgba(255, 255, 255);
-  scrollbar-width: none;
-  -ms-overflow-style: none;
-  overflow: hidden;
-}
-.icons{
-  color: rgb(255, 255, 255);
-}
-.menu{
-  --background: transparent;
-}
-ion-icon {
-  color: rgb(0, 0, 0);
-  }
-.forms-item {   
-  border-bottom: 1px solid black;
-}
-.forms{
---background: rgba(255, 255, 255, 0.236);
-
-}
-.container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-top: -200px;
-  height: 100%;
 }
 
 .header-toolbar {
@@ -38,20 +12,9 @@ ion-icon {
   height: auto;
   font-size: 10px;
   --background: rgb(235, 34, 34);
-
 }
 .background{
   --background: linear-gradient(to right, rgba(189, 21, 21, 0.692), rgba(255,0,0,1));
-
-}
-
-
-.center { 
-  margin-bottom: 0; /* Remove the bottom margin */
-  padding-bottom: 0; /* Remove the bottom padding */
-  text-align: center;
-  font-weight: bold;
-  font-size: large;
 }
 
 
@@ -59,10 +22,9 @@ ion-icon {
   width: 200px;
   height: 200px;
   padding-top: 20px;
- 
+  padding-bottom: 20px;
 }
-
-.image-container {
+.image-container {  
   display: flex;
   justify-content: center;
   align-items: center;
@@ -90,12 +52,10 @@ ion-icon {
   font-weight: bold;
 }
 
+.ion-toolbar-right {
+  display: flex;
+  justify-content: flex-end;
 
-.custom-text-button {
-  color: rgb(255, 255, 255);
-  font-size: 10px;
-  font-weight: bold;
-  /* Add more custom styles as needed */
 }
 
 
@@ -148,3 +108,8 @@ ion-item,
   border-radius: 30px;
 }
 
+
+.bar-fill {
+  background-color: #007bff; /* Change color to your preference */
+  transition: height 0.5s;
+}

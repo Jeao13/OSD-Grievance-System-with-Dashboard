@@ -1,5 +1,11 @@
 ion-tab-bar {
-    --background: rgb(255, 255, 255);
-      --color: rgb(73, 73, 73);
-      --color-selected:#ff0000;
-    }
+  --background: rgb(255, 255, 255);
+  --color: rgb(73, 73, 73);
+  --color-selected:#ff0000;
+  position: relative;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom: none;
+  border-left: none;
+  border-right: none;
+}
