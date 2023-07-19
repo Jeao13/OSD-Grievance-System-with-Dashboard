@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
 import { HttpClient } from '@angular/common/http';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Params } from '@angular/router'; 
 import { Router } from '@angular/router';
 import { DataService } from 'src/app/data.service';
 import { saveAs } from 'file-saver';
@@ -27,6 +27,7 @@ export class LoginPage implements OnInit {
   ];
 
   username: string;
+  dept:string;
   forms: Form[] = [];
   idRequirementCount = 0;
   user: User = {};
@@ -90,7 +91,9 @@ export class LoginPage implements OnInit {
   ngOnInit() {
     this.route.queryParams.subscribe((params) => {
       this.username = params['username'];
+      this.dept =  params['dept'];
       this.dataService.setUsername(this.username);
+      this.dataService.setDept(this.dept);
 
       const { name, college, year, profilePic } = params;
       this.user = { name, college, year, profilePic };
@@ -105,6 +108,11 @@ export class LoginPage implements OnInit {
 
      
     });
+
+
+
+
+ 
   }
 
 
@@ -153,7 +161,11 @@ export class LoginPage implements OnInit {
           const name = nameNode || '';
           const college = collegeNode || '';
           const year = yearNode || '';
-          const profilePic = profilePicNode || '';
+          let profilePic = profilePicNode || '';
+          const fallbackImage = 'assets/userpic.png';
+          if (!profilePic) {
+            profilePic = fallbackImage;
+          }
 
           this.user = {
             name,
@@ -186,12 +198,13 @@ export class LoginPage implements OnInit {
 
         this.forms.push({ srcode, violation, dept});
 
-        if (dept === 'CICS') { // Check if <dept> is "CICS"
+        if (dept === this.dept) { // Check if <dept> is "CICS"
           this.cicsDeptCount++; // Increment the count for <data> with <dept> of CICS
         }
       }
       
     console.log(this.idRequirementCount)
+    console.log(this.dept)
     });
 
   }
