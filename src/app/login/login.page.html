@@ -5,7 +5,6 @@
     </ion-toolbar>
   </ion-header>
 
-
   <ion-content>
     <ion-list>
       <ion-menu-toggle (click)="sanction()" auto-hide="false">
@@ -32,8 +31,6 @@
         </ion-item>
       </ion-menu-toggle>
  
-  
-
       <ion-item class="forms"  [ngClass]="{'hide-item': isClassDisabled}">
         <ion-label>Formal Complaint Letter</ion-label>
         <ion-button class="button-dl" (click)="downloadFile()">

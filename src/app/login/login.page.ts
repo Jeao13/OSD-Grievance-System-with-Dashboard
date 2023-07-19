@@ -12,8 +12,6 @@ interface Form {
   dept: string | null;
 }
 
-
-
 @Component({
   selector: 'app-login',
   templateUrl: './login.page.html',
@@ -75,7 +73,6 @@ export class LoginPage implements OnInit {
     );
   }
 
-  
   toggleClass(event: Event) {
     event.stopPropagation(); // Prevent the event from propagating
 
@@ -86,7 +83,6 @@ export class LoginPage implements OnInit {
   countCICSDeptData() {
     this.cicsDeptCount = this.forms.filter((form) => form.dept === 'CICS').length;
   }
-
 
   ngOnInit() {
     this.route.queryParams.subscribe((params) => {
@@ -105,14 +101,7 @@ export class LoginPage implements OnInit {
           this.displayUserInfo1Executed = true; // Set the flag to true after the function execution
         }
       }
-
-     
     });
-
-
-
-
- 
   }
 
 
@@ -206,10 +195,7 @@ export class LoginPage implements OnInit {
     console.log(this.idRequirementCount)
     console.log(this.dept)
     });
-
   }
-
-  
 }
 
 interface User1 {

@@ -23,6 +23,7 @@ interface Form {
   `,
   styleUrls: ['./pie-chart.component.scss'],
 })
+
 export class PieChartComponent {
   @Input() data: any[];
   onSelect: (event: any) => void;
