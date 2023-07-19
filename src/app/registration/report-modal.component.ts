@@ -6,7 +6,7 @@ import { ModalController } from '@ionic/angular';
   styleUrls: ['./report-modal.component.scss'],
   template: `
     <ion-header>
-      <ion-toolbar>
+      <ion-toolbar class="header-toolbar">
         <ion-title>{{ violation }}</ion-title>
         <ion-buttons slot="end">
           <ion-button (click)="dismissModal()">Close</ion-button>
@@ -14,13 +14,15 @@ import { ModalController } from '@ionic/angular';
       </ion-toolbar>
     </ion-header>
 
-    <ion-content>
-      <ion-card>
-        <ion-card-content class="card-content">
-          <pre>{{ report }}</pre>
-        </ion-card-content>
-      </ion-card>
-    </ion-content>
+  <ion-content class="custom-image">
+  <div class="modal-container">
+    <ion-card>
+      <ion-card-content class="card-content">
+        <pre>{{ report }}</pre>
+      </ion-card-content>
+    </ion-card>
+  </div>
+</ion-content>
   `
 })
 export class ReportModalComponent {
