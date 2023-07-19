@@ -18,10 +18,6 @@ ion-icon {
   color: rgb(0, 0, 0);
 }
 
-.image-container {
-  border-radius: 500px;
-}
-
 .forms-item {   
   border-bottom: 1px solid black;
 }
@@ -54,24 +50,28 @@ ion-icon {
   text-align: center;
   font-weight: bold;
   font-size: large;
+  margin-right: 0;
 }
 
 .profile-pic {
-  width: 200px;
-  height: 200px;
-  padding-top: 20px;
+  width: 50%;
+  height: 50%;
+  border-style: solid;
 }
 
 .image-container {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .font {
   font-size: small;
   text-align: center;
   font-weight: bold;
+  margin-right: 0;
 }
 
 .btn-right {
@@ -93,11 +93,11 @@ ion-icon {
   /* Add more custom styles as needed */
 }
 
-ion-item,
-.no-border {
+ion-item, .no-border {
   --background: transparent;
   --color: black;  
   --border-style: none; /* Remove border style */
+  text-align: center;
 }
 
 .background-image {
@@ -122,13 +122,27 @@ ion-title{
   color: aliceblue;
 }
 
-ion-card-title{
+ion-card-title, .title{
   font-size: 20px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: rgb(189, 14, 14);
+  padding-bottom: 0;
 }
 
 ion-card-content{
   font-size: 14px;
   color: black;
+  padding-top: 0;
+}
+
+ion-card {
+  --border-radius: 0;
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid rgba(0,0,0,.1);
+  box-sizing: content-box;
+  height: 0;
+  overflow: visible;
 }

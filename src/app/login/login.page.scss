@@ -1,10 +1,6 @@
 ion-content{
-
   --ion-background-color:rgba(255, 255, 255,0.8);
   --ion-item-background:rgba(255, 255, 255);
-
-
-
 }
 
 .center{
@@ -15,44 +11,36 @@ ion-content{
 
 ion-item{
   color: black;
-
 }
 
 .background{
   --background: linear-gradient(to right, rgba(189, 21, 21, 0.692), rgba(255,0,0,1));
-
 }
 
 
 .profile-pic {
   width: 200px; 
   height: 200px; 
-
-
   padding-top: 20px;
   padding-bottom: 20px;
-
 }
+
 .image-container {  
   display: flex;
   justify-content: center;
   align-items: center;
-
 }
 
 .font {
   font-size: small;
   text-align: center;
   font-weight: bold;
-
 }
 
 .btn-right {
   display: flex;
   justify-content: flex-end;
   --background: rgb(92, 92, 92);
-
-
 }
 
 .btn-left {
@@ -60,15 +48,12 @@ ion-item{
   justify-content: flex-end;
   --background: #28a745;
   margin-top: 20px;
-
-
 }
 
 
 .ion-toolbar-right {
   display: flex;
   justify-content: flex-end;
-
 }
 
 .custom-button {

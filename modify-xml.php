@@ -3,7 +3,7 @@ header('Access-Control-Allow-Origin: http://localhost:8100');
 header('Access-Control-Allow-Methods: GET, POST, OPTIONS');
 header('Access-Control-Allow-Headers: Content-Type');
 
-$xmlFile = 'ionic-form-ui/src/assets/data.xml'; // Replace with the path to your XML file
+$xmlFile = 'OSD-Grievance-System-with-Dashboard/src/assets/data.xml'; // Replace with the path to your XML file
 
 // Retrieve the new element data from the request payload
 $data = json_decode(file_get_contents('php://input'), true);
@@ -13,8 +13,6 @@ $newMessage = $data['violation'];
 $newMessage1 = $data['report'];
 $time = $data ['timestamp'];
 $status = $data ['status'];
-
-
 
 // Load the XML file
 $doc = new DOMDocument();

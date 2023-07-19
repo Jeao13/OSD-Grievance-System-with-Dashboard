@@ -121,7 +121,6 @@
      <profilePic>assets/Gerald_ID.jpeg</profilePic>
   </user>
 
-  
     <user>
     <username>20-04729</username>
     <password>buquis</password>
@@ -132,5 +131,18 @@
     <year>THIRD YEAR</year>
      <profilePic>assets/CJ_ID.jpg</profilePic>
   </user>
+
+  <user>
+   <username>1</username>
+   <password>1</password>
+   <role>student</role>
+   <sanctions>N/A</sanctions>
+    <name>Test Subject 1</name>
+   <college>BS INFORMATION TECHNOLOGY</college>
+   <year>THIRD YEAR</year>
+    <profilePic>assets/Panganiban_ID.jpg</profilePic>
+ </user>
+
+  
   
 </users>

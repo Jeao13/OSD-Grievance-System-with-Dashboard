@@ -62,20 +62,23 @@
 </ion-header>
 
 <ion-content class="background-image">
-  <div class="image-container">
-    <ion-img [src]="user.profilePic" alt="Profile Picture" class="profile-pic"></ion-img>
-  </div>
-  <ion-item class="no-border">
-    <ion-label class="center">{{ user?.name }}</ion-label>
-  </ion-item>
-  <ion-item class="no-border">
-    <ion-label class="font">{{ user?.college }} - {{ user?.year }}</ion-label>
-  </ion-item>
+  <ion-card>
+    <div class="image-container">
+      <ion-img [src]="user.profilePic" alt="Profile Picture" class="profile-pic"></ion-img>
+    </div>
+    <ion-item class="no-border">
+      <ion-label class="center">{{ user?.name }}</ion-label>
+    </ion-item>
+    <ion-item class="no-border">
+      <ion-label class="font">{{ user?.college }} - {{ user?.year }}</ion-label>
+    </ion-item>
+</ion-card>
 
   <ion-card>
-    <ion-card-header>
+    <ion-card-header class="title">
       <ion-card-title>OSD Profile:</ion-card-title>
     </ion-card-header>
+    <hr>
       <ion-card-content>
         The Office of Student Discipline is one of the student-service offices of this University which 
         implement rules and regulations. It is commited to serve equally, all involved parties in an 
@@ -84,9 +87,10 @@
         with the vision and mission of the university.
       </ion-card-content>
 
-    <ion-card-header>
+    <ion-card-header class="title">
       <ion-card-title>Services Offered:</ion-card-title>
     </ion-card-header>
+    <hr>
       <ion-card-content>
         1. Recieve, evaluate and approve the Request for New ID.<br>
         2. Evaluation for the approval and relese of the request for non-wearing of school uniform.<br>

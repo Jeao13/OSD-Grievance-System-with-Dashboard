@@ -48,11 +48,15 @@ export class HomePage {
           this.router.navigate(['/tabs/tab1'], { queryParams: { username: this.username } });
           this.username = '';
           this.password = '';
-        } else if (authenticated1) {
+        } 
+        
+        else if (authenticated1) {
           this.router.navigate(['/tabadmin/login'], { queryParams: { username: this.username } });
           this.username = '';
           this.password = '';
-        } else {
+        } 
+        
+        else {
           // Login failed
           this.loginFailed = true;
           console.log('Invalid username or password');
