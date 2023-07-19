@@ -5,6 +5,8 @@ import { FormsModule } from '@angular/forms';
 import { IonicModule } from '@ionic/angular';
 
 import { LoginPageRoutingModule } from './login-routing.module';
+import { PieChartComponent } from './pie-chart.component';
+import { NgxChartsModule } from '@swimlane/ngx-charts';
 
 import { LoginPage } from './login.page';
 
@@ -13,8 +15,9 @@ import { LoginPage } from './login.page';
     CommonModule,
     FormsModule,
     IonicModule,
-    LoginPageRoutingModule
+    LoginPageRoutingModule,
+    NgxChartsModule
   ],
-  declarations: [LoginPage]
+  declarations: [LoginPage,  PieChartComponent]
 })
 export class LoginPageModule {}

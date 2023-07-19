@@ -6,17 +6,36 @@ import { Router } from '@angular/router';
 import { DataService } from 'src/app/data.service';
 import { saveAs } from 'file-saver';
 
+interface Form {
+  srcode: string | null;
+  violation: string | null;
+  dept: string | null;
+}
+
+
+
 @Component({
   selector: 'app-login',
   templateUrl: './login.page.html',
   styleUrls: ['./login.page.scss'],
 })
 export class LoginPage implements OnInit {
+  chartData: any[] = [
+    { name: 'Label 1', value: 30 },
+    { name: 'Label 2', value: 20 },
+    { name: 'Label 3', value: 50 },
+  ];
+
   username: string;
-  user: User = {}; // Initialize with an empty object
+  forms: Form[] = [];
+  idRequirementCount = 0;
+  user: User = {};
+  cicsDeptCount = 0;
+  user1: User1 = {};// Initialize with an empty object
   safeProfilePicUrl: SafeResourceUrl;
   showFormsDropdown = false;
   isClassDisabled = true;
+  private displayUserInfo1Executed = false;
 
   constructor(
     private route: ActivatedRoute,
@@ -63,7 +82,10 @@ export class LoginPage implements OnInit {
   }
  
     
-  
+  countCICSDeptData() {
+    this.cicsDeptCount = this.forms.filter((form) => form.dept === 'CICS').length;
+  }
+
 
   ngOnInit() {
     this.route.queryParams.subscribe((params) => {
@@ -75,7 +97,13 @@ export class LoginPage implements OnInit {
 
       if (this.username) {
         this.displayUserInfo();
+        this.displayUserInfo1()
+        if (!this.displayUserInfo1Executed) { // Check if the function has not been executed yet
+          this.displayUserInfo1Executed = true; // Set the flag to true after the function execution
+        }
       }
+
+     
     });
   }
 
@@ -138,6 +166,41 @@ export class LoginPage implements OnInit {
       }
     });
   }
+
+  displayUserInfo1() {
+   
+    this.http.get('assets/data.xml', { responseType: 'text' }).subscribe((xmlData) => {
+      const parser = new DOMParser();
+      const xmlDoc = parser.parseFromString(xmlData, 'application/xml');
+
+      const usersNode = xmlDoc.getElementsByTagName('data');
+      this.cicsDeptCount = 0;
+
+
+
+      for (let i = 0; i < usersNode.length; i++) {
+        const form = usersNode[i];
+        const srcode = form.getElementsByTagName('srcode')[0]?.textContent;
+        const violation = form.getElementsByTagName('violation')[0]?.textContent;
+        const dept = form.getElementsByTagName('dept')[0]?.textContent;
+
+        this.forms.push({ srcode, violation, dept});
+
+        if (dept === 'CICS') { // Check if <dept> is "CICS"
+          this.cicsDeptCount++; // Increment the count for <data> with <dept> of CICS
+        }
+      }
+      
+    console.log(this.idRequirementCount)
+    });
+
+  }
+
+  
+}
+
+interface User1 {
+  users?: number;
 }
 
 interface User {
