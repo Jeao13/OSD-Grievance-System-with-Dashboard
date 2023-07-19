@@ -1,5 +1,5 @@
 <ion-header>
-  <ion-toolbar>
+  <ion-toolbar class="header-toolbar" >
     <ion-buttons slot="start">
       <ion-back-button></ion-back-button>
     </ion-buttons>
@@ -9,7 +9,7 @@
   </ion-toolbar>
 </ion-header>
  
-<ion-content>
+<ion-content class ="background-image">
   <div class="content-container">
     <div class="search-container">
       <ion-searchbar [(ngModel)]="searchTerm" (input)="onSearch()" (keyup.enter)="displayUserInfo()" placeholder="Input Sr-Code"></ion-searchbar>
@@ -35,16 +35,51 @@
         <ion-label class="font">{{ users2?.year }}</ion-label>
   
       </ion-item>
+
+
     </div>
 
-    <div class="user-info-container">
-<ion-label><h1>Sanctions:</h1></ion-label>
+    <div class="sanc-container"></div>
+    <form (ngSubmit)="addsanctions()">
+      <ion-item>
+        <ion-label position="floating">Classification of Violation</ion-label>
+        <ion-select [(ngModel)]="message" name="message1" class="custom-select">
+          <ion-select-option class="custom-option" value="Classroom Rules and Regulations">
+            Classroom Rules and Regulations
+          </ion-select-option>
+          <ion-select-option class="custom-option" value="ID Requirement">
+            ID Requirement
+          </ion-select-option>
+          <ion-select-option class="custom-option" value="Proper Uniform, Dress Code and Other Related Rules/Regulations">
+            Proper Uniform, Dress Code & Other Related Rules/Regulations
+          </ion-select-option>
+          <ion-select-option class="custom-option" value="University Facilities and Premises">
+            University Facilities & Premises
+          </ion-select-option>
+          <ion-select-option class="custom-option" value="Academic Dishonesty">
+            Academic Dishonesty
+          </ion-select-option>
+        </ion-select>
+      </ion-item>
+      
+      
+      <div class="center-button">
+        <ion-button class="custom-button" type="submit" >Give Sanction</ion-button>
+      </div>
+
+    </form>
+
+
+  </div>
+
+    <div class="sanctions-container">
+    <ion-label><h1>Sanctions:</h1></ion-label>
       <ion-list *ngIf="showResults">
         <ion-item *ngFor="let data of matchingData">
           <ion-label>
             
             <h2>{{ data.violation }}</h2>
-            <h2>{{ data.timestamp }}</h2>
+            <h3>{{ data.timestamp }}</h3>
      
     
             
@@ -71,7 +106,15 @@
       <ion-button type="submit" >Give Sanction</ion-button>
     </div>
     </form>
+
+
+
+
+
+
+
   </div>
 
+  
 </ion-content>
 

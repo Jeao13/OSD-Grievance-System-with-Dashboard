@@ -7,7 +7,7 @@ import { HttpClient } from '@angular/common/http';
   styleUrls: ['./modal-status.component.scss'],
   template: `
     <ion-header>
-      <ion-toolbar>
+      <ion-toolbar class="header-toolbar">
         <ion-title>{{ violation }}</ion-title>
         <ion-buttons slot="end">
           <ion-button (click)="dismissModal()">Close</ion-button>
@@ -15,7 +15,7 @@ import { HttpClient } from '@angular/common/http';
       </ion-toolbar>
     </ion-header>
 
-    <ion-content>
+    <ion-content class ="custom-image">
       <ion-card>
         <ion-card-content class="card-content">
           <pre>{{ report }}</pre>
@@ -27,7 +27,8 @@ import { HttpClient } from '@angular/common/http';
             <ion-select-option value="Taken Action">Taken Action</ion-select-option>
             <ion-select-option value="Case Closed">Case Closed</ion-select-option>
           </ion-select>
-        </ion-item>
+      </ion-item>
+  
     </ion-content>
   `
 })

@@ -21,11 +21,8 @@ ion-content {
   display: flex;
   align-items: center;
   justify-content: center;
-}
 
-/* Styling for ion-list */
-ion-list {
-  margin-top: 10px;
+  
 }
 
 /* Styling for ion-item */
@@ -34,37 +31,39 @@ ion-item {
   border-radius: 5px;
   margin-bottom: 10px;
   padding: 10px;
-}
 
-ion-label h3 {
-  font-size: 18px;
+}
+.custom-button {
+  --background: rgb(16, 204, 50);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  font-size: 15px;
   font-weight: bold;
-  margin-bottom: 5px;
 }
 
-/* Styling for h3 within ion-label */
-ion-label h3:first-child {
-  color: #237cdc;
+ion-item{
+
+color: black;
+
+
 }
 
 /* Styling for h2 within ion-label */
-ion-label h2 {
+ion-label h1 {
   margin-bottom: 5px;
-  font-size: 16px;
+  font-size: 20px;
+  font-weight: bold;
   color: black;
 }
 
 /* Styling for p within ion-label */
 ion-label p {
   font-size: 14px;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
 
-/* Styling for ion-button */
-ion-button {
-  margin-top: 10px;
-  --background: green;
-  font-weight: bold;
+h2{
+font-size: 15px;
+
 }
 
 /* Styling for ion-ripple-effect */

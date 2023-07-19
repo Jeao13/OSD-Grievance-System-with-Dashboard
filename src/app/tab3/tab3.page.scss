@@ -14,6 +14,23 @@ ion-title {
   --background: linear-gradient(to right, rgba(189, 21, 21, 0.692), rgba(255,0,0,1));
 
 }
+.background-image {
+  position: relative;
+}
+
+.background-image::before {
+  content: "";
+  background: url('/assets/Alangilan.jpg') no-repeat center center fixed;
+  background-size: cover;
+  opacity: 0.8;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  filter: grayscale(100%); /* Apply grayscale filter */
+}
 
 /* Styling for ion-content */
 ion-content {
@@ -30,38 +47,31 @@ ion-content {
 
 /* Styling for ion-list */
 ion-list {
+  background: transparent;
   margin-top: 10px;
 }
 
 /* Styling for ion-item */
 ion-item {
-  border: 1px solid #ccc;
-  border-radius: 5px;
+  --border-style: none; /* Remove border style */  
+  border-radius: 10px;
   margin-bottom: 10px;
   padding: 10px;
 
 }
 
-ion-label h3 {
-  font-size: 18px;
-  font-weight: bold;
-  margin-bottom: 5px;
-}
-
-/* Styling for h3 within ion-label */
-ion-label h3:first-child {
-  color: #237cdc;
-}
 
 /* Styling for h2 within ion-label */
 ion-label h2 {
   margin-bottom: 5px;
   font-size: 16px;
   color: black;
+  font-weight: bold;
 }
 
 /* Styling for p within ion-label */
 ion-label p {
+  color: gray;
   font-size: 14px;
   margin-bottom: 10px;
 }
@@ -77,14 +87,6 @@ ion-button {
 ion-ripple-effect {
   color: green;
 }
-
-/* Styling for ion-item when no results found */
-ion-item.no-results {
-  border: none;
-}
-
-/* Styling for ion-label when no results found */
-ion-label.no-results {
-  text-align: center;
-  color: #777;
+::ng-deep ion-item.no-results ion-label {
+  color: black !important;
 }

@@ -11,23 +11,23 @@
       <ion-menu-toggle (click)="openReportModal( user1?.violation,user1?.time )" auto-hide="false">
         <ion-item class="menu">
           <ion-icon slot="start" name="clipboard"></ion-icon>
-          <ion-icon slot="end" name="chevron-forward"></ion-icon>
+          <ion-icon slot="end" name="caret-forward"></ion-icon>
           <ion-label>Sanctions</ion-label>
         </ion-item>
       </ion-menu-toggle>
   
       <ion-menu-toggle (click)="file()" auto-hide="false">
         <ion-item class="menu" >
-          <ion-icon slot="start" name="search-circle"></ion-icon>
-          <ion-icon slot="end" name="chevron-forward"></ion-icon>
+          <ion-icon slot="start" name="file-tray-full"></ion-icon>
+          <ion-icon slot="end" name="caret-forward"></ion-icon>
           <ion-label>File Complaint</ion-label>
         </ion-item>
       </ion-menu-toggle>
   
       <ion-menu-toggle auto-hide="false">
         <ion-item class="forms-item" (click)="toggleClass($event)">
-          <ion-icon slot="end" name="chevron-down"></ion-icon>
-          <ion-icon slot="start" name="list"></ion-icon>
+          <ion-icon slot="end" name="caret-forward"></ion-icon>
+          <ion-icon slot="start" name="folder"></ion-icon>
           <ion-label>Forms</ion-label>
         </ion-item>
       </ion-menu-toggle>
@@ -74,31 +74,5 @@
     </ion-item>
 </ion-card>
 
-  <ion-card>
-    <ion-card-header class="title">
-      <ion-card-title>OSD Profile:</ion-card-title>
-    </ion-card-header>
-    <hr>
-      <ion-card-content>
-        The Office of Student Discipline is one of the student-service offices of this University which 
-        implement rules and regulations. It is commited to serve equally, all involved parties in an 
-        unbiased and fair manner. OSD aims to cultivate a strong sense of self discipline within the 
-        students in a healthy university environment through disciplinary procedures which are in line
-        with the vision and mission of the university.
-      </ion-card-content>
-
-    <ion-card-header class="title">
-      <ion-card-title>Services Offered:</ion-card-title>
-    </ion-card-header>
-    <hr>
-      <ion-card-content>
-        1. Recieve, evaluate and approve the Request for New ID.<br>
-        2. Evaluation for the approval and relese of the request for non-wearing of school uniform.<br>
-        3. Provide temporary gate pass to requesting student.<br>
-        4. Orientation for incoming student trainees.<br>
-        5. Orientation / Re-orientation seminar for security personnel.<br>
-        6. Answer queries regarding student discipline matters.<br>
-        7. To evaluate the disciplinary proceedings and disciplinary sanctions to erring students to ascertain the proper implementation of disciplinary process.
-      </ion-card-content>
-  </ion-card>
+ 
 </ion-content>
