@@ -11,4 +11,11 @@ export class DataService {
   setUsername(username: string | null) {
     this.usernameSubject.next(username);
   }
+
+  private deptSubject = new BehaviorSubject<string | null>(null);
+  dept$ = this.deptSubject.asObservable();
+
+  setDept(dept: string) {
+    this.deptSubject.next(dept);
+  }
 }

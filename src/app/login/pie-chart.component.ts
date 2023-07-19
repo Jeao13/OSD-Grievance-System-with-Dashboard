@@ -1,5 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
+import { DataService } from 'src/app/data.service';
 
 interface Form {
   srcode: string | null;
@@ -25,6 +26,7 @@ interface Form {
 export class PieChartComponent {
   @Input() data: any[];
   onSelect: (event: any) => void;
+  department:string;
   idRequirementCount = 0;
   ClassroomCount = 0;
   UniformCount = 0;
@@ -42,10 +44,19 @@ export class PieChartComponent {
   legendSpacing = 10;
   
 
-  constructor(private http: HttpClient) {}
+  constructor(private http: HttpClient,  private dataService: DataService,) {}
 
   ngOnInit() {
+
     this.displayUserInfo1();
+    this.dataService.dept$.subscribe((dept) => {
+        if (dept) {
+          // Do whatever you want with the dept value here
+          
+          this.department=dept;
+          console.log(this.department);
+        }
+      });
   }
 
   displayUserInfo1() {
@@ -63,23 +74,24 @@ export class PieChartComponent {
 
         this.forms.push({ srcode, violation, dept });
 
-        if (violation === 'ID Requirement' && dept ==='CICS') {
+        if (violation === 'ID Requirement' && dept === this.department) {
           this.idRequirementCount++;
+         
         }
 
-        else if (violation === 'Classroom Rules and Regulations' && dept ==='CICS') {
+        else if (violation === 'Classroom Rules and Regulations' && dept === this.department) {
             this.ClassroomCount++;
           }
 
-        else if (violation === 'Proper Uniform, Dress Code and Other Related Rules/Regulations' && dept ==='CICS') {
+        else if (violation === 'Proper Uniform, Dress Code and Other Related Rules/Regulations' && dept === this.department) {
             this.UniformCount++;
           }
 
-        else if (violation === 'University Facilities and Premises' && dept ==='CICS') {
+        else if (violation === 'University Facilities and Premises' && dept === this.department) {
             this.FacilitiesCount++;
           }
 
-        else if (violation === 'Academic Dishonesty' && dept ==='CICS') {
+        else if (violation === 'Academic Dishonesty' && dept === this.department) {
             this.AcademicCount++;
           }
       }

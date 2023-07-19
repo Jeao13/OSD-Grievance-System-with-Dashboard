@@ -7,6 +7,7 @@ import { ModalController } from '@ionic/angular';
 import { ReportModalComponent } from './report-modal.component';
 import { ReportModalComponent1 } from './modal-status.component';
 
+
 @Component({
   selector: 'app-registration',
   templateUrl: './registration.page.html',
@@ -14,6 +15,7 @@ import { ReportModalComponent1 } from './modal-status.component';
 })
 export class RegistrationPage {
   username: string | null; // Updated type to allow null values
+  department:string;
   message: string;
   xmlData: any;
   matchingData: any[] = [];
@@ -36,6 +38,15 @@ export class RegistrationPage {
         this. loadAndDisplayViolationReport();
       }
     });
+
+    this.dataService.dept$.subscribe((dept) => {
+      if (dept) {
+        // Do whatever you want with the dept value here
+        
+        this.department=dept;
+        console.log(this.department);
+      }
+    });
   }
 
   loadAndDisplayViolationReport() {
@@ -54,7 +65,7 @@ export class RegistrationPage {
         for (let i = 0; i < datas.length; i++) {
           const deptElement = datas[i].getElementsByTagName('dept')[0];
           const dept = deptElement ? deptElement.textContent : '';
-          if (dept === 'CICS') {
+          if (dept === this.department) {
             const srcodeElement = datas[i].getElementsByTagName('srcode')[0];
             const srcode = srcodeElement ? srcodeElement.textContent : '';
             const violation = datas[i].getElementsByTagName('violation')[0].textContent;
