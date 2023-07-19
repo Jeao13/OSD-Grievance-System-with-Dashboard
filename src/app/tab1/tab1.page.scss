@@ -37,6 +37,7 @@ ion-icon {
   font-weight: bold;
   height: auto;
   font-size: 10px;
+  --background: rgb(235, 34, 34);
 
 }
 .background{
@@ -119,4 +120,9 @@ ion-item,
   bottom: 0;
   z-index: -1;
   filter: grayscale(100%); /* Apply grayscale filter */
+}
+
+
+.hide-item {
+  display: none;
 }

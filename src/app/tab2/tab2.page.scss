@@ -29,7 +29,19 @@ ion-content {
 
   
 }
+.header-toolbar {
+  font-weight: bold;
+  height: auto;
+  font-size: 10px;
+  --background: rgb(235, 34, 34);
 
+}
+.custom-button {
+  --background: rgb(16, 204, 50);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  font-size: 15px;
+  font-weight: bold;
+}
 
 ion-item{
 
@@ -39,20 +51,22 @@ color: black;
 }
 
 /* Styling for h2 within ion-label */
-ion-label h2 {
+ion-label h1 {
   margin-bottom: 5px;
-  font-size: 16px;
+  font-size: 20px;
+  font-weight: bold;
   color: black;
 }
 
 /* Styling for p within ion-label */
 ion-label p {
-  font-size: 14px;
-  margin-bottom: 10px;
+  font-size: 10px;
+  
 }
 
 h2{
-font-weight: bold;
+font-size: 15px;
+
 }
 
 /* Styling for ion-ripple-effect */
