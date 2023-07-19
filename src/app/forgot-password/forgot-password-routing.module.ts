@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-
 import { ForgotPasswordPage } from './forgot-password.page';
 
 const routes: Routes = [
