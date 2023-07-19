@@ -7,7 +7,7 @@
     <name>Aedrian Jeao De Torres</name>
     <college>BS INFORMATION TECHNOLOGY</college>
     <year>THIRD YEAR</year>
-     <profilePic>path/to/image.jpg</profilePic>
+     <profilePic></profilePic>
   </user>
   <user>
     <username>20-03025</username>
@@ -39,7 +39,7 @@
      <name>Jofer Joy Castillo</name>
     <college>BS INFORMATION TECHNOLOGY</college>
     <year>THIRD YEAR</year>
-     <profilePic>path/to/image.jpg</profilePic>
+     <profilePic></profilePic>
   </user>
 
   <user>
@@ -113,6 +113,7 @@
     <username>555477</username>
     <password>sirgerald</password>
     <role>coordinator</role>
+    <dept>CICS</dept>
     <sanctions>N/A</sanctions>
      <name>Gerald James Dañoy</name>
     <college>GUEST LECTURER I</college>
@@ -131,4 +132,5 @@
     <year>THIRD YEAR</year>
      <profilePic>assets/CJ_ID.jpg</profilePic>
   </user>
+  
 </users>

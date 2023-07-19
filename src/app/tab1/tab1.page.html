@@ -8,7 +8,7 @@
 
   <ion-content>
     <ion-list>
-      <ion-menu-toggle auto-hide="false">
+      <ion-menu-toggle (click)="openReportModal( user1?.violation,user1?.time )" auto-hide="false">
         <ion-item class="menu">
           <ion-icon slot="start" name="clipboard"></ion-icon>
           <ion-icon slot="end" name="chevron-forward"></ion-icon>
@@ -71,7 +71,7 @@
 
 <ion-content class="background-image">
   <div class="image-container">
-    <ion-img [src]="user.profilePic" alt="Profile Picture" class="profile-pic"></ion-img>
+    <ion-img [src]="user.profilePic" class="profile-pic"></ion-img>
   </div>
   <ion-item class="no-border">
     <ion-label class="center">{{ user?.name }}</ion-label>
@@ -79,4 +79,6 @@
   <ion-item class="no-border">
     <ion-label class="font">{{ user?.college }} - {{ user?.year }}</ion-label>
   </ion-item>
+
+ 
 </ion-content>

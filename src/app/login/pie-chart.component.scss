@@ -1,0 +1,28 @@
+.chart-container {
+  display: flex;
+  justify-content: center; /* Horizontal centering */
+  align-items: center; /* Vertical centering */
+  font-size: 1px;
+}
+/* Adjust the legend font size and height as needed */
+.chart-container ngx-charts-legend {
+  
+  height: auto; /* Set the height of the legend as per your requirement */
+}
+
+/* Adjust the chart container height to accommodate the chart and legend */
+.chart-container ngx-charts-pie-chart {
+    height: auto; /* Set the height of the chart container to accommodate the chart and legend */
+}
+
+/* If you want to add some space between the chart and legend, you can use margin */
+.chart-container ngx-charts-legend.below {
+  margin-top: 60px;
+padding-bottom: 20px;
+
+}
+
+
+::ng-deep .ngx-charts-legend-item {
+    padding: 8px; /* Adjust the value as per your requirement */
+  }

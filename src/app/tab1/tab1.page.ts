@@ -5,6 +5,8 @@ import { ActivatedRoute } from '@angular/router';
 import { Router } from '@angular/router';
 import { DataService } from 'src/app/data.service';
 import { saveAs } from 'file-saver';
+import { ModalController } from '@ionic/angular';
+import { ReportModalComponent } from './report-modal.component';
 
 
 @Component({
@@ -14,10 +16,12 @@ import { saveAs } from 'file-saver';
 })
 export class Tab1Page implements OnInit {
   username: string;
-  user: User = {}; // Initialize with an empty object
+  user: User = {};
+   user1: User1 = {}; // Initialize with an empty object
   safeProfilePicUrl: SafeResourceUrl;
   showFormsDropdown = false;
   isClassDisabled = true;
+
 
   constructor(
     private route: ActivatedRoute,
@@ -25,6 +29,7 @@ export class Tab1Page implements OnInit {
 
     private router: Router,
     private dataService: DataService,
+    private modalController: ModalController
 
   ) {}
 
@@ -76,6 +81,7 @@ export class Tab1Page implements OnInit {
 
       if (this.username) {
         this.displayUserInfo();
+        this.displayUserInfo1()
       }
     });
   }
@@ -121,7 +127,11 @@ export class Tab1Page implements OnInit {
           const name = nameNode || '';
           const college = collegeNode || '';
           const year = yearNode || '';
-          const profilePic = profilePicNode || '';
+          let profilePic = profilePicNode || '';
+          const fallbackImage = 'assets/userpic.png';
+          if (!profilePic) {
+            profilePic = fallbackImage;
+          }
 
           this.user = {
             name,
@@ -134,6 +144,60 @@ export class Tab1Page implements OnInit {
       }
     });
   }
+  
+
+  displayUserInfo1() {
+   
+    this.http.get('assets/sanctions.xml', { responseType: 'text' }).subscribe((xmlData) => {
+      const parser = new DOMParser();
+      const xmlDoc = parser.parseFromString(xmlData, 'application/xml');
+
+      const users = xmlDoc.getElementsByTagName('Forms');
+
+      for (let i = 0; i < users.length; i++) {
+        const currentUser = users[i];
+        const currentUsername = currentUser.getElementsByTagName('srcode')[0]?.textContent;
+
+        if (currentUsername === this.username) {
+          const nameNode = currentUser.getElementsByTagName('violation')[0]?.textContent;
+          const collegeNode = currentUser.getElementsByTagName('time')[0]?.textContent;
+        
+     
+         
+          const violation = nameNode || '';
+          const time = collegeNode || '';
+         
+          this.user1 = {
+      
+            violation,
+            time,
+        
+          };
+          break;
+        }
+      }
+    });
+  }
+
+  async openReportModal(report: string, violation:string) {
+    const modal = await this.modalController.create({
+      component: ReportModalComponent,
+      componentProps: {
+ 
+        report: report,
+        violation: violation
+      }
+    });
+
+    return await modal.present();
+  }
+}
+
+interface User1 {
+
+  violation?: string;
+  time?: string;
+  
 }
 
 interface User {
