@@ -168,4 +168,16 @@
      <profilePic>assets/CJ_ID.jpg</profilePic>
   </user>
   
+
+     <user>
+    <username>12345</username>
+    <password>12345</password>
+    <role>head</role>
+    <dept>COE</dept>
+    <sanctions>N/A</sanctions>
+     <name>OSD HEAD</name>
+    <college>GUEST LECTURER I</college>
+    <year>OSD HEAD</year>
+     <profilePic></profilePic>
+  </user>
 </users>

@@ -39,21 +39,27 @@ const routes: Routes = [
       path: 'tabadmin1',
       loadChildren: () => import('./tabadmin1/tabadmin1.module').then( m => m.Tabadmin1PageModule)
     },
-    {
-      path: 'tabadmin2',
-      loadChildren: () => import('./tabadmin2/tabadmin2.module').then( m => m.Tabadmin2PageModule)
-    },
+    
   
     {
       path: 'tabadmin3',
       loadChildren: () => import('./tabadmin3/tabadmin3.module').then( m => m.Tabadmin3PageModule)
-    },  {
+    },
+  {
     path: 'osdhome',
     loadChildren: () => import('./osdhome/osdhome.module').then( m => m.OsdhomePageModule)
   },
   {
     path: 'osdlogs',
     loadChildren: () => import('./osdlogs/osdlogs.module').then( m => m.OsdlogsPageModule)
+  },
+  {
+    path: 'osdnotif',
+    loadChildren: () => import('./osdnotif/osdnotif.module').then( m => m.OsdnotifPageModule)
+  },
+  {
+    path: 'tabhead',
+    loadChildren: () => import('./tabhead/tabhead.module').then( m => m.TabheadPageModule)
   },
 
 ];
