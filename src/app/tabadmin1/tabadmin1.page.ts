@@ -65,7 +65,7 @@ export class Tabadmin1Page {
             const department = userNodes[i].getElementsByTagName('dept')[0]?.textContent;
   
             // Filter users based on role and department
-            if (role === 'student' && department === 'CICS') {
+            if (role === 'student' && department === this.department) {
               this.users.push({ username: username !== null ? username : '' });
             }
           }
