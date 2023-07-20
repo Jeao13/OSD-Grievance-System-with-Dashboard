@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { ActivatedRoute } from '@angular/router';
+import { DataService } from 'src/app/data.service';
 
 
 interface User {
@@ -17,6 +18,8 @@ export class Tabadmin1Page {
   username1: string;
   message: string;
   message1: string;
+
+  department :string;
  
   users: User[] = [];
   users2: users2 = {};
@@ -31,10 +34,29 @@ export class Tabadmin1Page {
   matchingData: any[] = [];
   showResults = false;
  
+  
+  constructor(private route: ActivatedRoute, private http: HttpClient,private dataService: DataService,) {
+    this.route.queryParams.subscribe((params) => {
+      this.username = params['username'];
+      if (this.username) {
+        // this.saveData();
+      }
+    });
+  }
 
 
   ngOnInit() {
-    this.loadUsernames();
+    
+
+    this.dataService.dept$.subscribe((dept) => {
+      if (dept) {
+        // Do whatever you want with the dept value here
+        
+        this.department=dept;
+        this.loadUsernames();
+       
+      }
+    });
     
   }
 
@@ -48,9 +70,17 @@ export class Tabadmin1Page {
   
           for (let i = 0; i < userNodes.length; i++) {
             const username = userNodes[i].getElementsByTagName('username')[0]?.textContent;
+            const role = userNodes[i].getElementsByTagName('role')[0]?.textContent;
+            const department = userNodes[i].getElementsByTagName('dept')[0]?.textContent;
+
+          
       
   
-            this.users.push({ username: username !== null ? username : ''});
+            if (role === 'student' && department === this.department) {
+           
+              this.users.push({ username: username !== null ? username : '' });
+              
+            }
           } 
   
           this.filteredUsers = this.users;
@@ -80,14 +110,6 @@ export class Tabadmin1Page {
     this.loadAndDisplayViolationReport()
   }
 
-  constructor(private route: ActivatedRoute, private http: HttpClient) {
-    this.route.queryParams.subscribe((params) => {
-      this.username = params['username'];
-      if (this.username) {
-        // this.saveData();
-      }
-    });
-  }
 
   saveData() {
    

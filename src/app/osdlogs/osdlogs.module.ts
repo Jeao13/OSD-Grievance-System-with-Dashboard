@@ -8,6 +8,9 @@ import { OsdlogsPageRoutingModule } from './osdlogs-routing.module';
 
 import { OsdlogsPage } from './osdlogs.page';
 
+import { ReportModalComponent } from './report-modal.component';
+import { ReportModalComponent1 } from './modal-status.component';
+
 @NgModule({
   imports: [
     CommonModule,
@@ -15,6 +18,6 @@ import { OsdlogsPage } from './osdlogs.page';
     IonicModule,
     OsdlogsPageRoutingModule
   ],
-  declarations: [OsdlogsPage]
+  declarations: [OsdlogsPage,ReportModalComponent,ReportModalComponent1]
 })
 export class OsdlogsPageModule {}

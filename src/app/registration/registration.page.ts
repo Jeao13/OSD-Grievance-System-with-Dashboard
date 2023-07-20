@@ -4,7 +4,7 @@ import { DomSanitizer } from '@angular/platform-browser';
 import { ActivatedRoute } from '@angular/router';
 import { DataService } from 'src/app/data.service';
 import { ModalController } from '@ionic/angular';
-import { ReportModalComponent } from './report-modal.component';
+
 import { ReportModalComponent1 } from './modal-status.component';
 
 
@@ -84,23 +84,15 @@ export class RegistrationPage {
       }
     );
   }
-  async openReportModal(report: string, violation:string) {
-    const modal = await this.modalController.create({
-      component: ReportModalComponent,
-      componentProps: {
-        report: report,
-        violation: violation
-      }
-    });
 
-    return await modal.present();
-  }
-  async openReportModal1(report: string, violation:string) {
+  async openReportModal1(report: string, violation:string, srcode:string) {
     const modal = await this.modalController.create({
       component: ReportModalComponent1,
       componentProps: {
         report: report,
-        violation: violation
+        violation: violation,
+        srcode: srcode,
+        functionInPage: this.loadAndDisplayViolationReport.bind(this)
       }
     });
 

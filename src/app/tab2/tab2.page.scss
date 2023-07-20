@@ -1,3 +1,4 @@
+
 ion-header {
   background-color: #333;
   color: #fff;
@@ -9,20 +10,31 @@ ion-title {
   padding: 10px;
 }
 
-.background {
+ion-toolbar{
   --background: linear-gradient(to right, rgba(189, 21, 21, 0.692), rgba(255,0,0,1));
+}
+
+.background{
+  --background: linear-gradient(to right, rgba(189, 21, 21, 0.692), rgba(255,0,0,1));
+
 }
 
 /* Styling for ion-content */
 ion-content {
   padding: 10px;
+  
   --ion-background-color:rgba(255, 255, 255, 0.8);
   --ion-item-background:rgba(255, 255, 255, 0.8);
+
+
   display: flex;
   align-items: center;
   justify-content: center;
+}
 
-  
+/* Styling for ion-list */
+ion-list {
+  margin-top: 10px;
 }
 
 /* Styling for ion-item */
@@ -33,21 +45,25 @@ ion-item {
   padding: 10px;
 
 }
-.custom-button {
-  --background: rgb(16, 204, 50);
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
-  font-size: 15px;
+
+ion-label h3 {
+  font-size: 18px;
   font-weight: bold;
+  margin-bottom: 5px;
 }
 
-ion-item{
-
-color: black;
-
-
+/* Styling for h3 within ion-label */
+ion-label h3:first-child {
+  color: #237cdc;
 }
 
 /* Styling for h2 within ion-label */
+ion-label h2 {
+  margin-bottom: 5px;
+  font-size: 16px;
+  color: black;
+}
+
 ion-label h1 {
   margin-bottom: 5px;
   font-size: 20px;
@@ -55,15 +71,18 @@ ion-label h1 {
   color: black;
 }
 
+
 /* Styling for p within ion-label */
 ion-label p {
   font-size: 14px;
   margin-bottom: 10px;
 }
 
-h2{
-font-size: 15px;
-
+/* Styling for ion-button */
+ion-button {
+  margin-top: 10px;
+  --background: green;
+  font-weight: bold;
 }
 
 /* Styling for ion-ripple-effect */

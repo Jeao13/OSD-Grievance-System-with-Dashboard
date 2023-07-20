@@ -75,24 +75,24 @@ export class PieChartComponent {
 
         this.forms.push({ srcode, violation, dept });
 
-        if (violation === 'ID Requirement' && dept === this.department) {
+        if (violation === 'ID Requirement') {
           this.idRequirementCount++;
          
         }
 
-        else if (violation === 'Classroom Rules and Regulations' && dept === this.department) {
+        else if (violation === 'Classroom Rules and Regulations') {
             this.ClassroomCount++;
           }
 
-        else if (violation === 'Proper Uniform, Dress Code and Other Related Rules/Regulations' && dept === this.department) {
+        else if (violation === 'Proper Uniform, Dress Code and Other Related Rules/Regulations' ) {
             this.UniformCount++;
           }
 
-        else if (violation === 'University Facilities and Premises' && dept === this.department) {
+        else if (violation === 'University Facilities and Premises') {
             this.FacilitiesCount++;
           }
 
-        else if (violation === 'Academic Dishonesty' && dept === this.department) {
+        else if (violation === 'Academic Dishonesty') {
             this.AcademicCount++;
           }
       }
@@ -121,11 +121,7 @@ export class PieChartComponent {
             return { ...item, value: this.AcademicCount };
           }
         return item;
-
-
-        
       });
-      
     });
   }
 }

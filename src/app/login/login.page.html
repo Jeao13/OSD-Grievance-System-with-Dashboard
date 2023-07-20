@@ -6,7 +6,7 @@
   </ion-header>
 
   <ion-content>
-    <ion-list>
+    <ion-list class="lop">
       <ion-menu-toggle (click)="sanction()" auto-hide="false">
         <ion-item class="menu">
           <ion-icon slot="start" name="clipboard"></ion-icon>
@@ -14,14 +14,7 @@
           <ion-label>Sanctions</ion-label>
         </ion-item>
       </ion-menu-toggle>
-  
-      <ion-menu-toggle (click)="file()" auto-hide="false">
-        <ion-item class="menu" >
-          <ion-icon slot="start" name="file-tray-full"></ion-icon>
-          <ion-icon slot="end" name="caret-forward"></ion-icon>
-          <ion-label>File Complaint</ion-label>
-        </ion-item>
-      </ion-menu-toggle>
+
   
       <ion-menu-toggle auto-hide="false">
         <ion-item class="forms-item" (click)="toggleClass($event)">
@@ -32,18 +25,72 @@
       </ion-menu-toggle>
  
       <ion-item class="forms"  [ngClass]="{'hide-item': isClassDisabled}">
-        <ion-label>Formal Complaint Letter</ion-label>
+        <ion-label>Request for Non Wearing of Uniform</ion-label>
         <ion-button class="button-dl" (click)="downloadFile()">
   
           Download
         </ion-button>
       </ion-item>
       <ion-item class="forms"[ngClass]="{'hide-item': isClassDisabled}">
-        <ion-label >Request for New ID</ion-label>
+        <ion-label >Notice of Case Dismissal</ion-label>
         <ion-button class="button-dl"(click)="downloadFile1()">
         
           Download
         </ion-button>
+
+        
+      </ion-item> 
+
+      <ion-item class="forms"  [ngClass]="{'hide-item': isClassDisabled}">
+        <ion-label>Call Slip</ion-label>
+        <ion-button class="button-dl" (click)="downloadFile2()">
+  
+          Download
+        </ion-button>
+      </ion-item>
+      <ion-item class="forms"[ngClass]="{'hide-item': isClassDisabled}">
+        <ion-label >Temporary Gate Pass</ion-label>
+        <ion-button class="button-dl"(click)="downloadFile3()">
+        
+          Download
+        </ion-button>
+
+        
+      </ion-item> 
+
+      <ion-item class="forms"  [ngClass]="{'hide-item': isClassDisabled}">
+        <ion-label>Student Incident Report</ion-label>
+        <ion-button class="button-dl" (click)="downloadFile4()">
+  
+          Download
+        </ion-button>
+      </ion-item>
+      <ion-item class="forms"[ngClass]="{'hide-item': isClassDisabled}">
+        <ion-label >Letter of Suspension</ion-label>
+        <ion-button class="button-dl"(click)="downloadFile5()">
+        
+          Download
+        </ion-button>
+
+        
+      </ion-item> 
+
+      
+      <ion-item class="forms"  [ngClass]="{'hide-item': isClassDisabled}">
+        <ion-label>Written Reprimand for Violation of Norms of Conduct</ion-label>
+        <ion-button class="button-dl" (click)="downloadFile6()">
+  
+          Download
+        </ion-button>
+      </ion-item>
+      <ion-item class="forms"[ngClass]="{'hide-item': isClassDisabled}">
+        <ion-label >Written Warning for Violation of Norms of Conduct</ion-label>
+        <ion-button class="button-dl"(click)="downloadFile7()">
+        
+          Download
+        </ion-button>
+
+        
       </ion-item> 
     </ion-list>
   </ion-content>

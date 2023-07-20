@@ -1,18 +1,29 @@
 ion-content {
   --ion-background-color: rgba(255, 255, 255, 0.8);
-  --ion-item-background: rgba(255, 255, 255);
+
   scrollbar-width: none;
   -ms-overflow-style: none;
   overflow: hidden;
+}
+
+ion-item{
+  background-color: rgb(255, 255, 255);
 }
 
 .icons{
   color: rgb(255, 255, 255);
 }
 
+.lop{ background-color: rgb(255, 255, 255);}
+
 .menu{
   --background: transparent;
 }
+
+ion-image{
+  border: 0px;
+}
+
 
 ion-icon {
   color: rgb(0, 0, 0);
@@ -38,6 +49,7 @@ ion-icon {
   font-weight: bold;
   height: auto;
   font-size: 10px;
+  --background: linear-gradient(to right, rgba(189, 21, 21, 0.692), rgba(255,0,0,1));
 
 }
 
@@ -53,9 +65,10 @@ ion-icon {
 }
 
 .profile-pic {
-  width: 50%;
-  height: 50%;
-  border-style: solid;
+  width: 300px;
+  height: 250px;
+ 
+ 
 }
 
 .image-container {
@@ -64,6 +77,7 @@ ion-icon {
   align-items: center;
   padding-top: 10px;
   padding-bottom: 10px;
+  background-color: rgba(255, 255, 255);
 }
 
 .font {
@@ -127,12 +141,18 @@ ion-card-title, .title{
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: rgb(189, 14, 14);
   padding-bottom: 0;
+  
+}
+
+ion-card-header{
+  background-color: rgb(255, 255, 255);
 }
 
 ion-card-content{
   font-size: 14px;
   color: black;
   padding-top: 0;
+  background-color: rgb(255, 255, 255);
 }
 
 ion-card {
@@ -152,16 +172,24 @@ hr {
   display: none;
 }
 .num-container {
-  max-width: 600px;
-  margin: 0 auto;
-  margin-top: 16px;
+  
   padding: 10px;
-  background:rgba(255, 255, 255, 0.671);
+  background:rgba(255, 255, 255, 0.532);
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
-  border-radius: 10px;
+  border-radius: 30px;
+  width:fit-content;
+
+}
+.center-container {
   margin-left: 20px;
   margin-right: 20px;
-
+  margin-bottom: 20px;
+  margin-top: 200px; /* Adjust the margin as needed */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Adjust the height as needed */
+  padding: fit;
 }
 
 table {
@@ -187,5 +215,5 @@ th {
 }
 
 td:hover {
-  background-color: #ff8d8dc5;
+  background-color: #ff8d8d;
 }

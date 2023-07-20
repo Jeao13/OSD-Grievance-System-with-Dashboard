@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
+import { HttpClient,HttpHeaders } from '@angular/common/http';
 import { DomSanitizer } from '@angular/platform-browser';
 import { ActivatedRoute } from '@angular/router';
 import { DataService } from 'src/app/data.service';
@@ -67,5 +67,27 @@ export class Tab3Page {
       }
     );
   }
+  clearDataInXMLFile() {
+    const url = 'http://localhost/clear-stunotif.php'; // Replace with the correct URL of your PHP file\
+    const data = {
+      srcode: this.username
+ 
+        
+
+    };
+
+    // Make a POST request to the PHP file
+    this.http.post(url, data).subscribe(
+      (response) => {
+        console.log('Contents cleared successfully:', response);
+        this.loadAndDisplayViolationReport();
+      },
+      (error) => {
+        console.error('Error clearing contents:', error);
+        // Handle the error response here, if needed
+      }
+    );
+  }
+
 
 }

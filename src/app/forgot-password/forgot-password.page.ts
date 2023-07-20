@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { ActivatedRoute } from '@angular/router';
+import {ToastController } from '@ionic/angular';
 
 @Component({
   selector: 'app-forgot-password',
@@ -14,7 +15,7 @@ export class ForgotPasswordPage {
   message: string;
   message1: string;
 
-  constructor(private route: ActivatedRoute, private http: HttpClient) {
+  constructor(private route: ActivatedRoute, private http: HttpClient,   private toastController: ToastController) {
     this.route.queryParams.subscribe((params) => {
       this.username = params['username'];
       if (this.username) {
@@ -22,6 +23,20 @@ export class ForgotPasswordPage {
       }
     });
   }
+
+  showAlertMessage() {
+    this.showToastMessage();
+  }
+
+  async showToastMessage() {
+    const toast = await this.toastController.create({
+      message: 'Your report has been submitted',
+      duration: 1000, // Show the toast for 2 seconds
+      position: 'middle'
+    });
+    toast.present();
+  }
+
 
   saveData() {
     const apiUrl1 = 'http://localhost/modify-adnotif.php';
@@ -61,6 +76,7 @@ export class ForgotPasswordPage {
     this.http.post(apiUrl1, data1).subscribe(
       () => {
         console.log('Data saved successfully');
+        this.showAlertMessage();
       },
       (error) => {
         console.error('Error saving data:', error);
