@@ -6,8 +6,10 @@ ion-content {
   overflow: hidden;
 }
 
-ion-item{
-  background-color: rgb(255, 255, 255);
+ion-title {
+  font-size: 20px;
+  font-weight: bold;
+  padding: 10px;
 }
 
 .icons{
@@ -27,7 +29,8 @@ ion-image{
 
 ion-icon {
   color: rgb(0, 0, 0);
-  }
+}
+
 .forms-item {   
   border-bottom: 1px solid black;
 }
@@ -49,7 +52,7 @@ ion-icon {
   font-weight: bold;
   height: auto;
   font-size: 10px;
-  --background: linear-gradient(to right, rgba(189, 21, 21, 0.692), rgba(255,0,0,1));
+  --background: rgb(235, 34, 34);  --background: linear-gradient(to right, rgba(189, 21, 21, 0.692), rgba(255,0,0,1));
 
 }
 
@@ -61,30 +64,25 @@ ion-icon {
   text-align: center;
   font-weight: bold;
   font-size: large;
-  margin-right: 0;
 }
 
 .profile-pic {
-  width: 300px;
-  height: 250px;
- 
- 
+  width: 200px;
+  height: 200px;
+  padding-top: 20px;
 }
 
 .image-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  background-color: rgba(255, 255, 255);
+  padding-bottom: 20px;
 }
 
 .font {
   font-size: small;
   text-align: center;
   font-weight: bold;
-  margin-right: 0;
 }
 
 .btn-right {
@@ -94,8 +92,7 @@ ion-icon {
 }
 
 .button-dl{
-
-  --background: rgb(10, 230, 50);
+  --background: rgb(19, 196, 43);
   font-size: 10px;
   font-weight: bold;
 }
@@ -111,8 +108,7 @@ ion-item, .no-border {
   --background: transparent;
   --color: black;  
   --border-style: none; /* Remove border style */
-  text-align: center;
-}
+ }
 
 .background-image {
   position: relative;
@@ -132,11 +128,36 @@ ion-item, .no-border {
   filter: grayscale(100%); /* Apply grayscale filter */
 }
 
-ion-title{
-  color: aliceblue;
+.hide-item {
+  display: none;
 }
 
-ion-card-title, .title{
+.profile-container {
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.532);
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 30px;
+  width: fit-content;
+  margin: 20px auto; /* Center the element horizontally */
+  margin-bottom: 20px;
+  display: block;
+  justify-content: center; /* Center the content horizontally */
+  align-items: center; /* Center the content vertically */
+}
+
+.info-container {
+  max-width: 548px; /* Set a maximum width for the container */
+  margin: 0 auto; /* Center the container horizontally */
+  padding: 20px; /* Add some padding for better visual appearance */
+
+  /* Optional: Add a background color, border, and box-shadow */
+  background-color: rgba(255, 255, 255, 0.532);
+  border-radius: 20px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.info-container h1 {
+  text-align: left; /* Center the headings */
   font-size: 20px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: rgb(189, 14, 14);
@@ -148,48 +169,220 @@ ion-card-header{
   background-color: rgb(255, 255, 255);
 }
 
-ion-card-content{
-  font-size: 14px;
-  color: black;
-  padding-top: 0;
-  background-color: rgb(255, 255, 255);
+h1 {
+  text-align: left; /* Center the headings */
+  font-size: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: rgb(189, 14, 14);
+  padding-bottom: 0;
+  font-weight: bold;
 }
 
-ion-card {
-  --border-radius: 0;
+.info-container p {
+  text-align: justify; /* Justify the text for better readability */
+  margin-bottom: 20px; /* Add some space between paragraphs */
 }
 
-hr {
-  border: 0;
-  border-top: 1px solid rgba(0,0,0,.1);
-  box-sizing: content-box;
-  height: 0;
-  overflow: visible;
+.num-container {
+  padding: 20px;
+  background:rgba(255, 255, 255, 0.532);
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  width: 552px;
 }
 
+.center-container {
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+ion-content {
+  --ion-background-color: rgba(255, 255, 255, 0.8);
+  --ion-item-background: rgba(255, 255, 255);
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  overflow: hidden;
+}
+
+ion-title {
+  font-size: 20px;
+  font-weight: bold;
+  padding: 10px;
+}
+
+.icons{
+  color: rgb(255, 255, 255);
+}
+
+.menu{
+  --background: transparent;
+}
+
+ion-icon {
+  color: rgb(0, 0, 0);
+}
+
+.forms-item {   
+  border-bottom: 1px solid black;
+}
+
+.forms{
+--background: rgba(255, 255, 255, 0.236);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: -200px;
+  height: 100%;
+}
+
+.header-toolbar {
+  font-weight: bold;
+  height: auto;
+  font-size: 10px;
+  --background: rgb(235, 34, 34);
+}
+
+.background{
+  --background: linear-gradient(to right, rgba(189, 21, 21, 0.692), rgba(255,0,0,1));
+}
+
+.center { 
+  text-align: center;
+  font-weight: bold;
+  font-size: large;
+}
+
+.profile-pic {
+  width: 200px;
+  height: 200px;
+  padding-top: 20px;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 20px;
+}
+
+.font {
+  font-size: small;
+  text-align: center;
+  font-weight: bold;
+}
+
+.btn-right {
+  display: flex;
+  justify-content: flex-end;
+  --background: transparent;
+}
+
+.button-dl{
+  --background: rgb(19, 196, 43);
+  font-size: 10px;
+  font-weight: bold;
+}
+
+.custom-text-button {
+  color: rgb(255, 255, 255);
+  font-size: 10px;
+  font-weight: bold;
+  /* Add more custom styles as needed */
+}
+
+ion-item, .no-border {
+  --background: transparent;
+  --color: black;  
+  --border-style: none; /* Remove border style */
+ }
+
+.background-image {
+  position: relative;
+}
+
+.background-image::before {
+  content: "";
+  background: url('/assets/Alangilan.jpg') no-repeat center center fixed;
+  background-size: cover;
+  opacity: 0.8;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  filter: grayscale(100%); /* Apply grayscale filter */
+}
 
 .hide-item {
   display: none;
 }
-.num-container {
-  
+
+.profile-container {
   padding: 10px;
-  background:rgba(255, 255, 255, 0.532);
+  background: rgba(255, 255, 255, 0.532);
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
   border-radius: 30px;
-  width:fit-content;
-
-}
-.center-container {
-  margin-left: 20px;
-  margin-right: 20px;
+  width: fit-content;
+  margin: 20px auto; /* Center the element horizontally */
   margin-bottom: 20px;
-  margin-top: 200px; /* Adjust the margin as needed */
+  display: block;
+  justify-content: center; /* Center the content horizontally */
+  align-items: center; /* Center the content vertically */
+}
+
+.info-container {
+  max-width: 548px; /* Set a maximum width for the container */
+  margin: 0 auto; /* Center the container horizontally */
+  padding: 20px; /* Add some padding for better visual appearance */
+
+  /* Optional: Add a background color, border, and box-shadow */
+  background-color: rgba(255, 255, 255, 0.532);
+  border-radius: 20px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.info-container h1 {
+  text-align: left; /* Center the headings */
+  font-size: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: rgb(189, 14, 14);
+  padding-bottom: 0;
+}
+
+h1 {
+  text-align: left; /* Center the headings */
+  font-size: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: rgb(189, 14, 14);
+  padding-bottom: 0;
+  font-weight: bold;
+}
+
+.info-container p {
+  text-align: justify; /* Justify the text for better readability */
+  margin-bottom: 20px; /* Add some space between paragraphs */
+}
+
+.center-container {
+  margin: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh; /* Adjust the height as needed */
-  padding: fit;
+}
+
+.num-container {
+  padding: 20px;
+  background:rgba(255, 255, 255, 0.532);
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  width: 552px;
 }
 
 table {
@@ -198,22 +391,59 @@ table {
   margin-top: 10px;
 }
 
-th,
-td {
+th, td {
   --border-style: none; /* Remove border style */
-  font-size: x-small;
+  font-size: initial;
   color: black;
   padding: 8px;
   text-align: left;
-
 }
 
 th { 
-  white-space:nowrap; 
-  background:transparent;
+  white-space: nowrap; 
+  background: transparent;
   font-weight: bold;
 }
 
 td:hover {
   background-color: #ff8d8d;
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid rgba(0, 0, 0, .1);
+  box-sizing: content-box;
+  height: 0;
+  overflow: visible;
+}
+
+/* Add styles for equal-width columns and justify text */
+td {
+  width: 50%; /* Divide the table columns equally */
+}
+
+/* Justify the text in table cells */
+td, th {
+  text-align: justify;
+}
+
+/* Optional: Add hyphens to break long words in justified text */
+td, th {
+  hyphens: auto;
+}
+
+p {
+  line-height: 1.5rem;
+}
+
+h1, ion-icon {
+  vertical-align: middle;
+}
+
+p {
+  line-height: 1.5rem;
+}
+
+h1, ion-icon {
+  vertical-align: middle;
 }
