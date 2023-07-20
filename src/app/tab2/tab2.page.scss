@@ -61,6 +61,7 @@ ion-item {
 ion-button {
   margin-top: 10px;
   --background: green;
+}
 
 ion-label h3 {
   font-size: 18px;
@@ -71,6 +72,8 @@ ion-label h3 {
 ion-item {
   color: black;
 /* Styling for h3 within ion-label */
+}
+
 ion-label h3:first-child {
   color: #237cdc;
 }
