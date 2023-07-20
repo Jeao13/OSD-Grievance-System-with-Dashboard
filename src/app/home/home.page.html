@@ -3,11 +3,10 @@
     <ion-card>
       <ion-card-header>
         <ion-card-title>
-            <img src="/assets/LOGO.png" alt="Logo">
+            <img class="hakdog" src="/assets/LOGO.png" alt="Logo">
         </ion-card-title>
       </ion-card-header>
       <ion-card-content>
-        <h2 class="login-title">Grievance System Login</h2>
           <form (ngSubmit)="validateForm()">
             <ion-item>
               <ion-input placeholder="Username" type="text" [(ngModel)]="username" name="username"></ion-input>

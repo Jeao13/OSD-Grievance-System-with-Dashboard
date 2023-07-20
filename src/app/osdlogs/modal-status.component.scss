@@ -1,25 +1,18 @@
-.modal-container {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  
 
-  ion-card {
-    background-color: transparent;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  }
-
-  .card-content {
-    color:black;
-    background-color: white;
+ ion-card{
+  background-color: white;
+ }
+ ion-item {
+  --background: transparent;
+  --color: black;
+  --ion-item-background: transparent;
+  --ion-color-base: transparent;
+  --ion-color-primary: transparent;
+  --ion-color-primary-contrast: transparent;
+  margin-top: 20px;
+}
+  .card-content {   
     padding: 20px;
-    width:800px;
-    height:600px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     --background: transparent;
@@ -28,9 +21,7 @@
     --ion-color-base: transparent;
     --ion-color-primary: transparent;
     --ion-color-primary-contrast: transparent;
-    
   }
-}
 
 .header-toolbar {
   font-weight: bold;
@@ -40,11 +31,12 @@
 }
 
 .custom-image {
-  --background: rgba(255, 255, 255, 0.686);
+  --background: white;
 }
+
 pre {
-  
-  background-color: white;
+  color:black;
+  background-color: rgb(255, 255, 255);
   font-size: 16px;
   overflow: hidden;
   text-overflow: ellipsis;

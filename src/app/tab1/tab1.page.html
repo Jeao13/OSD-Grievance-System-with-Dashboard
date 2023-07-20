@@ -6,8 +6,8 @@
   </ion-header>
 
 
-  <ion-content>
-    <ion-list>
+  <ion-content >
+    <ion-list class="lop">
       <ion-menu-toggle (click)="openReportModal( user1?.violation,user1?.time )" auto-hide="false">
         <ion-item class="menu">
           <ion-icon slot="start" name="clipboard"></ion-icon>
@@ -82,159 +82,28 @@
   </ion-item>
   </div>
   
-  
-  <div class="info-container">
-    <h1>OSD Profile:</h1>
-      <hr>
-        <p>
-          The Office of Student Discipline is one of the student-service offices of this University which 
-          implement rules and regulations. It is commited to serve equally, all involved parties in an 
-          unbiased and fair manner. OSD aims to cultivate a strong sense of self discipline within the 
-          students in a healthy university environment through disciplinary procedures which are in line
-          with the vision and mission of the university.
-        </p>
-  
-    <h1>Services Offered:</h1>
-      <hr>
-        <p>
-          1. Recieve, evaluate and approve the Request for New ID.<br>
-          2. Evaluation for the approval and relese of the request for non-wearing of school uniform.<br>
-          3. Provide temporary gate pass to requesting student.<br>
-          4. Orientation for incoming student trainees.<br>
-          5. Orientation / Re-orientation seminar for security personnel.<br>
-          6. Answer queries regarding student discipline matters.<br>
-          7. To evaluate the disciplinary proceedings and disciplinary sanctions to erring students to ascertain the proper implementation of disciplinary process.
-        </p>
-  </div>
 
+  <ion-card-content>
+    The Office of Student Discipline is one of the student-service offices of this University which 
+    implement rules and regulations. It is commited to serve equally, all involved parties in an 
+    unbiased and fair manner. OSD aims to cultivate a strong sense of self discipline within the 
+    students in a healthy university environment through disciplinary procedures which are in line
+    with the vision and mission of the university.
+  </ion-card-content>
 
-  <div class="center-container">
-    <div class="num-container">
-      <h1><ion-icon name="call"></ion-icon>Trunklines</h1>
-      <hr>
-      <table>
-        <tr>
-          <td>PABLO BORBON</td>
-          <td>(043) 779-8400</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>(043) 779-8401</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>(043) 779-8402</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>(043) 779-8403</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>(043) 779-8404</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>(043) 779-8405</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>(043) 779-8406</td>
-        </tr>
-        <tr>
-          <td>ALANGILAN</td>
-          <td>(043) 425-0139</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>(043) 425-0143</td>
-        </tr>
-        <tr>
-          <td>ARASOF-NASUGBU</td>
-          <td>(043) 416-0349</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>(043) 416-0350</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>(043) 416-0068</td>
-        </tr>
-        <tr>
-          <td>JPLPC-MALVAR</td>
-          <td>(043) 778-2170</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>(043) 778-6633</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>(043) 406-0830</td>
-        </tr>
-      </table>
-        
-      <h1><ion-icon name="mail"></ion-icon>Emails</h1>
-      <hr>
-      <table>
-        <tr>
-          <td>Registrar</td>
-          <td>pablo.borbon@g.batstate-u.edu.ph</td>
-        </tr>
-        <tr>
-          <td>Alangilan</td>
-          <td>registrar.alangilan@g.batstate-u.edu.ph</td>
-        </tr>
-        <tr>
-          <td>Malvar</td>
-          <td>registrar.malvar@g.batstate-u.edu.ph</td>
-        </tr>
-        <tr>
-          <td>Nasugbu</td>
-          <td>registrar.nasugbu@g.batstate-u.edu.ph</td>
-        </tr>
-        <tr>
-          <td>ICT Services</td>
-          <td>ict.pb@g.batstate-u.edu.ph</td>
-        </tr>
-        <tr>
-          <td>Alangilan</td>
-          <td>ict.alangilan@g.batstate-u.edu.ph</td>
-        </tr>
-        <tr>
-          <td>Malvar</td>
-          <td>ict.malvar@g.batstate-u.edu.ph</td>
-        </tr>
-        <tr>
-          <td>Nasugbu</td>
-          <td>ictsupport.nasugbu@g.batstate-u.edu.ph</td>
-        </tr>
-        <tr>
-          <td>Lipa</td>
-          <td>ict.lipa@g.batstate-u.edu.ph</td>
-        </tr>
-        <tr>
-          <td>Balayan</td>
-          <td>ict.balayan@g.batstate-u.edu.ph</td>
-        </tr>
-        <tr>
-          <td>Lemery</td>
-          <td>ict.lemery@g.batstate-u.edu.ph</td>
-        </tr>
-        <tr>
-          <td>San Juan</td>
-          <td>ict.sanjuan@g.batstate-u.edu.ph</td>
-        </tr>
-        <tr>
-          <td>Rosario</td>
-          <td>ict.rosario@g.batstate-u.edu.ph</td>
-        </tr>
-        <tr>
-          <td>Lobo</td>
-          <td>ict.lobo@g.batstate-u.edu.ph</td>
-        </tr>
-      </table>
-    </div>
-  </div>
+  <ion-card-header>
+    <ion-card-title>Services Offered:</ion-card-title>
+  </ion-card-header>
+
+  <ion-card-content>
+    1. Recieve, evaluate and approve the Request for New ID.<br>
+    2. Evaluation for the approval and relese of the request for non-wearing of school uniform.<br>
+    3. Provide temporary gate pass to requesting student.<br>
+    4. Orientation for incoming student trainees.<br>
+    5. Orientation / Re-orientation seminar for security personnel.<br>
+    6. Answer queries regarding student discipline matters.<br>
+    7. To evaluate the disciplinary proceedings and disciplinary sanctions to erring students to ascertain the proper implementation of disciplinary process.
+  </ion-card-content>
+</ion-card>
+ 
 </ion-content>

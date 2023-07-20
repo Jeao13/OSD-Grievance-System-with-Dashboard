@@ -72,4 +72,26 @@ export class Tabadmin3Page {
     );
   }
 
+  clearDataInXMLFile() {
+    const url = 'http://localhost/clear-stunotif.php'; // Replace with the correct URL of your PHP file\
+    const data = {
+      srcode: this.username
+ 
+        
+
+    };
+
+    // Make a POST request to the PHP file
+    this.http.post(url, data).subscribe(
+      (response) => {
+        console.log('Contents cleared successfully:', response);
+        this.loadAndDisplayViolationReport();
+      },
+      (error) => {
+        console.error('Error clearing contents:', error);
+        // Handle the error response here, if needed
+      }
+    );
+  }
+
 }

@@ -1,6 +1,6 @@
 ion-content {
   --ion-background-color: rgba(255, 255, 255, 0.8);
-  --ion-item-background: rgba(255, 255, 255);
+
   scrollbar-width: none;
   -ms-overflow-style: none;
   overflow: hidden;
@@ -16,9 +16,16 @@ ion-title {
   color: rgb(255, 255, 255);
 }
 
+.lop{ background-color: rgb(255, 255, 255);}
+
 .menu{
   --background: transparent;
 }
+
+ion-image{
+  border: 0px;
+}
+
 
 ion-icon {
   color: rgb(0, 0, 0);
@@ -45,7 +52,8 @@ ion-icon {
   font-weight: bold;
   height: auto;
   font-size: 10px;
-  --background: rgb(235, 34, 34);
+  --background: rgb(235, 34, 34);  --background: linear-gradient(to right, rgba(189, 21, 21, 0.692), rgba(255,0,0,1));
+
 }
 
 .background{
@@ -154,6 +162,11 @@ ion-item, .no-border {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: rgb(189, 14, 14);
   padding-bottom: 0;
+  
+}
+
+ion-card-header{
+  background-color: rgb(255, 255, 255);
 }
 
 h1 {

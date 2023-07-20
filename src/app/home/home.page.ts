@@ -28,6 +28,7 @@ export class HomePage {
         const users = xmlDoc.getElementsByTagName('user');
         let authenticated = false;
         let authenticated1 = false;
+        let authenticated2 = false;
 
         for (let i = 0; i < users.length; i++) {
           const user = users[i];
@@ -40,8 +41,20 @@ export class HomePage {
             authenticated = true;
             break;  
           }
+
+          if (this.username === xmlUsername && this.password === xmlPassword && xmlrole === 'faculty') {
+            authenticated = true;
+            break;  
+          }
+
           else if(this.username === xmlUsername && this.password === xmlPassword && xmlrole ==='coordinator'){
             authenticated1 = true;
+            this.dept = xmldept;
+            break;
+          }
+
+          else if(this.username === xmlUsername && this.password === xmlPassword && xmlrole ==='head'){
+            authenticated2 = true;
             this.dept = xmldept;
             break;
           }
@@ -56,6 +69,12 @@ export class HomePage {
         
         else if (authenticated1) {
           this.router.navigate(['/tabadmin/login'], { queryParams: { username: this.username , dept:this.dept} });
+          this.username = '';
+          this.password = '';
+        } 
+
+        else if (authenticated2) {
+          this.router.navigate(['/tabhead/osdhome'], { queryParams: { username: this.username , dept:this.dept} });
           this.username = '';
           this.password = '';
         } 

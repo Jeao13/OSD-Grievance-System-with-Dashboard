@@ -33,10 +33,8 @@ import { HttpClient } from '@angular/common/http';
   `
 })
 export class ReportModalComponent1 {
-  @Input() srcode: string;
   @Input() violation: string;
   @Input() report: string;
-  @Input() functionInPage: () => void;
   message: string;
 
   constructor(private modalController: ModalController,   private http: HttpClient,) {}
@@ -46,7 +44,7 @@ export class ReportModalComponent1 {
   }
 
   saveData(x:string) {
-    const apiUrl1 = 'http://localhost/modify-notif.php';
+   
     const apiUrl = 'http://localhost/modify-status.php'; // Replace with the actual URL of your PHP script
     const data = {
       status: this.message,
@@ -62,45 +60,13 @@ export class ReportModalComponent1 {
 
     };
 
-    const data1 = {
-      
-     srcode: this.srcode,
-      violation: 'The status of your report has been changed',
-      timestamp: new Date().toLocaleString('en-US', {
-        hour: 'numeric',
-        minute: 'numeric',
-        year: 'numeric',
-        month: 'short',
-        day: 'numeric'
-      }    ),
-        
-
-    };
-
     this.http.post(apiUrl, data).subscribe(
       () => {
         console.log('Data saved successfully');
-        
       },
       (error) => {
         console.error('Error saving data:', error);
       }
     );
-
-    this.http.post(apiUrl1, data1).subscribe(
-      () => {
-        console.log('Data saved successfully');
-        this.functionInPage();
-        console.log(this.srcode);
-      },
-      (error) => {
-        console.error('Error saving data:', error);
-        console.log(this.srcode);
-      }
-    );
-
-
   }
-
-
 }

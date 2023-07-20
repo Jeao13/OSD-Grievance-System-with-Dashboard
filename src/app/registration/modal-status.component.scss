@@ -13,6 +13,8 @@
 }
   .card-content {   
     padding: 20px;
+    width:800px;
+    height:600px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     --background: transparent;
@@ -22,6 +24,8 @@
     --ion-color-primary: transparent;
     --ion-color-primary-contrast: transparent;
   }
+
+ 
 
 .header-toolbar {
   font-weight: bold;
