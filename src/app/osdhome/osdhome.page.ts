@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
 import { HttpClient } from '@angular/common/http';
-import { ActivatedRoute, Params } from '@angular/router'; 
+import { ActivatedRoute, Params } from '@angular/router';
 import { Router } from '@angular/router';
 import { DataService } from 'src/app/data.service';
 import { saveAs } from 'file-saver';
@@ -25,12 +25,12 @@ export class OsdhomePage implements OnInit {
   ];
 
   username: string;
-  dept:string;
+  dept: string;
   forms: Form[] = [];
   idRequirementCount = 0;
   user: User = {};
   cicsDeptCount = 0;
-  user1: User1 = {};// Initialize with an empty object
+  user1: User1 = {}; // Initialize with an empty object
   safeProfilePicUrl: SafeResourceUrl;
   showFormsDropdown = false;
   isClassDisabled = true;
@@ -40,12 +40,12 @@ export class OsdhomePage implements OnInit {
     private route: ActivatedRoute,
     private http: HttpClient,
     private router: Router,
-    private dataService: DataService,
+    private dataService: DataService
   ) {}
 
   downloadFile() {
     const fileUrl = 'assets/BatStateU-FO-OSD-07_Formal Complaint Letter_Rev. 02.pdf'; // Replace with the path to your file
-  
+
     this.http.get(fileUrl, { responseType: 'blob' }).subscribe(
       (response) => {
         saveAs(response, 'BatStateU-FO-OSD-07_Formal Complaint Letter_Rev. 02.pdf'); // Save the file locally with the desired name
@@ -59,7 +59,7 @@ export class OsdhomePage implements OnInit {
 
   downloadFile1() {
     const fileUrl = 'assets/BatStateU-FO-OSD-10_Request for New ID_Rev. 03.pdf'; // Replace with the path to your file
-  
+
     this.http.get(fileUrl, { responseType: 'blob' }).subscribe(
       (response) => {
         saveAs(response, 'BatStateU-FO-OSD-10_Request for New ID_Rev. 03.pdf'); // Save the file locally with the desired name
@@ -76,8 +76,7 @@ export class OsdhomePage implements OnInit {
 
     this.isClassDisabled = !this.isClassDisabled;
   }
- 
-    
+
   countCICSDeptData() {
     this.cicsDeptCount = this.forms.length;
   }
@@ -88,28 +87,27 @@ export class OsdhomePage implements OnInit {
       this.dept = params['dept'];
       this.dataService.setUsername(this.username);
       this.dataService.setDept(this.dept);
-  
+
       // Check if user data is stored in sessionStorage and retrieve it
       const storedUserData = sessionStorage.getItem('userData');
       if (storedUserData) {
         this.user = JSON.parse(storedUserData);
       }
-  
+
       const storedCicsDeptCount = sessionStorage.getItem('cicsDeptCount');
       if (storedCicsDeptCount) {
         this.cicsDeptCount = parseInt(storedCicsDeptCount);
       }
-  
+
       if (this.username) {
         this.displayUserInfo();
-        this.displayUserInfo1();
         if (!this.displayUserInfo1Executed) {
           this.displayUserInfo1Executed = true;
+          this.displayUserInfo1();
         }
       }
     });
   }
-
 
   sanction() {
     this.router.navigate(['/tabadmin1'], { queryParams: { username: this.username } });
@@ -122,16 +120,16 @@ export class OsdhomePage implements OnInit {
   toggleFormsDropdown() {
     this.showFormsDropdown = !this.showFormsDropdown;
   }
- 
+
   logout() {
     // Clear user data from local storage or session storage
     localStorage.removeItem('userToken');
     sessionStorage.clear();
     localStorage.removeItem('hasLoadedBefore');
-  
+
     // Reset any user-related variables to their default values
     this.username = '';
-  
+
     // Redirect the user to the login page and replace the current history entry
     this.router.navigate(['/home']);
     window.location.reload();
@@ -174,7 +172,7 @@ export class OsdhomePage implements OnInit {
         }
       }
 
-        sessionStorage.setItem('userData', JSON.stringify(this.user));
+      sessionStorage.setItem('userData', JSON.stringify(this.user));
     });
   }
 
@@ -184,7 +182,7 @@ export class OsdhomePage implements OnInit {
       const xmlDoc = parser.parseFromString(xmlData, 'application/xml');
 
       const usersNode = xmlDoc.getElementsByTagName('data');
-      
+
       for (let i = 0; i < usersNode.length; i++) {
         const form = usersNode[i];
         const srcode = form.getElementsByTagName('srcode')[0]?.textContent;
@@ -192,11 +190,9 @@ export class OsdhomePage implements OnInit {
         const dept = form.getElementsByTagName('dept')[0]?.textContent;
 
         this.forms.push({ srcode, violation, dept });
-
-       
       }
       this.cicsDeptCount = this.forms.length;
-      
+
       sessionStorage.setItem('cicsDeptCount', this.cicsDeptCount.toString());
       sessionStorage.setItem('userData', JSON.stringify(this.user));
     });
