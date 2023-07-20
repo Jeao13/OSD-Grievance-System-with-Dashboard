@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
-import { Tab1Page } from './tab1/tab1.page'; 
+import { Tab1Page } from './stuhome/tab1.page'; 
 
 const routes: Routes = [
   {
@@ -15,17 +15,17 @@ const routes: Routes = [
 
   {
     path: 'login',
-    loadChildren: () => import('./login/login.module').then( m => m.LoginPageModule)
+    loadChildren: () => import('./cordhome/login.module').then( m => m.LoginPageModule)
   },
 
   {
     path: 'registration',
-    loadChildren: () => import('./registration/registration.module').then( m => m.RegistrationPageModule)
+    loadChildren: () => import('./cordlogs/registration.module').then( m => m.RegistrationPageModule)
   },
 
   {
     path: 'forgot-password',
-    loadChildren: () => import('./forgot-password/forgot-password.module').then( m => m.ForgotPasswordPageModule)
+    loadChildren: () => import('./givereport/forgot-password.module').then( m => m.ForgotPasswordPageModule)
   },
 
   {
@@ -39,12 +39,12 @@ const routes: Routes = [
 
   {
     path: 'tabadmin1',
-    loadChildren: () => import('./tabadmin1/tabadmin1.module').then( m => m.Tabadmin1PageModule)
+    loadChildren: () => import('./givesanction/tabadmin1.module').then( m => m.Tabadmin1PageModule)
   },
   
   {
     path: 'tabadmin3',
-    loadChildren: () => import('./tabadmin3/tabadmin3.module').then( m => m.Tabadmin3PageModule)
+    loadChildren: () => import('./cordnotif/tabadmin3.module').then( m => m.Tabadmin3PageModule)
   },
 
   {
