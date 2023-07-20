@@ -8,6 +8,11 @@ ion-content {
   -ms-overflow-style: none;
   overflow: hidden;
 }
+ion-title {
+  font-size: 20px;
+  font-weight: bold;
+  padding: 10px;
+}
 .icons{
   color: rgb(255, 255, 255);
 }
@@ -15,7 +20,7 @@ ion-content {
   --background: transparent;
 }
 ion-icon {
-  color: rgba(0, 0, 0, 0.79);
+  color: rgb(0, 0, 0);
   }
 .forms-item {   
   border-bottom: 1px solid black;
@@ -126,18 +131,17 @@ ion-item,
 .hide-item {
   display: none;
 }
-.num-container {
-  max-width: 600px;
-  margin: 0 auto;
-  margin-top: 16px;
-  padding: 10px;
-  background:rgba(255, 255, 255, 0.671);
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
-  border-radius: 10px;
+.num-container {  
+  max-width: 552px;
   margin-left: 20px;
   margin-right: 20px;
-
+  margin-top: 16px;
+  padding: 10px;
+  background:rgba(255, 255, 255, 0.478);
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
 }
+
 
 table {
   width: 100%;
@@ -148,19 +152,21 @@ table {
 th,
 td {
   --border-style: none; /* Remove border style */
-  font-size: x-small;
+  font-size:small;
   color: black;
-  padding: 8px;
+  padding: 7px;
   text-align: left;
 
 }
 
 th { 
+ 
+  color: crimson;
   white-space:nowrap; 
   background:transparent;
   font-weight: bold;
 }
 
 td:hover {
-  background-color: #ff8d8dc5;
+  background-color: #ff8d8d;
 }

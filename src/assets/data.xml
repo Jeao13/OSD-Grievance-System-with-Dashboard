@@ -374,4 +374,42 @@ look at me now</report>
     <timestamp>Jul 19, 2023, 1:41 PM</timestamp>
     <status>Pending</status>
   </data>
+  <data>
+    <srcode>20-03025</srcode>
+    <dept>CICS</dept>
+    <violation>Classroom Rules and Regulations</violation>
+    <report>Subject: Complaint Regarding Product Quality
+
+I hope this letter finds you well. I am writing to express my deep dissatisfaction with the quality of the [Product Name] that I recently purchased from your company.
+
+On [Purchase Date], I bought the [Product Name] from your store located at [Store Address]. Unfortunately, upon using the product, I noticed several defects and discrepancies that have severely affected its performance. The issues I encountered include [describe the specific issues in detail].
+
+I must emphasize that I had high expectations from your brand, and this disappointing experience has left me frustrated and dissatisfied. As a loyal customer, I believe it is essential to bring such matters to your attention in the hope that you can address the quality concerns and prevent similar instances in the future.
+
+I kindly request that you take immediate action to resolve this matter. I would appreciate a replacement or refund for the defective product. Additionally, I hope you will conduct a thorough investigation into the quality control processes to prevent such issues from recurring.
+
+Please find attached copies of the purchase receipt and any other relevant documents. I expect a prompt response and a resolution to this matter within [reasonable timeframe, e.g., 14 days]. If I do not receive a satisfactory response, I may have no choice but to escalate the matter through relevant consumer protection channels.
+
+I value your company's reputation and hope that you will take this complaint seriously. I trust that you will uphold your commitment to customer satisfaction and take immediate corrective measures.
+
+Thank you for your attention to this matter. I look forward to a swift resolution.
+
+Sincerely,</report>
+    <timestamp>Jul 19, 2023, 6:57 PM</timestamp>
+    <status>Pending</status>
+  </data>
+  <data>
+    <srcode>20-03025</srcode>
+    <dept>CICS</dept>
+    <violation>Academic Dishonesty</violation>
+    <report>During the recent exam, I observed Gray Fullbuster engaging in academic dishonesty by cheating on the test. He was not alone in this act, as Natsu Dragneel was his accomplice. This behavior is unacceptable and goes against the principles of fair and honest academic practices.
+
+As fellow students, we have a responsibility to uphold the integrity of our academic environment and ensure a level playing field for everyone. Cheating undermines the trust and fairness in our educational system, and it affects the credibility of our achievements.
+
+I urge the appropriate authorities to investigate this matter thoroughly and take necessary actions to address and prevent such incidents in the future. Academic dishonesty should not be tolerated, and it is crucial to enforce academic integrity policies to maintain the credibility and value of our education.
+
+Let us all be vigilant and committed to promoting a culture of honesty and fairness within our academic community. Together, we can create an environment where academic excellence is achieved through hard work, dedication, and integrity.</report>
+    <timestamp>Jul 19, 2023, 8:06 PM</timestamp>
+    <status>Pending</status>
+  </data>
 </datas>

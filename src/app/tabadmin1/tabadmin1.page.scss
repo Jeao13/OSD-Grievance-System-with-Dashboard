@@ -6,6 +6,11 @@ ion-content {
     -ms-overflow-style: none;
     overflow: hidden;
   }
+  ion-title {
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px;
+  }
   ion-searchbar {
     color: #000000;
   }
@@ -95,8 +100,8 @@ ion-content {
     filter: grayscale(100%); /* Apply grayscale filter */
   }
   .content-container {
-    background: transparent;
-    height:fit-content;
+    background: transparent;    
+    max-height: fit-content;
     position: relative;
   }
   
@@ -128,16 +133,16 @@ ion-content {
     padding: 10px;
     background:rgba(255, 255, 255, 0.478);
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
-    border-radius: 30px;
+    border-radius: 20px;
   }
   .sanctions-container {
     margin-left: 20px;
-   margin-right: 20px;
+    margin-right: 20px;
     margin-top: 16px;
     padding: 10px;
     background:rgba(255, 255, 255, 0.478);
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
-    border-radius: 30px;
+    border-radius: 20px;
   }
 
   h1{

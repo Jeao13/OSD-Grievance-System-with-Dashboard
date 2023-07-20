@@ -80,12 +80,52 @@
     <ion-label class="font">{{ user?.college }} - {{ user?.year }}</ion-label>
   </ion-item>
 
+    
   <div class="report-custom">
-  <ion-item class="rep">
-    <ion-label class="center">Total Number of Reports: {{ cicsDeptCount }}</ion-label>
-  </ion-item>  
+    <ion-item class="rep">
+      <ion-label class="center">Total Number of Reports: {{ cicsDeptCount }}</ion-label>
+    </ion-item>  
+    
+  
+    <app-pie-chart></app-pie-chart>
+    
+    <div class="icon-container">
+      <ol class="icon-list">
+        <li class="icon-item">
+          <div class="icon">
+            <ion-icon class="icon1" name="ellipse"></ion-icon>
+            <span class="icon-name">Classroom Rules and Regulations</span>
+          </div>
+        </li>
+        <li class="icon-item">
+          <div class="icon">
+            <ion-icon class="icon2" name="ellipse"></ion-icon>
+            <span class="icon-name">ID Requirement</span>
+          </div>
+        </li>
+        <li class="icon-item">
+          <div class="icon">
+            <ion-icon  class="icon3" name="ellipse"></ion-icon>
+            <span class="icon-name">Proper Uniform, Dress Code and Other Related Rules/Regulations</span>
+          </div>
+        </li>
+        <li class="icon-item">
+          <div class="icon">
+            <ion-icon class="icon4" name="ellipse"></ion-icon>
+            <span class="icon-name">University Facilities and Premises</span>
+          </div>
+        </li>
+        <li class="icon-item">
+          <div class="icon">
+            <ion-icon  class="icon5" name="ellipse"></ion-icon>
+            <span class="icon-name">Academic Dishonesty</span>
+          </div>
+        </li>
+        <!-- Add more icons and names as needed -->
+      </ol>
+    
+    </div>
+  </div>
+  
 
-
-  <app-pie-chart></app-pie-chart>
-</div>
 </ion-content>

@@ -30,5 +30,9 @@
     <message>You have a new sanction!</message>
     <time>Jul 18, 2023, 11:26 PM</time>
   </notif>
-
+  <notif>
+    <srcode>20-03025</srcode>
+    <message>You have a new sanction!</message>
+    <time>Jul 20, 2023, 12:00 AM</time>
+  </notif>
 </OSD>

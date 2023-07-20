@@ -8,6 +8,12 @@ ion-content {
   -ms-overflow-style: none;
   overflow: hidden;
 }
+
+ion-title {
+  font-size: 20px;
+  font-weight: bold;
+  padding: 10px;
+}
 .icons{
   color: rgb(255, 255, 255);
 }
@@ -138,13 +144,64 @@ ion-item,
   display: none;
 }
 
-.report-custom{
+.report-custom{   
   margin-left: 20px;
   margin-right: 20px;
   margin-top: 16px;
   padding: 10px;
-  background:rgba(255, 255, 255, 0.532);
+  background:rgba(255, 255, 255, 0.478);
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
-  border-radius: 30px;
+  border-radius: 20px;
+  
 }
+.icon-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+.icon-container {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.icon {
+  display: flex;
+  flex-direction: row; /* Set flex-direction to row */
+  align-items: center;
+  font-size: small;
+
+  ion-icon {
+    margin-right: 5px; /* Add some space between the icon and the icon name */
+  }
+}
+
+.icon-item {
+  margin-bottom: 10px;
+}
+
+.icon-name {
+  color: black;
+  font-size: 12px;
+  font-weight: bold;
+}
+.icon1{
+  color: rgb(171,60,92);
+}
+.icon2{
+  color: rgba(122,163,229,255);
+}
+.icon3{
+  color: rgba(162,126,168,255);
+}
+
+.icon4{
+  color: rgba(170,227,245,255);
+}
+
+.icon5{
+  color: rgba(173,204,237,255);
+}
+
 

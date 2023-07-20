@@ -14,9 +14,11 @@
         <h2>Type of Violation: {{ data.violation }}</h2>
         <p>Status: {{ data.status }}</p>
         <p>{{ data.timestamp }}</p>
+        <div class="container">
         <ion-button  class="custom-button" expand="block" size="small" (click)="openReportModal(data.report,data.violation)">
           Show Report
         </ion-button>
+        </div>
         
       </ion-label>
     </ion-item>

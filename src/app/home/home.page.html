@@ -1,33 +1,28 @@
 <ion-content class="background-image">
-  <div class="container">
-    <div class="logo">
-      <img src="/assets/bsul.png" alt="Logo">
-      <h1>OFFICE OF STUDENT DISCIPLINE</h1>
-      <p class="logo-text">GRIEVANCE SYSTEM</p>
-    </div>
-
-    <div class="half-circle"></div>
-  
-    <div class="form">
-      <h2 class="login-title">Grievance System Login</h2>
-      <form (ngSubmit)="validateForm()">
-       
-        <ion-item>
-          <ion-label position="floating">Username</ion-label>
-          <ion-input type="text" [(ngModel)]="username" name="username"></ion-input>
-        </ion-item>
-        <ion-item>
-          <ion-label position="floating">Password</ion-label>
-          <ion-input type="password" [(ngModel)]="password" name="password"></ion-input>
-        </ion-item>
-        <div class="form-footer">
-          <a href="#" class="forgot-password">Forgot Password? Click Here</a>
-          <button type="submit" class="sign-in">Sign In</button>
-        </div>
-        <div *ngIf="loginFailed" class="login-error">
-          Invalid username or password
-        </div>
-      </form>
-    </div>
+  <div class="form">
+    <ion-card>
+      <ion-card-header>
+        <ion-card-title>
+            <img class="hakdog" src="/assets/LOGO.png" alt="Logo">
+        </ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+          <form (ngSubmit)="validateForm()">
+            <ion-item>
+              <ion-input placeholder="Username" type="text" [(ngModel)]="username" name="username"></ion-input>
+            </ion-item>
+            <ion-item>
+              <ion-input placeholder="Password"  type="password" [(ngModel)]="password" name="password"></ion-input>
+            </ion-item>
+            <ion-label>* Password is case sensitive</ion-label>
+            <div class="form-footer">
+              <button type="submit" class="sign-in">Sign In</button>
+            </div>
+            <div *ngIf="loginFailed" class="login-error">
+              Invalid username or password
+            </div>
+          </form>
+      </ion-card-content>
+    </ion-card>
   </div>
 </ion-content>
