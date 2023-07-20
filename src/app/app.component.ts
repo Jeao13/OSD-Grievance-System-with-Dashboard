@@ -16,6 +16,6 @@ export class AppComponent implements OnInit {
     setTimeout(() => {
       this.showSplash = false;
       this.router.navigateByUrl('/home'); // Replace 'home' with the desired landing page after the splash screen
-    }, 5000); // Adjust the timeout value (in milliseconds) as needed
+    }, 0); // Adjust the timeout value (in milliseconds) as needed
   }
 }

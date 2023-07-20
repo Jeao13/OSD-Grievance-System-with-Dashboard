@@ -1,10 +1,6 @@
 ion-content{
-
   --ion-background-color:rgba(255, 255, 255,0.8);
   --ion-item-background:rgba(255, 255, 255);
-
-
-
 }
 
 .header-toolbar {
@@ -13,10 +9,10 @@ ion-content{
   font-size: 10px;
   --background: rgb(235, 34, 34);
 }
+
 .background{
   --background: linear-gradient(to right, rgba(189, 21, 21, 0.692), rgba(255,0,0,1));
 }
-
 
 .profile-pic {
   width: 200px;
@@ -24,10 +20,12 @@ ion-content{
   padding-top: 20px;
   padding-bottom: 20px;
 }
+
 .image-container {  
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 20px, 0px, 20px, 0px;
 }
 
 .font {
@@ -44,9 +42,7 @@ ion-content{
   --background: transparent;
 }
 
-
 .button-dl{
-
   --background: rgb(19, 196, 43);
   font-size: 10px;
   font-weight: bold;
@@ -55,25 +51,23 @@ ion-content{
 .ion-toolbar-right {
   display: flex;
   justify-content: flex-end;
-
 }
 
-
-ion-item,
-.no-border {
+ion-item, .no-border {
   margin-bottom: 0; /* Remove the bottom margin */
   padding-bottom: 0; /* Remove the bottom padding */
   --background: transparent;
   --color: black;  
   --border-style: none; /* Remove border style */
-
  }
- ion-label {
+
+.no-border {
   margin-bottom: 0; /* Remove the bottom margin */
-  padding-bottom: 0; /* Remove the bottom padding */
+  padding: 10px, 0px, 10px, 0px; /* Remove the bottom padding */
+  font-weight: bold;
+  color: black;
+  text-align: center;
 }
-
-
 
 .background-image {
   position: relative;
@@ -93,7 +87,6 @@ ion-item,
   filter: grayscale(100%); /* Apply grayscale filter */
 }
 
-
 .hide-item {
   display: none;
 }
@@ -108,8 +101,31 @@ ion-item,
   border-radius: 30px;
 }
 
-
 .bar-fill {
   background-color: #007bff; /* Change color to your preference */
   transition: height 0.5s;
+}
+
+.report-custom {
+  max-width: 548px; /* Set a maximum width for the container */
+  margin: 0 auto; /* Center the container horizontally */
+  padding: 20px; /* Add some padding for better visual appearance */
+
+  /* Optional: Add a background color, border, and box-shadow */
+  background-color: rgba(255, 255, 255, 0.532);
+  border-radius: 20px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.coord {
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.532);
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 30px;
+  width: 300px;
+  margin: 20px auto; /* Center the element horizontally */
+  margin-bottom: 20px;
+  display: block;
+  justify-content: center; /* Center the content horizontally */
+  align-items: center; /* Center the content vertically */
 }
