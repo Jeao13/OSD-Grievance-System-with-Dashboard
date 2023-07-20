@@ -1,9 +1,39 @@
-.card-content {
-  pre {
-    font-size: 16px; /* Set the desired font size */
-    overflow: hidden; /* Hide any overflowing text */
-    text-overflow: ellipsis; /* Show ellipsis (...) for text that overflows */
-    white-space: pre-wrap; /* Wrap text to multiple lines */
-    word-wrap: break-word; /* Allow breaking of long words */
-  }
+
+.header-toolbar {
+  font-weight: bold;
+  height: auto;
+  font-size: 10px;
+  --background: linear-gradient(to right, rgba(189, 21, 21, 0.692), rgba(255,0,0,1));
 }
+ion-list{
+  background-color:rgb(255, 255, 255);
+ 
+}
+ion-item{
+  --border-style: none; /* Remove border style */
+  --background:rgb(255, 255, 255);
+  border-radius: 10px;
+}
+.custom-image {
+  --background: rgba(255, 255, 255, 0.686);
+}
+
+h2{
+ color:black;
+  font-weight: bold;
+
+}
+p{
+  color: gray;
+    font-size: 10px;
+  }
+  .sanctions-container {
+    margin-left: 20px;
+    margin-right: 20px;
+
+    margin-top: 16px;
+    padding: 10px;
+    background:rgb(255, 255, 255);
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+  }

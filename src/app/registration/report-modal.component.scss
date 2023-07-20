@@ -7,32 +7,36 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  
-  background-image: url('/assets/Alangilan.jpg'); /* Set the URL of your background image here */
-  background-size: cover;
-  background-position: center;
-  backdrop-filter: blur(8px); /* Adjust the blur amount as desired */
-}
-.card-content {
-  background-color: rgb(255, 255, 255);
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  background-color: rgb(255, 255, 255); /* Adjust the background color and transparency as desired */
+
+  ion-card {
+    background-color: transparent;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+
+  .card-content {
+    color:black;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
 }
 
 .header-toolbar {
   font-weight: bold;
   height: auto;
   font-size: 10px;
-  --background: rgb(235, 34, 34);
+  --background: linear-gradient(to right, rgba(189, 21, 21, 0.692), rgba(255,0,0,1));
 }
 
 .custom-image {
-  --background: white;
+  --background: rgba(255, 255, 255, 0.686);
 }
 
 pre {
-  background-color: rgb(255, 255, 255);
+  
+  background-color: white;
   font-size: 16px;
   overflow: hidden;
   text-overflow: ellipsis;

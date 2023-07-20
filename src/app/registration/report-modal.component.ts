@@ -14,7 +14,7 @@ import { ModalController } from '@ionic/angular';
       </ion-toolbar>
     </ion-header>
 
-    <ion-content class="custom-image">
+  <ion-content class="custom-image">
   <div class="modal-container">
     <ion-card>
       <ion-card-content class="card-content">

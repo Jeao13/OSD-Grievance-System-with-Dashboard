@@ -14,7 +14,7 @@ interface Form {
       <ngx-charts-pie-chart
         [results]="chartData"
         [view]="[400, 300]"
-        [labels]="true"
+        [labels]="true"       
         (select)="onSelect($event)"
       >
       </ngx-charts-pie-chart>
@@ -40,6 +40,7 @@ export class PieChartComponent {
     { name: 'Academic Dishonesty', value: this.AcademicCount },
   ];
   legendSpacing = 10;
+  
 
   constructor(private http: HttpClient) {}
 

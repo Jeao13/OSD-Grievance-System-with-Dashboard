@@ -10,16 +10,20 @@ import { DataService } from 'src/app/data.service';
   styleUrls: ['./report-modal.component.scss'],
   template: `
   <ion-header>
-  <ion-toolbar class="background">
+  <ion-toolbar class="header-toolbar">
+  <ion-buttons slot="end">
+          <ion-button (click)="dismissModal()">Close</ion-button>
+        </ion-buttons>
     <ion-title>
       Sanctions
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content class="background-image">
+<ion-content class="custom-image">
+<div class="sanctions-container">
   <ion-list *ngIf="showResults">
-    <ion-item *ngFor="let data of matchingData">
+    <ion-item  *ngFor="let data of matchingData">
       <ion-label>
       
         <h2>Type of Violation: {{ data.violation }}</h2>
@@ -32,6 +36,7 @@ import { DataService } from 'src/app/data.service';
       <ion-label>No results found for the entered username.</ion-label>
     </ion-item>
   </ion-list>
+</div>
 </ion-content>
 
   `
