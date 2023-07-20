@@ -10,13 +10,15 @@
   <ion-list *ngIf="showResults">
     <ion-item *ngFor="let data of matchingData">
       <ion-label>
-        <h2>College/Department: {{ data.dept }}</h2>
-        <h1>Type of Violation: {{ data.violation }}</h1>
+        <h1>College/Department: {{ data.dept }}</h1>
+        <h2>Type of Violation: {{ data.violation }}</h2>
         <p>Status: {{ data.status }}</p>
         <p>{{ data.timestamp }}</p>
+        <div class="container">
         <ion-button size="small" (click)="openReportModal(data.report,data.violation)">
           Show Report
         </ion-button>
+        </div>
       </ion-label>
     </ion-item>
     

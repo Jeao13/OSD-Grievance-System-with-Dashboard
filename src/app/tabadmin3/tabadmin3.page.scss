@@ -1,92 +1,92 @@
 
 ion-header {
-    background-color: #333;
-    color: #fff;
-  }
+  background-color: #333;
+  color: #fff;
+}
+
+ion-title {
+  font-size: 20px;
+  font-weight: bold;
+  padding: 10px;
+}
+
+.background{
+  --background: linear-gradient(to right, rgba(189, 21, 21, 0.692), rgba(255,0,0,1));
+
+}
+.background-image {
+  position: relative;
+}
+
+.background-image::before {
+  content: "";
+  background: url('/assets/Alangilan.jpg') no-repeat center center fixed;
+  background-size: cover;
+  opacity: 0.8;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  filter: grayscale(100%); /* Apply grayscale filter */
+}
+
+/* Styling for ion-content */
+ion-content {
+  padding: 10px;
   
-  ion-title {
-    font-size: 20px;
-    font-weight: bold;
-    padding: 10px;
-  }
-  
-  .background{
-    --background: linear-gradient(to right, rgba(189, 21, 21, 0.692), rgba(255,0,0,1));
-  
-  }
-  
-  /* Styling for ion-content */
-  ion-content {
-    padding: 10px;
-    
-    --ion-background-color:rgba(255, 255, 255, 0.8);
-    --ion-item-background:rgba(255, 255, 255, 0.8);
-  
-  
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  /* Styling for ion-list */
-  ion-list {
-    margin-top: 10px;
-  }
-  
-  /* Styling for ion-item */
-  ion-item {
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    margin-bottom: 10px;
-    padding: 10px;
-  
-  }
-  
-  ion-label h3 {
-    font-size: 18px;
-    font-weight: bold;
-    margin-bottom: 5px;
-  }
-  
-  /* Styling for h3 within ion-label */
-  ion-label h3:first-child {
-    color: #237cdc;
-  }
-  
-  /* Styling for h2 within ion-label */
-  ion-label h2 {
-    margin-bottom: 5px;
-    font-size: 14px;
-    color: black;
-    font-weight: bold;
-  }
-  
-  /* Styling for p within ion-label */
-  ion-label p {
-    color: gray;
-    font-size: 10px;
-    margin-bottom: 10px;
-  }
-  
-  /* Styling for ion-button */
-  ion-button {
-    margin-top: 10px;
-    --background: green;
-    font-weight: bold;
-  }
-  
-  /* Styling for ion-ripple-effect */
-  ion-ripple-effect {
-    color: green;
-  }
-  
-  /* Styling for ion-item when no results found */
-  ion-item.no-results {
-    border: none;
-  }
-  
-  /* Styling for ion-label when no results found */
-  ion-label.no-results {
-    text-align: center;
-    color: #777;
-  }
+  --ion-background-color:rgba(255, 255, 255, 0.8);
+  --ion-item-background:rgba(255, 255, 255, 0.8);
+
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Styling for ion-list */
+ion-list {
+  background: transparent;
+  margin-top: 10px;
+}
+
+/* Styling for ion-item */
+ion-item {
+  --border-style: none; /* Remove border style */  
+  border-radius: 10px;
+  margin-bottom: 10px;
+  padding: 10px;
+
+}
+
+
+/* Styling for h2 within ion-label */
+ion-label h2 {
+  margin-bottom: 5px;
+  font-size: 16px;
+  color: black;
+  font-weight: bold;
+}
+
+/* Styling for p within ion-label */
+ion-label p {
+  color: gray;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+/* Styling for ion-button */
+ion-button {
+  margin-top: 10px;
+  --background: green;
+  font-weight: bold;
+}
+
+/* Styling for ion-ripple-effect */
+ion-ripple-effect {
+  color: green;
+}
+::ng-deep ion-item.no-results ion-label {
+  color: black !important;
+}

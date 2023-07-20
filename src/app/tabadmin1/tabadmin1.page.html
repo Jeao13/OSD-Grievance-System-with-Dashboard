@@ -29,17 +29,19 @@
       </ion-item>
       <ion-item class="no-border">
         <ion-label class="font">{{ users2?.college }}</ion-label>
+  
       </ion-item>
       <ion-item>
         <ion-label class="font">{{ users2?.year }}</ion-label>
+  
       </ion-item>
+
+     
+
     </div>
 
-    <div class="sanc-container"></div>
-  
+    
 
-
-  </div>
     <div class="sanctions-container">
     <ion-label><h1>Sanctions:</h1></ion-label>
       <ion-list *ngIf="showResults">
@@ -49,6 +51,8 @@
             <h2>{{ data.violation }}</h2>
             <h3>{{ data.timestamp }}</h3>
      
+    
+            
           </ion-label>
         </ion-item>
         <ion-item *ngIf="matchingData.length === 0">
@@ -57,20 +61,38 @@
       </ion-list>
 
     </div>
+    
+
+    <div class="sanc-container"></div>
     <form (ngSubmit)="addsanctions()">
-    <ion-item>
-      <ion-label position="floating">Classification of Violation</ion-label>
-      <ion-select [(ngModel)]="message" name="message1">
-        <ion-select-option value="Classroom Rules and Regulations">Classroom Rules and Regulations</ion-select-option>
-        <ion-select-option value="ID Requirement">ID Requirement</ion-select-option>
-        <ion-select-option value="Proper Uniform, Dress Code and Other Related Rules/Regulations">Proper Uniform, Dress Code & Other Related Rules/Regulations</ion-select-option>
-        <ion-select-option value="University Facilities and Premises">University Facilities & Premises</ion-select-option>
-        <ion-select-option value="Academic Dishonesty">Academic Dishonesty</ion-select-option>
-      </ion-select>
-    </ion-item>
-    <div>
-      <ion-button type="submit" >Give Sanction</ion-button>
-    </div>
+      <ion-item>
+        <ion-label position="floating">Classification of Violation</ion-label>
+        <ion-select [(ngModel)]="message" name="message1" class="custom-select">
+          <ion-select-option class="custom-option" value="Classroom Rules and Regulations">
+            Classroom Rules and Regulations
+          </ion-select-option>
+          <ion-select-option class="custom-option" value="ID Requirement">
+            ID Requirement
+          </ion-select-option>
+          <ion-select-option class="custom-option" value="Proper Uniform, Dress Code and Other Related Rules/Regulations">
+            Proper Uniform, Dress Code & Other Related Rules/Regulations
+          </ion-select-option>
+          <ion-select-option class="custom-option" value="University Facilities and Premises">
+            University Facilities & Premises
+          </ion-select-option>
+          <ion-select-option class="custom-option" value="Academic Dishonesty">
+            Academic Dishonesty
+          </ion-select-option>
+        </ion-select>
+      </ion-item>
+      
+      <div class="center-button">
+        <ion-button class="custom-button" type="submit" >Give Sanction</ion-button>
+      </div>
+
     </form>
+
+
+  </div>
 </ion-content>
 

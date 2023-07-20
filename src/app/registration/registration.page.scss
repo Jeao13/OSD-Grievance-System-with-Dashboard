@@ -11,14 +11,17 @@ ion-header {
   }
   
   .background{
-    --background: linear-gradient(to right, rgba(189, 21, 21, 0.692), rgba(255,0,0,1));
-  
-  }
+   
+      font-weight: bold;
+      height: auto;
+      font-size: 10px;
+      --background: linear-gradient(to right, rgba(189, 21, 21, 0.692), rgba(255,0,0,1));
+    
+    }
   
   /* Styling for ion-content */
   ion-content {
-    padding: 10px;
-    
+    padding: 10px;    
     --ion-background-color:rgba(255, 255, 255, 0.8);
     --ion-item-background:rgba(255, 255, 255, 0.8);
   
@@ -28,16 +31,14 @@ ion-header {
     justify-content: center;
   }
   
-  /* Styling for ion-list */
-  ion-list {
-    margin-top: 10px;
-  }
+  
   
   /* Styling for ion-item */
   ion-item {
-    border: 1px solid #ccc;
+    --border-style: none;
     border-radius: 5px;
     margin-bottom: 10px;
+    box-shadow: 8px 4px 10px rgba(0, 0, 0, 0.2); /* Increase the values for more visible shadow */
     padding: 10px;
   
   }
@@ -68,11 +69,12 @@ ion-header {
     color: black;
   }
   
-  /* Styling for p within ion-label */
   ion-label p {
     font-size: 14px;
     margin-bottom: 10px;
   }
+  
+  
   
   /* Styling for ion-button */
   ion-button {
@@ -81,11 +83,7 @@ ion-header {
     font-weight: bold;
   }
   
-  /* Styling for ion-ripple-effect */
-  ion-ripple-effect {
-    color: green;
-  }
-  
+   
   /* Styling for ion-item when no results found */
   ion-item.no-results {
     border: none;

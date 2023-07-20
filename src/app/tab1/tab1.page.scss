@@ -1,6 +1,5 @@
 ion-content {
   --ion-background-color: rgba(255, 255, 255, 0.8);
-
   scrollbar-width: none;
   -ms-overflow-style: none;
   overflow: hidden;
@@ -26,18 +25,10 @@ ion-image{
   border: 0px;
 }
 
-
 ion-icon {
   color: rgb(0, 0, 0);
 }
 
-.forms-item {   
-  border-bottom: 1px solid black;
-}
-
-.forms{
---background: rgba(255, 255, 255, 0.236);
-}
 
 .container {
   display: flex;
@@ -53,12 +44,9 @@ ion-icon {
   height: auto;
   font-size: 10px;
   --background: rgb(235, 34, 34);  --background: linear-gradient(to right, rgba(189, 21, 21, 0.692), rgba(255,0,0,1));
-
 }
 
-.background{
-  --background: linear-gradient(to right, rgba(189, 21, 21, 0.692), rgba(255,0,0,1));
-}
+
 
 .center { 
   text-align: center;
@@ -136,7 +124,7 @@ ion-item, .no-border {
   padding: 10px;
   background: rgba(255, 255, 255, 0.532);
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
-  border-radius: 30px;
+  border-radius: 20px;
   width: fit-content;
   margin: 20px auto; /* Center the element horizontally */
   margin-bottom: 20px;
@@ -146,12 +134,16 @@ ion-item, .no-border {
 }
 
 .info-container {
+  
+  margin: 20px auto; /* Center the element horizontally */
+  color: black;
+  width: fit-content;
   max-width: 548px; /* Set a maximum width for the container */
-  margin: 0 auto; /* Center the container horizontally */
-  padding: 20px; /* Add some padding for better visual appearance */
+ 
+  padding: 10px; /* Add some padding for better visual appearance */
 
   /* Optional: Add a background color, border, and box-shadow */
-  background-color: rgba(255, 255, 255, 0.532);
+  background-color: rgba(255, 255, 255, 0.733);
   border-radius: 20px;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
 }
@@ -183,16 +175,17 @@ h1 {
   margin-bottom: 20px; /* Add some space between paragraphs */
 }
 
-.num-container {
+.num-container {  
   padding: 20px;
-  background:rgba(255, 255, 255, 0.532);
+  background:rgba(255, 255, 255, 0.633);
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
   border-radius: 20px;
   width: 552px;
 }
 
 .center-container {
-  margin: 20px;
+  padding: auto;
+  margin: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -323,67 +316,19 @@ ion-item, .no-border {
 .hide-item {
   display: none;
 }
-
-.profile-container {
-  padding: 10px;
-  background: rgba(255, 255, 255, 0.532);
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
-  border-radius: 30px;
-  width: fit-content;
-  margin: 20px auto; /* Center the element horizontally */
-  margin-bottom: 20px;
-  display: block;
-  justify-content: center; /* Center the content horizontally */
-  align-items: center; /* Center the content vertically */
-}
-
-.info-container {
-  max-width: 548px; /* Set a maximum width for the container */
-  margin: 0 auto; /* Center the container horizontally */
-  padding: 20px; /* Add some padding for better visual appearance */
-
-  /* Optional: Add a background color, border, and box-shadow */
-  background-color: rgba(255, 255, 255, 0.532);
-  border-radius: 20px;
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.info-container h1 {
-  text-align: left; /* Center the headings */
-  font-size: 20px;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  color: rgb(189, 14, 14);
-  padding-bottom: 0;
-}
-
-h1 {
-  text-align: left; /* Center the headings */
-  font-size: 20px;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  color: rgb(189, 14, 14);
-  padding-bottom: 0;
-  font-weight: bold;
-}
-
-.info-container p {
-  text-align: justify; /* Justify the text for better readability */
-  margin-bottom: 20px; /* Add some space between paragraphs */
-}
-
-.center-container {
-  margin: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 .num-container {
-  padding: 20px;
-  background:rgba(255, 255, 255, 0.532);
+  max-width: 600px;
+  margin: 0 auto;
+  margin-top: 16px;
+  padding: 10px;
+  background:rgba(255, 255, 255, 0.671);
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
-  border-radius: 20px;
-  width: 552px;
+  border-radius: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
+
 }
+
 
 table {
   width: 100%;
@@ -393,57 +338,18 @@ table {
 
 th, td {
   --border-style: none; /* Remove border style */
-  font-size: initial;
+  font-size: x-small;
   color: black;
-  padding: 8px;
+  padding: 7px;
   text-align: left;
 }
 
 th { 
-  white-space: nowrap; 
-  background: transparent;
+  white-space:nowrap; 
+  background:transparent;
   font-weight: bold;
 }
 
 td:hover {
-  background-color: #ff8d8d;
-}
-
-hr {
-  border: 0;
-  border-top: 1px solid rgba(0, 0, 0, .1);
-  box-sizing: content-box;
-  height: 0;
-  overflow: visible;
-}
-
-/* Add styles for equal-width columns and justify text */
-td {
-  width: 50%; /* Divide the table columns equally */
-}
-
-/* Justify the text in table cells */
-td, th {
-  text-align: justify;
-}
-
-/* Optional: Add hyphens to break long words in justified text */
-td, th {
-  hyphens: auto;
-}
-
-p {
-  line-height: 1.5rem;
-}
-
-h1, ion-icon {
-  vertical-align: middle;
-}
-
-p {
-  line-height: 1.5rem;
-}
-
-h1, ion-icon {
-  vertical-align: middle;
+  background-color: #ff8d8dc5;
 }
