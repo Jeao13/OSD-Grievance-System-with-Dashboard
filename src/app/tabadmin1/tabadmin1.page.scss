@@ -1,203 +1,217 @@
 
+ion-content {
+  --ion-background-color: rgba(255, 255, 255, 0.8);
+  --ion-item-background: rgba(255, 255, 255);
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  overflow: hidden;
+}
+ion-title {
+  font-size: 20px;
+  font-weight: bold;
+  padding: 10px;
+}
+ion-searchbar {
+  color: #000000;
+}
 .header-toolbar {
   font-weight: bold;
   height: auto;
   font-size: 10px;
-  --background: linear-gradient(to right, rgba(189, 21, 21, 0.692), rgba(255,0,0,1));}
-  
+  --background: linear-gradient(to right, rgba(189, 21, 21, 0.692), rgba(255,0,0,1));
+}
 
-
-ion-content {
-    --ion-background-color: rgba(255, 255, 255, 0.8);
-    --ion-item-background: rgba(255, 255, 255);
-    scrollbar-width: none;
-    -ms-overflow-style: none;
-    overflow: hidden;
-  }
-  ion-searchbar {
-    color: #000000;
-  }
-  .header-toolbar {
-    font-weight: bold;
-    height: auto;
-    font-size: 10px;
-    --background: linear-gradient(to right, rgba(189, 21, 21, 0.692), rgba(255,0,0,1));
-  }
-  
-   
-  .forms-item {   
-    border-bottom: 1px solid black;
-  }
-  .forms{
-  --background: rgba(255, 255, 255, 0.236);
-  
-  }
-  .container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top: -200px;
-    height: 100%;
-  }
  
-    .background{
-    --background: linear-gradient(to right, rgba(189, 21, 21, 0.692), rgba(255,0,0,1));
-  
-  }
-    .center { 
-    text-align: center;
-    font-weight: bold;
-    font-size: large;
-  }
-  
-  
-  .profile-pic {
-    width: 200px;
-    height: 200px;
-    padding-top: 20px;
+.forms-item {   
+  border-bottom: 1px solid black;
+}
+.forms{
+--background: rgba(255, 255, 255, 0.236);
+
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: -200px;
+  height: 100%;
+}
+
+  .background{
+  --background: linear-gradient(to right, rgba(189, 21, 21, 0.692), rgba(255,0,0,1));
+
+}
+  .center { 
+  text-align: center;
+  font-weight: bold;
+  font-size: large;
+}
+
+
+.profile-pic {
+  width: 200px;
+  height: 200px;
+  padding-top: 20px;
+ 
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.font {
+  font-size: smaller;
+  text-align: center;
+
+}
    
-  }
-  
-  .image-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .font {
-    font-size: smaller;
-    text-align: center;
-  
-  }
-     
-  
-  ion-item,
-  .no-border {
-    --background: transparent;
-    --color: black;  
-    --border-style: none; /* Remove border style */
-  
-   }
 
-   ion-label{
-    color:black;
-   }
-  
-  
-  .background-image {
-    position: relative;
-  }
-  
-  .background-image::before {
-    content: "";
-    background: url('/assets/Alangilan.jpg') no-repeat center center fixed;
-    background-size: cover;
-    opacity: 0.8;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: -1;
-    filter: grayscale(100%); /* Apply grayscale filter */
-  }
-  .content-container {
-    background: transparent;
-    height:fit-content;
-    position: relative;
-  }
-  
-  .search-container {
-    position: relative;
-    z-index: 1;
-  }
-  
-  .recommendation-list {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    right: 0;
-    background-color: #ffffff;
-    z-index: 2;
-    border: 1px solid #ccc;
-    border-top: none;
-    border-radius: 0 0 8px 8px;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
-    padding: 8px;
-    max-height: 200px;
-    overflow-y: auto;
-  }
-  
-  .user-info-container {
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-top: 16px;
-    padding: 10px;
-    background:rgba(255, 255, 255, 0.478);
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
-    border-radius: 30px;
-  }
-  .sanctions-container {
-    margin-left: 20px;
-   margin-right: 20px;
-    margin-top: 16px;
-    padding: 10px;
-    background:rgba(255, 255, 255, 0.478);
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
-    border-radius: 30px;
+ion-item,
+.no-border {
+  --background: transparent;
+  --color: black;  
+  --border-style: none; /* Remove border style */
+
+ }
+
+ ion-label{
+  color:black;
+ }
+
+
+.background-image {
+  position: relative;
+}
+
+.background-image::before {
+  content: "";
+  background: url('/assets/Alangilan.jpg') no-repeat center center fixed;
+  background-size: cover;
+  opacity: 0.8;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  filter: grayscale(100%); /* Apply grayscale filter */
+}
+.content-container {
+  background: transparent;    
+  max-height: fit-content;
+  position: relative;
+}
+
+.search-container {
+  position: relative;
+  z-index: 1;
+}
+
+.recommendation-list {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background-color: #ffffff;
+  z-index: 2;
+  border: 1px solid #ccc;
+  border-top: none;
+  border-radius: 0 0 8px 8px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 8px;
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.user-info-container {
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 16px;
+  padding: 10px;
+  background:rgba(255, 255, 255, 0.478);
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+}
+.sanctions-container {
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 16px;
+  padding: 10px;
+  background:rgba(255, 255, 255, 0.478);
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+}
+
+h1{
+  font-weight: bold;
+}
+h2{
+  color: #000000;
+  font-weight: bold;
+
+}
+h3{
+  color: gray;
+    font-size: 10px;
   }
 
-  h1{
-    font-weight: bold;
-  }
-  h2{
-    font-weight: bold;
-
-  }
-  h3{
-    color: gray;
-      font-size: 10px;
-    }
-  
-  ion-list{
-    background: transparent;
-  }
+ion-list{
+  background: transparent;
+}
 
 /* Custom styling for ion-select options */
 ion-item.custom-select {
-  --padding-start: 16px;
-  --padding-end: 16px;
+--padding-start: 16px;
+--padding-end: 16px;
 
-  .select-text {
-    color: #000000; /* Change text color */
-    font-weight: bold;
-  }
-
-  .select-placeholder {
-    color: #808080; /* Change placeholder text color */
-  }
-
-  ion-icon.select-icon {
-    color: #000000; /* Change icon color */
-    font-size: 20px; /* Change icon size */
-  }
-
-  .select-overlay {
-    background-color: #FFFFFF; /* Change overlay background color */
-  }
-
-  .select-option {
-    --background: #FFFFFF; /* Change option background color */
-    color: #000000; /* Change option text color */
-  }
-
-  .select-option:hover {
-    --background: #c22424; /* Change option background color on hover */
-  }
-
-  .select-option.selected {
-    --background: #000000; /* Change selected option background color */
-    color: #FFFFFF; /* Change selected option text color */
-  }
+.select-text {
+  color: #000000; /* Change text color */
+  font-weight: bold;
 }
+
+.select-placeholder {
+  color: #808080; /* Change placeholder text color */
+}
+
+ion-icon.select-icon {
+  color: #000000; /* Change icon color */
+  font-size: 20px; /* Change icon size */
+}
+
+.select-overlay {
+  background-color: #FFFFFF; /* Change overlay background color */
+}
+
+.select-option {
+  --background: #FFFFFF; /* Change option background color */
+  color: #000000; /* Change option text color */
+}
+
+.select-option:hover {
+  --background: #c22424; /* Change option background color on hover */
+}
+
+.select-option.selected {
+  --background: #000000; /* Change selected option background color */
+  color: #FFFFFF; /* Change selected option text color */
+}
+}
+
+
+  
+.center-button {
+  margin-top: 16px;
+  display: flex;
+  justify-content: center;      
+}
+.custom-button {
+ 
+  --background: rgb(16, 204, 50);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  font-size: 15px;
+  font-weight: bold;
+}
+ 

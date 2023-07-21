@@ -44,11 +44,11 @@ export class OsdhomePage implements OnInit {
   ) {}
 
   downloadFile() {
-    const fileUrl = 'assets/BatStateU-FO-OSD-07_Formal Complaint Letter_Rev. 02.pdf'; // Replace with the path to your file
-
+    const fileUrl = 'assets/BatStateU-FO-OSD-06_Request-for-Non-Wearing-of-Uniform_Rev.-02.pdf'; 
+  
     this.http.get(fileUrl, { responseType: 'blob' }).subscribe(
       (response) => {
-        saveAs(response, 'BatStateU-FO-OSD-07_Formal Complaint Letter_Rev. 02.pdf'); // Save the file locally with the desired name
+        saveAs(response, 'BatStateU-FO-OSD-06_Request-for-Non-Wearing-of-Uniform_Rev.-02.pdf'); // Save the file locally with the desired name
       },
       (error) => {
         console.error('Error fetching file: ' + error);
@@ -58,11 +58,11 @@ export class OsdhomePage implements OnInit {
   }
 
   downloadFile1() {
-    const fileUrl = 'assets/BatStateU-FO-OSD-10_Request for New ID_Rev. 03.pdf'; // Replace with the path to your file
-
+    const fileUrl = 'assets/BatStateU-FO-OSD-09_Notice-of-Case-Dismissal_Rev.-01.pdf'; // Replace with the path to your file
+  
     this.http.get(fileUrl, { responseType: 'blob' }).subscribe(
       (response) => {
-        saveAs(response, 'BatStateU-FO-OSD-10_Request for New ID_Rev. 03.pdf'); // Save the file locally with the desired name
+        saveAs(response, 'BatStateU-FO-OSD-09_Notice-of-Case-Dismissal_Rev.-01.pdf'); // Save the file locally with the desired name
       },
       (error) => {
         console.error('Error fetching file: ' + error);
@@ -71,6 +71,93 @@ export class OsdhomePage implements OnInit {
     );
   }
 
+  
+  downloadFile2() {
+    const fileUrl = 'assets/BatStateU-FO-OSD-08_Call-Slip_Rev.-02.pdf'; 
+  
+    this.http.get(fileUrl, { responseType: 'blob' }).subscribe(
+      (response) => {
+        saveAs(response, 'BatStateU-FO-OSD-08_Call-Slip_Rev.-02.pdf'); // Save the file locally with the desired name
+      },
+      (error) => {
+        console.error('Error fetching file: ' + error);
+        // Handle error, e.g., display an error message
+      }
+    );
+  }
+
+  downloadFile3() {
+    const fileUrl = 'assets/BatStateU-FO-OSD-01_Temporary-Gate-Pass_Rev.-02.pdf'; // Replace with the path to your file
+  
+    this.http.get(fileUrl, { responseType: 'blob' }).subscribe(
+      (response) => {
+        saveAs(response, 'BatStateU-FO-OSD-01_Temporary-Gate-Pass_Rev.-02.pdf'); // Save the file locally with the desired name
+      },
+      (error) => {
+        console.error('Error fetching file: ' + error);
+        // Handle error, e.g., display an error message
+      }
+    );
+  }
+
+  
+  downloadFile4() {
+    const fileUrl = 'assets/BatStateU-FO-OSD-05_Student-Incident-Report_Rev.-02.pdf'; 
+  
+    this.http.get(fileUrl, { responseType: 'blob' }).subscribe(
+      (response) => {
+        saveAs(response, 'BatStateU-FO-OSD-05_Student-Incident-Report_Rev.-02.pdf'); // Save the file locally with the desired name
+      },
+      (error) => {
+        console.error('Error fetching file: ' + error);
+        // Handle error, e.g., display an error message
+      }
+    );
+  }
+
+  downloadFile5() {
+    const fileUrl = 'assets/BatStateU-FO-OSD-04_Letter-of-Suspension_Rev.-02.pdf'; // Replace with the path to your file
+  
+    this.http.get(fileUrl, { responseType: 'blob' }).subscribe(
+      (response) => {
+        saveAs(response, 'BatStateU-FO-OSD-04_Letter-of-Suspension_Rev.-02.pdf'); // Save the file locally with the desired name
+      },
+      (error) => {
+        console.error('Error fetching file: ' + error);
+        // Handle error, e.g., display an error message
+      }
+    );
+  }
+
+
+  
+  downloadFile6() {
+    const fileUrl = 'assets/BatStateU-FO-OSD-03_Written-Reprimand-for-Violation-of-Norms-of-Conduct_Rev.-02.pdf'; 
+  
+    this.http.get(fileUrl, { responseType: 'blob' }).subscribe(
+      (response) => {
+        saveAs(response, 'BatStateU-FO-OSD-03_Written-Reprimand-for-Violation-of-Norms-of-Conduct_Rev.-02.pdf'); // Save the file locally with the desired name
+      },
+      (error) => {
+        console.error('Error fetching file: ' + error);
+        // Handle error, e.g., display an error message
+      }
+    );
+  }
+
+  downloadFile7() {
+    const fileUrl = 'assets/BatStateU-FO-OSD-02_Written-Warning-for-Violation-of-Norms-of-Conduct_Rev.-02.pdf'; // Replace with the path to your file
+  
+    this.http.get(fileUrl, { responseType: 'blob' }).subscribe(
+      (response) => {
+        saveAs(response, 'BatStateU-FO-OSD-02_Written-Warning-for-Violation-of-Norms-of-Conduct_Rev.-02.pdf'); // Save the file locally with the desired name
+      },
+      (error) => {
+        console.error('Error fetching file: ' + error);
+        // Handle error, e.g., display an error message
+      }
+    );
+  }
   toggleClass(event: Event) {
     event.stopPropagation(); // Prevent the event from propagating
 

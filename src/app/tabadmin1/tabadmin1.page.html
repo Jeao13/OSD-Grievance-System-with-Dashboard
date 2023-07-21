@@ -29,9 +29,11 @@
       </ion-item>
       <ion-item class="no-border">
         <ion-label class="font">{{ users2?.college }}</ion-label>
+  
       </ion-item>
       <ion-item>
         <ion-label class="font">{{ users2?.year }}</ion-label>
+  
       </ion-item>
 
      
@@ -92,28 +94,5 @@
 
 
   </div>
-
-    <div class="sanctions-container">
-    <ion-label><h1>Sanctions:</h1></ion-label>
-      <ion-list *ngIf="showResults">
-        <ion-item *ngFor="let data of matchingData">
-          <ion-label>
-            
-            <h2>{{ data.violation }}</h2>
-            <h3>{{ data.timestamp }}</h3>
-     
-    
-            
-          </ion-label>
-        </ion-item>
-        <ion-item *ngIf="matchingData.length === 0">
-          <ion-label>N/A</ion-label>
-        </ion-item>
-      </ion-list>
-
-    </div>
-    
-
-  
 </ion-content>
 

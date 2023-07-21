@@ -1,5 +1,5 @@
 
- ion-card{
+ion-card{
   background-color: white;
  }
  ion-title {
@@ -18,8 +18,6 @@
 }
   .card-content {   
     padding: 20px;
-    width:800px;
-    height:600px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     --background: transparent;
@@ -30,8 +28,6 @@
     --ion-color-primary-contrast: transparent;
   }
 
- 
-
 .header-toolbar {
   font-weight: bold;
   height: auto;
@@ -40,9 +36,8 @@
 }
 
 .custom-image {
-  --background: white;
+  --background: rgba(255, 255, 255, 0.888);
 }
-
 pre {
   color:black;
   background-color: rgb(255, 255, 255);
