@@ -1,34 +1,44 @@
-
-
-
 ion-content {
   --ion-background-color: rgba(255, 255, 255, 0.8);
-  --ion-item-background: rgba(255, 255, 255);
+
   scrollbar-width: none;
   -ms-overflow-style: none;
   overflow: hidden;
 }
+
 ion-title {
   font-size: 20px;
   font-weight: bold;
   padding: 10px;
 }
+
 .icons{
   color: rgb(255, 255, 255);
 }
+
+.lop{ background-color: rgb(255, 255, 255);}
+
 .menu{
   --background: transparent;
 }
+
+ion-image{
+  border: 0px;
+}
+
+
 ion-icon {
   color: rgb(0, 0, 0);
-  }
+}
+
 .forms-item {   
   border-bottom: 1px solid black;
 }
+
 .forms{
 --background: rgba(255, 255, 255, 0.236);
-
 }
+
 .container {
   display: flex;
   flex-direction: column;
@@ -42,14 +52,13 @@ ion-icon {
   font-weight: bold;
   height: auto;
   font-size: 10px;
-  --background: rgb(235, 34, 34);
+  --background: rgb(235, 34, 34);  --background: linear-gradient(to right, rgba(189, 21, 21, 0.692), rgba(255,0,0,1));
 
 }
+
 .background{
   --background: linear-gradient(to right, rgba(189, 21, 21, 0.692), rgba(255,0,0,1));
-
 }
-
 
 .center { 
   text-align: center;
@@ -57,18 +66,17 @@ ion-icon {
   font-size: large;
 }
 
-
 .profile-pic {
   width: 200px;
   height: 200px;
   padding-top: 20px;
- 
 }
 
 .image-container {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-bottom: 20px;
 }
 
 .font {
@@ -83,14 +91,11 @@ ion-icon {
   --background: transparent;
 }
 
-
 .button-dl{
-
   --background: rgb(19, 196, 43);
   font-size: 10px;
   font-weight: bold;
 }
-
 
 .custom-text-button {
   color: rgb(255, 255, 255);
@@ -99,15 +104,11 @@ ion-icon {
   /* Add more custom styles as needed */
 }
 
-
-ion-item,
-.no-border {
+ion-item, .no-border {
   --background: transparent;
   --color: black;  
   --border-style: none; /* Remove border style */
-
  }
-
 
 .background-image {
   position: relative;
@@ -127,19 +128,212 @@ ion-item,
   filter: grayscale(100%); /* Apply grayscale filter */
 }
 
+.hide-item {
+  display: none;
+}
+
+.profile-container {
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.532);
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 30px;
+  width: fit-content;
+  margin: 20px auto; /* Center the element horizontally */
+  margin-bottom: 20px;
+  display: block;
+  justify-content: center; /* Center the content horizontally */
+  align-items: center; /* Center the content vertically */
+}
+
+.info-container {
+  max-width: 548px; /* Set a maximum width for the container */
+  margin: 0 auto; /* Center the container horizontally */
+  padding: 20px; /* Add some padding for better visual appearance */
+
+  /* Optional: Add a background color, border, and box-shadow */
+  background-color: rgba(255, 255, 255, 0.532);
+  border-radius: 20px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.info-container h1 {
+  text-align: left; /* Center the headings */
+  font-size: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: rgb(189, 14, 14);
+  padding-bottom: 0;
+  
+}
+
+ion-card-header{
+  background-color: rgb(255, 255, 255);
+}
+
+h1 {
+  text-align: left; /* Center the headings */
+  font-size: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: rgb(189, 14, 14);
+  padding-bottom: 0;
+  font-weight: bold;
+}
+
+.info-container p {
+  text-align: justify; /* Justify the text for better readability */
+  margin-bottom: 20px; /* Add some space between paragraphs */
+}
+
+.num-container {
+  padding: 20px;
+  background:rgba(255, 255, 255, 0.532);
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  width: 552px;
+}
+
+.center-container {
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+ion-content {
+  --ion-background-color: rgba(255, 255, 255, 0.8);
+  --ion-item-background: rgba(255, 255, 255);
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  overflow: hidden;
+}
+
+ion-title {
+  font-size: 20px;
+  font-weight: bold;
+  padding: 10px;
+}
+
+.icons{
+  color: rgb(255, 255, 255);
+}
+
+.menu{
+  --background: transparent;
+}
+
+ion-icon {
+  color: rgb(0, 0, 0);
+}
+
+.forms-item {   
+  border-bottom: 1px solid black;
+}
+
+.forms{
+--background: rgba(255, 255, 255, 0.236);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: -200px;
+  height: 100%;
+}
+
+.header-toolbar {
+  font-weight: bold;
+  height: auto;
+  font-size: 10px;
+  --background: rgb(235, 34, 34);
+}
+
+.background{
+  --background: linear-gradient(to right, rgba(189, 21, 21, 0.692), rgba(255,0,0,1));
+}
+
+.center { 
+  text-align: center;
+  font-weight: bold;
+  font-size: large;
+}
+
+.profile-pic {
+  width: 200px;
+  height: 200px;
+  padding-top: 20px;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 20px;
+}
+
+.font {
+  font-size: small;
+  text-align: center;
+  font-weight: bold;
+}
+
+.btn-right {
+  display: flex;
+  justify-content: flex-end;
+  --background: transparent;
+}
+
+.button-dl{
+  --background: rgb(19, 196, 43);
+  font-size: 10px;
+  font-weight: bold;
+}
+
+.custom-text-button {
+  color: rgb(255, 255, 255);
+  font-size: 10px;
+  font-weight: bold;
+  /* Add more custom styles as needed */
+}
+
+ion-item, .no-border {
+  --background: transparent;
+  --color: black;  
+  --border-style: none; /* Remove border style */
+ }
+
+.background-image {
+  position: relative;
+}
+
+.background-image::before {
+  content: "";
+  background: url('/assets/Alangilan.jpg') no-repeat center center fixed;
+  background-size: cover;
+  opacity: 0.8;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  filter: grayscale(100%); /* Apply grayscale filter */
+}
 
 .hide-item {
   display: none;
 }
-.num-container {  
-  max-width: 552px;
-  margin-left: 20px;
-  margin-right: 20px;
+.num-container {
+  max-width: 600px;
+  margin: 0 auto;
   margin-top: 16px;
   padding: 10px;
-  background:rgba(255, 255, 255, 0.478);
+  background:rgba(255, 255, 255, 0.671);
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
-  border-radius: 20px;
+  border-radius: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
+
 }
 
 
@@ -149,24 +343,20 @@ table {
   margin-top: 10px;
 }
 
-th,
-td {
+th, td {
   --border-style: none; /* Remove border style */
-  font-size:small;
+  font-size: x-small;
   color: black;
   padding: 7px;
   text-align: left;
-
 }
 
 th { 
- 
-  color: crimson;
   white-space:nowrap; 
   background:transparent;
   font-weight: bold;
 }
 
 td:hover {
-  background-color: #ff8d8d;
+  background-color: #ff8d8dc5;
 }

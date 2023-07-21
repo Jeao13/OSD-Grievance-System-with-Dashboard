@@ -23,6 +23,7 @@ interface Form {
   `,
   styleUrls: ['./pie-chart.component.scss'],
 })
+
 export class PieChartComponent {
   @Input() data: any[];
   onSelect: (event: any) => void;
@@ -120,7 +121,11 @@ export class PieChartComponent {
             return { ...item, value: this.AcademicCount };
           }
         return item;
+
+
+        
       });
+      
     });
   }
 }

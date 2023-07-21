@@ -5,7 +5,8 @@ import { FormsModule } from '@angular/forms';
 import { IonicModule } from '@ionic/angular';
 
 import { OsdhomePageRoutingModule } from './osdhome-routing.module';
-
+import { PieChartComponent } from './pie-chart.component';
+import { NgxChartsModule } from '@swimlane/ngx-charts';
 import { OsdhomePage } from './osdhome.page';
 
 @NgModule({
@@ -13,8 +14,9 @@ import { OsdhomePage } from './osdhome.page';
     CommonModule,
     FormsModule,
     IonicModule,
-    OsdhomePageRoutingModule
+    OsdhomePageRoutingModule,
+    NgxChartsModule
   ],
-  declarations: [OsdhomePage]
+  declarations: [OsdhomePage, PieChartComponent]
 })
 export class OsdhomePageModule {}

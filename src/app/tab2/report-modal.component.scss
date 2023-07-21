@@ -1,31 +1,26 @@
 
-ion-card {
-  background-color: transparent;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-}
-ion-title {
-  font-size: 20px;
-  font-weight: bold;
-  padding: 10px;
-}
-.card-content {
-  color: black;
-  background-color: white;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  overflow-y: auto; /* Add scrollbars if content overflows vertically */
-  max-height: 80vh; /* Adjust the maximum height as desired */
-}
+  ion-card {
+    background-color: transparent;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
 
-pre {
-  background-color: white;
-  font-size: 16px;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: pre-wrap;
-  word-wrap: break-word;
-}
+  .card-content {
+    color:black;
+    background-color: white;
+    padding: 20px;
+    width:800px;
+    height:600px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    --background: transparent;
+    --color: black;
+    --ion-item-background: transparent;
+    --ion-color-base: transparent;
+    --ion-color-primary: transparent;
+    --ion-color-primary-contrast: transparent;
+    
+  }
+
 
 
 .header-toolbar {

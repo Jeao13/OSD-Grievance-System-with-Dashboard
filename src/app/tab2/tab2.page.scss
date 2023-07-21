@@ -5,6 +5,11 @@ ion-title {
   font-size: 20px;
   font-weight: bold;
   padding: 10px;
+  color: white;
+}
+
+ion-toolbar{
+  --background: linear-gradient(to right, rgba(189, 21, 21, 0.692), rgba(255,0,0,1));
 }
 
 .background{
@@ -23,63 +28,86 @@ ion-content {
   display: flex;
   align-items: center;
   justify-content: center;
-
-  
 }
+
+/* Styling for ion-list */
+ion-list {
+  margin-top: 10px;
+}
+
+/* Styling for ion-list */
+ion-list {
+  margin-top: 10px;
+}
+
+/* Styling for ion-item */
+ion-item {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
 .header-toolbar {
   font-weight: bold;
   height: auto;
   font-size: 10px;
   --background: linear-gradient(to right, rgba(189, 21, 21, 0.692), rgba(255,0,0,1));
 }
-.custom-button {
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
-  --background: rgb(19, 196, 43);
-  color: rgb(255, 255, 255);
-  margin-top: 16px;
-  width: 200px; /* Set the width to a fixed value, adjust as needed */
 
+ion-button {
+  margin-top: 10px;
+  --background: green;
 }
-  
 
-
-
-.container {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  margin-top: 8px;
-  height: 100%;
+ion-label h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 5px;
 }
+
 ion-item {
-  --border-style: none;
-  border-radius: 5px;
-  margin-bottom: 10px;
-  box-shadow: 8px 4px 10px rgba(0, 0, 0, 0.2); /* Increase the values for more visible shadow */
-  padding: 10px;
+  color: black;
+/* Styling for h3 within ion-label */
+}
 
+ion-label h3:first-child {
+  color: #237cdc;
 }
 
 
 
 
 /* Styling for h2 within ion-label */
+ion-label h2 {
+  margin-bottom: 5px;
+  font-size: 16px;
+  color: black;
+}
+
 ion-label h1 {
+  margin-bottom: 5px;
+  font-size: 16px;
+  color: black;
+}
+
+ion-label h2 {
   margin-bottom: 5px;
   font-size: 20px;
   font-weight: bold;
   color: black;
 }
 
+
 /* Styling for p within ion-label */
 ion-label p {
-  font-size: 13px;
-  
+  font-size: 14px;
+  margin-bottom: 5px;
+  color: black;
+  margin-bottom: 10px;
 }
 
 h2{
-  color: black;
 font-size: 15px;
 
 }

@@ -8,7 +8,6 @@ import { saveAs } from 'file-saver';
 import { ModalController } from '@ionic/angular';
 import { ReportModalComponent } from './report-modal.component';
 
-
 @Component({
   selector: 'app-tab1',
   templateUrl: './tab1.page.html',
@@ -26,7 +25,6 @@ export class Tab1Page implements OnInit {
   constructor(
     private route: ActivatedRoute,
     private http: HttpClient,
-
     private router: Router,
     private dataService: DataService,
     private modalController: ModalController
@@ -64,7 +62,6 @@ export class Tab1Page implements OnInit {
   
   toggleClass(event: Event) {
     event.stopPropagation(); // Prevent the event from propagating
-
     this.isClassDisabled = !this.isClassDisabled;
   }
  
@@ -162,8 +159,6 @@ export class Tab1Page implements OnInit {
           const nameNode = currentUser.getElementsByTagName('violation')[0]?.textContent;
           const collegeNode = currentUser.getElementsByTagName('time')[0]?.textContent;
         
-     
-         
           const violation = nameNode || '';
           const time = collegeNode || '';
          

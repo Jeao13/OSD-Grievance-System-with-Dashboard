@@ -12,19 +12,12 @@ interface Form {
   dept: string | null;
 }
 
-
-
 @Component({
   selector: 'app-login',
   templateUrl: './login.page.html',
   styleUrls: ['./login.page.scss'],
 })
 export class LoginPage implements OnInit {
-  chartData: any[] = [
-    { name: 'Label 1', value: 30 },
-    { name: 'Label 2', value: 20 },
-    { name: 'Label 3', value: 50 },
-  ];
 
   username: string;
   dept:string;
@@ -32,7 +25,7 @@ export class LoginPage implements OnInit {
   idRequirementCount = 0;
   user: User = {};
   cicsDeptCount = 0;
-  user1: User1 = {};// Initialize with an empty object
+  user1: User1 = {};
   safeProfilePicUrl: SafeResourceUrl;
   showFormsDropdown = false;
   isClassDisabled = true;
@@ -48,11 +41,11 @@ export class LoginPage implements OnInit {
   ) {}
 
   downloadFile() {
-    const fileUrl = 'assets/BatStateU-FO-OSD-07_Formal Complaint Letter_Rev. 02.pdf'; // Replace with the path to your file
+    const fileUrl = 'assets/BatStateU-FO-OSD-06_Request-for-Non-Wearing-of-Uniform_Rev.-02.pdf'; 
   
     this.http.get(fileUrl, { responseType: 'blob' }).subscribe(
       (response) => {
-        saveAs(response, 'BatStateU-FO-OSD-07_Formal Complaint Letter_Rev. 02.pdf'); // Save the file locally with the desired name
+        saveAs(response, 'BatStateU-FO-OSD-06_Request-for-Non-Wearing-of-Uniform_Rev.-02.pdf'); // Save the file locally with the desired name
       },
       (error) => {
         console.error('Error fetching file: ' + error);
@@ -62,11 +55,11 @@ export class LoginPage implements OnInit {
   }
 
   downloadFile1() {
-    const fileUrl = 'assets/BatStateU-FO-OSD-10_Request for New ID_Rev. 03.pdf'; // Replace with the path to your file
+    const fileUrl = 'assets/BatStateU-FO-OSD-09_Notice-of-Case-Dismissal_Rev.-01.pdf'; // Replace with the path to your file
   
     this.http.get(fileUrl, { responseType: 'blob' }).subscribe(
       (response) => {
-        saveAs(response, 'BatStateU-FO-OSD-10_Request for New ID_Rev. 03.pdf'); // Save the file locally with the desired name
+        saveAs(response, 'BatStateU-FO-OSD-09_Notice-of-Case-Dismissal_Rev.-01.pdf'); // Save the file locally with the desired name
       },
       (error) => {
         console.error('Error fetching file: ' + error);
@@ -76,6 +69,93 @@ export class LoginPage implements OnInit {
   }
 
   
+  downloadFile2() {
+    const fileUrl = 'assets/BatStateU-FO-OSD-08_Call-Slip_Rev.-02.pdf'; 
+  
+    this.http.get(fileUrl, { responseType: 'blob' }).subscribe(
+      (response) => {
+        saveAs(response, 'BatStateU-FO-OSD-08_Call-Slip_Rev.-02.pdf'); // Save the file locally with the desired name
+      },
+      (error) => {
+        console.error('Error fetching file: ' + error);
+        // Handle error, e.g., display an error message
+      }
+    );
+  }
+
+  downloadFile3() {
+    const fileUrl = 'assets/BatStateU-FO-OSD-01_Temporary-Gate-Pass_Rev.-02.pdf'; // Replace with the path to your file
+  
+    this.http.get(fileUrl, { responseType: 'blob' }).subscribe(
+      (response) => {
+        saveAs(response, 'BatStateU-FO-OSD-01_Temporary-Gate-Pass_Rev.-02.pdf'); // Save the file locally with the desired name
+      },
+      (error) => {
+        console.error('Error fetching file: ' + error);
+        // Handle error, e.g., display an error message
+      }
+    );
+  }
+
+  
+  downloadFile4() {
+    const fileUrl = 'assets/BatStateU-FO-OSD-05_Student-Incident-Report_Rev.-02.pdf'; 
+  
+    this.http.get(fileUrl, { responseType: 'blob' }).subscribe(
+      (response) => {
+        saveAs(response, 'BatStateU-FO-OSD-05_Student-Incident-Report_Rev.-02.pdf'); // Save the file locally with the desired name
+      },
+      (error) => {
+        console.error('Error fetching file: ' + error);
+        // Handle error, e.g., display an error message
+      }
+    );
+  }
+
+  downloadFile5() {
+    const fileUrl = 'assets/BatStateU-FO-OSD-04_Letter-of-Suspension_Rev.-02.pdf'; // Replace with the path to your file
+  
+    this.http.get(fileUrl, { responseType: 'blob' }).subscribe(
+      (response) => {
+        saveAs(response, 'BatStateU-FO-OSD-04_Letter-of-Suspension_Rev.-02.pdf'); // Save the file locally with the desired name
+      },
+      (error) => {
+        console.error('Error fetching file: ' + error);
+        // Handle error, e.g., display an error message
+      }
+    );
+  }
+
+
+  
+  downloadFile6() {
+    const fileUrl = 'assets/BatStateU-FO-OSD-03_Written-Reprimand-for-Violation-of-Norms-of-Conduct_Rev.-02.pdf'; 
+  
+    this.http.get(fileUrl, { responseType: 'blob' }).subscribe(
+      (response) => {
+        saveAs(response, 'BatStateU-FO-OSD-03_Written-Reprimand-for-Violation-of-Norms-of-Conduct_Rev.-02.pdf'); // Save the file locally with the desired name
+      },
+      (error) => {
+        console.error('Error fetching file: ' + error);
+        // Handle error, e.g., display an error message
+      }
+    );
+  }
+
+  downloadFile7() {
+    const fileUrl = 'assets/BatStateU-FO-OSD-02_Written-Warning-for-Violation-of-Norms-of-Conduct_Rev.-02.pdf'; // Replace with the path to your file
+  
+    this.http.get(fileUrl, { responseType: 'blob' }).subscribe(
+      (response) => {
+        saveAs(response, 'BatStateU-FO-OSD-02_Written-Warning-for-Violation-of-Norms-of-Conduct_Rev.-02.pdf'); // Save the file locally with the desired name
+      },
+      (error) => {
+        console.error('Error fetching file: ' + error);
+        // Handle error, e.g., display an error message
+      }
+    );
+  }
+
   toggleClass(event: Event) {
     event.stopPropagation(); // Prevent the event from propagating
 
@@ -87,7 +167,6 @@ export class LoginPage implements OnInit {
     this.cicsDeptCount = this.forms.filter((form) => form.dept === 'CICS').length;
   }
 
-
   ngOnInit() {
     this.route.queryParams.subscribe((params) => {
       this.username = params['username'];
@@ -95,8 +174,16 @@ export class LoginPage implements OnInit {
       this.dataService.setUsername(this.username);
       this.dataService.setDept(this.dept);
 
-      const { name, college, year, profilePic } = params;
-      this.user = { name, college, year, profilePic };
+        // Check if user data is already available in session storage
+        const storedUserData = sessionStorage.getItem('userData');
+        if (storedUserData) {
+          this.user = JSON.parse(storedUserData);
+        }
+    
+        const storedCicsDeptCount = sessionStorage.getItem('cicsDeptCount');
+        if (storedCicsDeptCount) {
+          this.cicsDeptCount = parseInt(storedCicsDeptCount);
+        }
 
       if (this.username) {
         this.displayUserInfo();
@@ -106,13 +193,10 @@ export class LoginPage implements OnInit {
         }
       }
 
-     
+      sessionStorage.setItem('username', this.username);
+      sessionStorage.setItem('dept', this.dept);
+      sessionStorage.setItem('userData', JSON.stringify(this.user));
     });
-
-
-
-
- 
   }
 
 
@@ -129,15 +213,16 @@ export class LoginPage implements OnInit {
   }
  
   logout() {
-    // Clear user data from local storage or session storage
     localStorage.removeItem('userToken');
   sessionStorage.clear();
+  localStorage.removeItem('hasLoadedBefore');
 
   // Reset any user-related variables to their default values
   this.username = '';
 
   // Redirect the user to the login page and replace the current history entry
-  this.router.navigate(['/home'], { replaceUrl: true });
+  this.router.navigate(['/home']);
+  window.location.reload();
   }
 
   displayUserInfo() {
@@ -173,9 +258,12 @@ export class LoginPage implements OnInit {
             year,
             profilePic,
           };
+
           break;
         }
       }
+      
+      sessionStorage.setItem('userData', JSON.stringify(this.user));
     });
   }
 
@@ -202,14 +290,10 @@ export class LoginPage implements OnInit {
           this.cicsDeptCount++; // Increment the count for <data> with <dept> of CICS
         }
       }
-      
-    console.log(this.idRequirementCount)
-    console.log(this.dept)
+      sessionStorage.setItem('cicsDeptCount', this.cicsDeptCount.toString());
+      sessionStorage.setItem('userData', JSON.stringify(this.user));
     });
-
   }
-
-  
 }
 
 interface User1 {
